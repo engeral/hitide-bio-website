@@ -45,14 +45,14 @@
           <div class="tags"><span><span class="t-zh">提高免疫力</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">抗病毒</span><span class="t-en">Antiviral</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
           <div class="pd-facts"><div><div class="k"><span class="t-zh">产品类型</span><span class="t-en">Product Type</span></div><div class="v"><span class="t-zh">复合预混合饲料 X（A 包 + B 包包裹材料）</span><span class="t-en">Compound Premix Feed X (Packet A + Packet B Coating Material)</span></div></div><div><div class="k"><span class="t-zh">净含量</span><span class="t-en">Net Content</span></div><div class="v"><span class="t-zh">100 克/包</span><span class="t-en">100g/sachet</span></div></div><div><div class="k"><span class="t-zh">标准编号</span><span class="t-en">Standard No.</span></div><div class="v"><span class="t-zh">Q/GDCHTD 67-2025</span><span class="t-en">Q/GDCHTD 67-2025</span></div></div><div><div class="k"><span class="t-zh">适用对象</span><span class="t-en">For</span></div><div class="v"><span class="t-zh">石斑鱼、鳜鱼</span><span class="t-en">Grouper, Mandarin Fish</span></div></div><div><div class="k"><span class="t-zh">靶标疫病</span><span class="t-en">Target Disease</span></div><div class="v"><span class="t-zh">神经坏死病毒（NNV）</span><span class="t-en">Nervous Necrosis Virus (NNV)</span></div></div><div><div class="k"><span class="t-zh">分类</span><span class="t-en">Category</span></div><div class="v"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></div></div></div>
           <p class="pd-lead"><span class="t-zh">针对石斑鱼、鳜鱼神经坏死病毒（NNV）的病毒结合蛋白产品。NNV 攻毒保护试验显示治疗组存活率显著优于对照组。</span><span class="t-en">A viral receptor-binding protein product targeting nervous necrosis virus (NNV) in grouper and mandarin fish. NNV challenge-protection trials showed significantly higher survival in the treatment group versus the control.</span></p>
-          <div class="calc">
-      <h4><span class="t-zh">💡 用量估算器（结合蛋白 A+B 包）</span><span class="t-en">💡 Dosage Calculator (Binding Protein Pack A+B)</span></h4>
+          <div class="calc" data-calc='{"type": "ab", "per20": 1}'>
+      <h4><span class="t-zh">💡 用量估算器</span><span class="t-en">💡 Dosage Calculator</span></h4>
       <div class="row">
         <label><span class="t-zh">饲料重量（kg）：</span><span class="t-en">Feed weight (kg):</span></label>
         <input id="calcFeed" type="number" min="0" step="1" placeholder="如 20" value="20">
         <button class="btn btn-navy" onclick="calcPacks()"><span class="t-zh">计算</span><span class="t-en">Calculate</span></button>
       </div>
-      <div class="out"><span class="t-zh">建议用量：</span><span class="t-en">Recommended dosage:</span><b id="calcOut">1</b> <span class="t-zh">套（A 包 + B 包）/ 20kg 饲料 · 每天一餐，连用 5-7 天</span><span class="t-en">pack(s) (Pack A + Pack B) / 20kg feed · one meal daily, for 5-7 days</span></div>
+      <div class="out"><span class="t-zh">建议用量：</span><span class="t-en">Recommended dosage:</span><b id="calcOut">—</b> <span id="calcUnit"><span class="t-zh">1 套（A 包 + B 包）/ 20kg 饲料 · 每天一餐，连用 5–7 天</span><span class="t-en">1 pack (Pack A + Pack B) / 20kg feed · one meal daily, for 5–7 days</span></span></div>
     </div>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
             <a class="btn btn-primary" href="../contact.html"><span class="t-zh">咨询 / 获取资料</span><span class="t-en">Inquire / Get Info</span></a>
@@ -148,7 +148,7 @@
   </div>
 </section>
 <script>
-function calcPacks(){var f=parseFloat(document.getElementById('calcFeed').value)||0;var n=Math.max(1,Math.round(f/20));document.getElementById('calcOut').textContent=n;}
+function calcPacks(){var box=document.querySelector('.calc[data-calc]');if(!box)return;var cfg=JSON.parse(box.getAttribute('data-calc'));var f=parseFloat(document.getElementById('calcFeed').value)||0;var out=document.getElementById('calcOut');if(cfg.type==='ab'){var packs=Math.max(1,Math.round(f/20))*cfg.per20;out.textContent=packs;}else{var g=Math.max(0,Math.round(f/20*100));var ml=Math.max(0,Math.round(f/20*300));out.textContent=g+'g + '+ml+'ml';}}
 if(document.getElementById('calcFeed')){document.getElementById('calcFeed').addEventListener('input',calcPacks);calcPacks();}
 </script>
 <footer>

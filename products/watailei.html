@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-zh-title="蛙泰莱 WaTaiLei · 海泰生物" data-en-title="WaTaiLei · HiTide Biotech">蛙泰莱 WaTaiLei · 海泰生物</title>
-<meta name="description" content="针对牛蛙歪头病（黄杆菌脑神经感染）的蛙属虹彩病毒结合蛋白产品。对照试验显示成活率约 75%（对照组约 44%）。">
+<meta name="description" content="针对牛蛙歪头病（黄杆菌脑神经感染）的细菌粘附蛋白产品，抑制黄杆菌进入血液与脑组织。对照试验显示成活率约 75%（对照组约 44%）。">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
@@ -44,15 +44,15 @@
           <h1><span class="t-zh">蛙泰莱</span><span class="t-en">WaTaiLei</span></h1>
           <div class="tags"><span><span class="t-zh">黄杆菌</span><span class="t-en">Flavobacterium</span></span><span><span class="t-zh">歪头病</span><span class="t-en">Wry-neck disease</span></span><span><span class="t-zh">细菌粘附蛋白</span><span class="t-en">Bacterial adhesion protein</span></span></div>
           <div class="pd-facts"><div><div class="k"><span class="t-zh">产品类型</span><span class="t-en">Product Type</span></div><div class="v"><span class="t-zh">复合预混合饲料 IV（A 包 + B 包包裹材料）</span><span class="t-en">Compound Premix Feed IV (Packet A + Packet B Coating Material)</span></div></div><div><div class="k"><span class="t-zh">净含量</span><span class="t-en">Net Content</span></div><div class="v"><span class="t-zh">100 克/包</span><span class="t-en">100g/sachet</span></div></div><div><div class="k"><span class="t-zh">标准编号</span><span class="t-en">Standard No.</span></div><div class="v"><span class="t-zh">Q/SDHT 0159-2023</span><span class="t-en">Q/SDHT 0159-2023</span></div></div><div><div class="k"><span class="t-zh">适用对象</span><span class="t-en">For</span></div><div class="v"><span class="t-zh">牛蛙</span><span class="t-en">Bullfrog</span></div></div><div><div class="k"><span class="t-zh">靶标疫病</span><span class="t-en">Target Disease</span></div><div class="v"><span class="t-zh">歪头病（黄杆菌脑神经感染）</span><span class="t-en">Wry-neck Disease (Flavobacterium neuroinfection)</span></div></div><div><div class="k"><span class="t-zh">分类</span><span class="t-en">Category</span></div><div class="v"><span class="t-zh">蛙用</span><span class="t-en">Frog</span></div></div></div>
-          <p class="pd-lead"><span class="t-zh">针对牛蛙歪头病（黄杆菌脑神经感染）的蛙属虹彩病毒结合蛋白产品。对照试验显示成活率约 75%（对照组约 44%）。</span><span class="t-en">A ranavirus receptor-binding protein product targeting bullfrog 'wry-neck disease' (Flavobacterium brain-nerve infection). Controlled trials showed a survival rate of approx. 75% (vs. approx. 44% in controls).</span></p>
-          <div class="calc">
-      <h4><span class="t-zh">💡 用量估算器（结合蛋白 A+B 包）</span><span class="t-en">💡 Dosage Calculator (Binding Protein Pack A+B)</span></h4>
+          <p class="pd-lead"><span class="t-zh">针对牛蛙歪头病（黄杆菌脑神经感染）的细菌粘附蛋白产品，抑制黄杆菌进入血液与脑组织。对照试验显示成活率约 75%（对照组约 44%）。</span><span class="t-en">A ranavirus receptor-binding protein product targeting bullfrog 'wry-neck disease' (Flavobacterium brain-nerve infection). Controlled trials showed a survival rate of approx. 75% (vs. approx. 44% in controls).</span></p>
+          <div class="calc" data-calc='{"type": "ab", "per20": 2}'>
+      <h4><span class="t-zh">💡 用量估算器</span><span class="t-en">💡 Dosage Calculator</span></h4>
       <div class="row">
         <label><span class="t-zh">饲料重量（kg）：</span><span class="t-en">Feed weight (kg):</span></label>
         <input id="calcFeed" type="number" min="0" step="1" placeholder="如 20" value="20">
         <button class="btn btn-navy" onclick="calcPacks()"><span class="t-zh">计算</span><span class="t-en">Calculate</span></button>
       </div>
-      <div class="out"><span class="t-zh">建议用量：</span><span class="t-en">Recommended dosage:</span><b id="calcOut">1</b> <span class="t-zh">套（A 包 + B 包）/ 20kg 饲料 · 每天一餐，连用 5-7 天</span><span class="t-en">pack(s) (Pack A + Pack B) / 20kg feed · one meal daily, for 5-7 days</span></div>
+      <div class="out"><span class="t-zh">建议用量：</span><span class="t-en">Recommended dosage:</span><b id="calcOut">—</b> <span id="calcUnit"><span class="t-zh">2 套（2×500g A 包 + 2×B 包）/ 20kg 蛙饲料 · 首次连续 3 天，间隔 1 月再 3 天</span><span class="t-en">2 packs (2×500g Pack A + 2×Pack B) / 20kg frog feed · 3 days, then repeat after 1 month</span></span></div>
     </div>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
             <a class="btn btn-primary" href="../contact.html"><span class="t-zh">咨询 / 获取资料</span><span class="t-en">Inquire / Get Info</span></a>
@@ -136,7 +136,7 @@
   </div>
 </section>
 <script>
-function calcPacks(){var f=parseFloat(document.getElementById('calcFeed').value)||0;var n=Math.max(1,Math.round(f/20));document.getElementById('calcOut').textContent=n;}
+function calcPacks(){var box=document.querySelector('.calc[data-calc]');if(!box)return;var cfg=JSON.parse(box.getAttribute('data-calc'));var f=parseFloat(document.getElementById('calcFeed').value)||0;var out=document.getElementById('calcOut');if(cfg.type==='ab'){var packs=Math.max(1,Math.round(f/20))*cfg.per20;out.textContent=packs;}else{var g=Math.max(0,Math.round(f/20*100));var ml=Math.max(0,Math.round(f/20*300));out.textContent=g+'g + '+ml+'ml';}}
 if(document.getElementById('calcFeed')){document.getElementById('calcFeed').addEventListener('input',calcPacks);calcPacks();}
 </script>
 <footer>

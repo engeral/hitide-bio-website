@@ -45,7 +45,15 @@
           <div class="tags"><span><span class="t-zh">独创反向包裹</span><span class="t-en">Proprietary reverse encapsulation</span></span><span><span class="t-zh">降低药残</span><span class="t-en">Reduces drug residue</span></span><span><span class="t-zh">控制耐药</span><span class="t-en">Controls drug resistance</span></span></div>
           <div class="pd-facts"><div><div class="k"><span class="t-zh">产品类型</span><span class="t-en">Product Type</span></div><div class="v"><span class="t-zh">水产用抗生素（独创反向包裹技术）</span><span class="t-en">Aquaculture Antibiotic (Proprietary Reverse Encapsulation Technology)</span></div></div><div><div class="k"><span class="t-zh">净含量</span><span class="t-en">Net Content</span></div><div class="v"><span class="t-zh">100 克/包</span><span class="t-en">100g/sachet</span></div></div><div><div class="k"><span class="t-zh">标准编号</span><span class="t-en">Standard No.</span></div><div class="v"><span class="t-zh">兽药字 190859092</span><span class="t-en">Veterinary Approval 190859092</span></div></div><div><div class="k"><span class="t-zh">适用对象</span><span class="t-en">For</span></div><div class="v"><span class="t-zh">牛蛙</span><span class="t-en">Bullfrog</span></div></div><div><div class="k"><span class="t-zh">靶标疫病</span><span class="t-en">Target Disease</span></div><div class="v"><span class="t-zh">急性细菌病（红腿/烂皮/腹水）</span><span class="t-en">Acute Bacterial Disease (Red Leg / Skin Ulcer / Ascites)</span></div></div><div><div class="k"><span class="t-zh">分类</span><span class="t-en">Category</span></div><div class="v"><span class="t-zh">蛙用</span><span class="t-en">Frog</span></div></div></div>
           <p class="pd-lead"><span class="t-zh">针对牛蛙急性细菌病的水产用抗生素，独创反向包裹技术减少水体污染与耐药菌产生。急性发作、重症首选，可与蛙泰莱联用。</span><span class="t-en">An aquaculture antibiotic for acute bacterial disease in bullfrogs, with proprietary reverse-encapsulation technology that reduces water pollution and resistant-bacteria development. First choice for acute outbreaks and severe cases; can be combined with WaTaiLei.</span></p>
-          
+          <div class="calc" data-calc='{"type": "rx"}'>
+      <h4><span class="t-zh">💡 用量估算器</span><span class="t-en">💡 Dosage Calculator</span></h4>
+      <div class="row">
+        <label><span class="t-zh">饲料重量（kg）：</span><span class="t-en">Feed weight (kg):</span></label>
+        <input id="calcFeed" type="number" min="0" step="1" placeholder="如 20" value="20">
+        <button class="btn btn-navy" onclick="calcPacks()"><span class="t-zh">计算</span><span class="t-en">Calculate</span></button>
+      </div>
+      <div class="out"><span class="t-zh">建议用量：</span><span class="t-en">Recommended dosage:</span><b id="calcOut">—</b> <span id="calcUnit"><span class="t-zh">100g + 300ml 植物油 / 20kg 蛙饲料 · 连用 3–7 天</span><span class="t-en">100g + 300ml vegetable oil / 20kg frog feed · for 3–7 days</span></span></div>
+    </div>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
             <a class="btn btn-primary" href="../contact.html"><span class="t-zh">咨询 / 获取资料</span><span class="t-en">Inquire / Get Info</span></a>
             <a class="btn btn-ghost" style="color:var(--navy);border-color:var(--rule);" href="../products.html"><span class="t-zh">← 返回产品中心</span><span class="t-en">← Back to Products</span></a>
@@ -109,7 +117,10 @@
     <div class="cta-strip" style="border-color:var(--gold);"><div class="t"><strong style="color:var(--gold);"><span class="t-zh">⚠ 处方药提示</span><span class="t-en">⚠ Prescription Notice</span></strong> · <span class="t-zh">本品为兽用处方药/抗生素，请凭兽医处方购买使用，遵守休药期规定。</span><span class="t-en">This is a veterinary prescription/antibiotic product. Purchase and use with a veterinarian’s prescription and observe withdrawal periods.</span></div><a class="btn btn-navy" href="../contact.html"><span class="t-zh">联系技术团队</span><span class="t-en">Contact Technical Team</span></a></div>
   </div>
 </section>
-
+<script>
+function calcPacks(){var box=document.querySelector('.calc[data-calc]');if(!box)return;var cfg=JSON.parse(box.getAttribute('data-calc'));var f=parseFloat(document.getElementById('calcFeed').value)||0;var out=document.getElementById('calcOut');if(cfg.type==='ab'){var packs=Math.max(1,Math.round(f/20))*cfg.per20;out.textContent=packs;}else{var g=Math.max(0,Math.round(f/20*100));var ml=Math.max(0,Math.round(f/20*300));out.textContent=g+'g + '+ml+'ml';}}
+if(document.getElementById('calcFeed')){document.getElementById('calcFeed').addEventListener('input',calcPacks);calcPacks();}
+</script>
 <footer>
   <div class="wrap">
     <div class="footer-grid">
