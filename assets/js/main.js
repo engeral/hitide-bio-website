@@ -178,10 +178,20 @@
     function renderRec(id){
       var card = pGrid.querySelector('.product[href$="'+id+'.html"]');
       if(!card || !mResult || !mCards) return;
+      var isEn = document.body.classList.contains('lang-en');
       var clone = card.cloneNode(true);
       clone.removeAttribute('style');
       mCards.innerHTML = '';
       mCards.appendChild(clone);
+      var U = window.__USAGE__ || {};
+      var u = U[id];
+      if(u){
+        var html = '<div class="m-usage"><div class="m-usage-h">'+(isEn ? (u.en||u.name) : u.name)+' · '+(isEn?'Directions':'用法用量')+'</div>';
+        if(u.course) html += '<div class="m-usage-row"><b>'+(isEn?'Course':'疗程')+'：</b>'+(isEn?(u.course_en||u.course):u.course)+'</div>';
+        if(u.note) html += '<div class="m-usage-row"><b>'+(isEn?'Precautions':'注意事项')+'：</b>'+(isEn?(u.note_en||u.note):u.note)+'</div>';
+        html += '<a class="btn btn-ghost" style="margin-top:10px;" href="'+u.url+'">'+(isEn?'View product':'查看产品')+' →</a></div>';
+        mCards.insertAdjacentHTML('beforeend', html);
+      }
       mResult.style.display = 'block';
       mResult.scrollIntoView({behavior:'smooth', block:'center'});
     }
