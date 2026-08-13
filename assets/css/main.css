@@ -331,3 +331,13 @@ body.lang-en .team-card .photo img{display:block}
 .m-usage-row b{color:var(--teal);font-weight:600}
 /* 产品页内 Q&A 当前项高亮 */
 .pill.is-current{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* ===== 技术参考阈值表 ===== */
+.ref-wrap{overflow-x:auto;margin-top:18px;-webkit-overflow-scrolling:touch}
+.ref-table{width:100%;border-collapse:collapse;font-size:14px;border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden}
+.ref-table th,.ref-table td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-1);line-height:1.55}
+.ref-table thead th{background:var(--navy);color:#fff;font-size:12.5px;letter-spacing:.04em;font-weight:600;white-space:nowrap}
+.ref-table tbody tr:nth-child(even){background:var(--paper)}
+.ref-table tbody tr:hover{background:rgba(13,138,156,.07)}
+.ref-table td.src{color:var(--ink-2);font-size:12.5px;white-space:nowrap}
+.ref-note{margin-top:14px;font-size:13px;color:var(--ink-2);line-height:1.7}
