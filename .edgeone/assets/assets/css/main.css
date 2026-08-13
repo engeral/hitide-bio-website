@@ -315,3 +315,19 @@ body.lang-en .t-en{display:inline}
 body.lang-en .brand-text .cn{display:none}
 body.lang-en .footer-brand .cn{display:none}
 body.lang-en .team-card .photo img{display:block}
+
+/* ===== 结构化用法面板 (功能·用法用量) ===== */
+.u-block{border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden;margin-top:14px}
+.u-item{display:grid;grid-template-columns:140px 1fr;gap:18px;padding:16px 20px;border-bottom:1px solid var(--rule)}
+.u-item:last-child{border-bottom:none}
+.u-k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);font-weight:600;padding-top:2px}
+.u-v{color:var(--ink-1);font-size:14.5px;line-height:1.7}
+.u-steps{margin:0;padding-left:4px;list-style:none}
+.u-steps li{margin:7px 0;padding-left:16px;position:relative;color:var(--ink-1)}
+.u-steps li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.m-usage{margin-top:16px;padding:16px 18px;background:var(--paper);border:1px solid var(--rule);border-radius:var(--radius)}
+.m-usage-h{font-weight:700;color:var(--navy);margin-bottom:8px;font-size:14px}
+.m-usage-row{font-size:13.5px;color:var(--ink-2);line-height:1.6;margin:4px 0}
+.m-usage-row b{color:var(--teal);font-weight:600}
+/* 产品页内 Q&A 当前项高亮 */
+.pill.is-current{background:var(--navy);color:#fff;border-color:var(--navy)}
