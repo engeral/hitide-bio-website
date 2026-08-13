@@ -1,0 +1,327 @@
+{
+  "taimiaoja": {
+    "en_type": "Vitamin Premix Feed III",
+    "en_net": "100g/bottle · 10 bottles/box",
+    "en_species": "Cat",
+    "en_disease": "FPV / Herpes / Calici",
+    "en_tags": ["Inhibits viral replication","Nourishes and tonifies","Improves gastrointestinal health","Boosts immunity","Speeds recovery"],
+    "en_faq": []
+  },
+  "miaolebao": {
+    "en_type": "Pet Nutritional Supplement (Cat)",
+    "en_net": "1.5g x 10 sachets",
+    "en_species": "Cat",
+    "en_disease": "FPV / Herpes / Calici",
+    "en_tags": ["Inhibits viral replication","Rapid nutrient boost","Improves gastrointestinal health","Boosts immunity","Speeds recovery"],
+    "en_faq": []
+  },
+  "futailai": {
+    "en_type": "Pet Nutritional Supplement (Cat)",
+    "en_net": "Powder 1.5g x 10 sachets / Tablets 2 bottles/box",
+    "en_species": "Cat",
+    "en_disease": "Feline Infectious Peritonitis (FCoV)",
+    "en_tags": ["Inhibits viral replication","Feline FIP FCoV","Botanical antiviral (TCM)","10-15 day course"],
+    "en_faq": []
+  },
+  "baozhentai_cat": {
+    "en_type": "Pet Nutritional Supplement (Cat, Tablets)",
+    "en_net": "1 bottle/box",
+    "en_species": "Cat",
+    "en_disease": "Feline Herpesvirus",
+    "en_tags": ["Inhibits viral replication","Feline herpes","Botanical antiviral (TCM)","10-15 day course"],
+    "en_faq": []
+  },
+  "beizhuangtai": {
+    "en_type": "Pet Nutritional Supplement (Cat, Tablets)",
+    "en_net": "1 bottle/box",
+    "en_species": "Cat",
+    "en_disease": "Feline Calicivirus",
+    "en_tags": ["Inhibits viral replication","Feline calici","Direct oral administration"],
+    "en_faq": []
+  },
+  "wentailai": {
+    "en_type": "Pet Nutritional Supplement (Cat, Tablets)",
+    "en_net": "1 bottle/box",
+    "en_species": "Cat",
+    "en_disease": "Feline Panleukopenia Virus (FPV)",
+    "en_tags": ["Inhibits viral replication","Feline panleukopenia (FPV)","10-15 day course"],
+    "en_faq": []
+  },
+  "yanzhengtai": {
+    "en_type": "Broad-spectrum Antimicrobial Protein Topical Spray",
+    "en_net": "20ml/bottle",
+    "en_species": "Cat, Dog",
+    "en_disease": "Skin lesions / Oral ulcers / Surgical wounds",
+    "en_tags": ["Broad-spectrum antimicrobial protein","EGF + FGF21","Promotes healing","Topical spray"],
+    "en_faq": []
+  },
+  "taiwangja": {
+    "en_type": "Vitamin Premix Feed III",
+    "en_net": "10 bottles/box",
+    "en_species": "Dog",
+    "en_disease": "Canine Distemper / Parvovirus / Coronavirus",
+    "en_tags": ["Inhibits viral replication","Rapid nutrient boost","Improves gastrointestinal health","Boosts immunity","Speeds recovery"],
+    "en_faq": []
+  },
+  "wanglebao": {
+    "en_type": "Pet Nutritional Supplement (Dog)",
+    "en_net": "2g x 10 sachets",
+    "en_species": "Dog",
+    "en_disease": "Canine Distemper / Parvovirus / Coronavirus",
+    "en_tags": ["Inhibits viral replication","Rapid nutrient boost","Improves gastrointestinal health","Boosts immunity","Speeds recovery"],
+    "en_faq": []
+  },
+  "xinaowei": {
+    "en_type": "Newcastle Disease Live Vaccine (V4/HB92 Clone Strain)",
+    "en_net": "10 bottles/box",
+    "en_species": "Pigeon",
+    "en_disease": "Newcastle Disease (ND)",
+    "en_tags": ["Mucosal immunity","Humoral immunity","Cellular immunity","Pigeon / Quail / Hazel grouse"],
+    "en_faq": []
+  },
+  "xinsian": {
+    "en_type": "Avian Newcastle Disease Live Vaccine (La Sota Strain)",
+    "en_net": "10 bottles/box",
+    "en_species": "Pigeon",
+    "en_disease": "Newcastle Disease (ND)",
+    "en_tags": ["Optimized seed virus","Unique culture process","SPF eggs","Dedicated diluent"],
+    "en_faq": []
+  },
+  "xinliu": {
+    "en_type": "Newcastle Disease + Avian Influenza (H9) Bivalent Inactivated Vaccine",
+    "en_net": "500ml/bottle",
+    "en_species": "Pigeon",
+    "en_disease": "Newcastle Disease + Avian Influenza H9",
+    "en_tags": ["La Sota strain","WD strain","10^10 EID50","Antigen concentration"],
+    "en_faq": []
+  },
+  "baotai_pigeon": {
+    "en_type": "Vitamin Premix Feed I",
+    "en_net": "5g/bottle",
+    "en_species": "Pigeon",
+    "en_disease": "Immune Activation / Viral Control",
+    "en_tags": ["Immune activation","Long-lasting protection 60+ days","Innovative encapsulation technology","Water-drinking / feed mixing"],
+    "en_faq": []
+  },
+  "qintaining": {
+    "en_type": "Liquid Vitamin Premix Feed IV",
+    "en_net": "Injectable",
+    "en_species": "Pigeon",
+    "en_disease": "Bacterial Infection / Drug-Resistant Bacteria",
+    "en_tags": ["Drug-resistant bacteria killer","Broad-spectrum antibacterial","No drug residue"],
+    "en_faq": []
+  },
+  "qintai_pigeon": {
+    "en_type": "Vitamin Premix Feed I",
+    "en_net": "100g",
+    "en_species": "Pigeon",
+    "en_disease": "Nutritional Supplement / Immune Support",
+    "en_tags": ["Broad-spectrum general use","Direct action","Highly effective in combination","No stress residue"],
+    "en_faq": []
+  },
+  "taikang": {
+    "en_type": "Poultry Vitamin Premix Feed",
+    "en_net": "1kg",
+    "en_species": "Pigeon",
+    "en_disease": "Nutritional Supplement",
+    "en_tags": ["Innovative process","Labor-saving, worry-free, cost-saving","Effectively improves","Premium ingredients"],
+    "en_faq": []
+  },
+  "nanhuaweikang": {
+    "en_type": "Compound Vitamin B Soluble Powder",
+    "en_net": "1000g",
+    "en_species": "Pigeon",
+    "en_disease": "Vitamin B Complex Deficiency",
+    "en_tags": ["Vitamin B complex","Multiple neuritis","Digestive disorders","Pellagra stomatitis"],
+    "en_faq": []
+  },
+  "wutan": {
+    "en_type": "Disinfectant",
+    "en_net": "1000g",
+    "en_species": "Pigeon",
+    "en_disease": "Environmental Disinfection",
+    "en_tags": ["Broad-spectrum disinfection","Bacterial spores","Fungi and viruses","Farms / hatching eggs"],
+    "en_faq": []
+  },
+  "dikang": {
+    "en_type": "Dimetridazole Premix",
+    "en_net": "100g",
+    "en_species": "Pigeon",
+    "en_disease": "Trichomoniasis / Spirochetes",
+    "en_tags": ["Antiprotozoal drug","Broad-spectrum antibacterial","Spirochetes","Histomonas"],
+    "en_faq": []
+  },
+  "koufu": {
+    "en_type": "Electrolyte Supplement",
+    "en_net": "118g",
+    "en_species": "Pigeon",
+    "en_disease": "Dehydration / Electrolyte Imbalance",
+    "en_tags": ["Electrolyte supplement","Regulates acid-base balance","Heat stress","Diarrhea correction"],
+    "en_faq": []
+  },
+  "hongtailai": {
+    "en_type": "Compound Premix Feed VII (Packet A + Packet B Coating Material)",
+    "en_net": "100g/sachet",
+    "en_species": "Mandarin Fish, Sea Bass",
+    "en_disease": "Frog Iridovirus (RSIV)",
+    "en_tags": ["Boosts immunity","Antiviral","Antibiotic-free farming"],
+    "en_faq": [
+      {"q":"How much feed does one packet mix with?","a":"1 Packet A + 1 Packet B mixes with 20kg of feed."},
+      {"q":"How many consecutive days should it be used?","a":"Per label, 5-7 days. In the Foshan case, mortality kept dropping after day 7, with the observation period extending to day 15."},
+      {"q":"How soon does it take effect?","a":"Clinical observation cases showed a marked drop in mortality after 7 consecutive days of use."},
+      {"q":"What if it is used incorrectly?","a":"Stop feeding immediately and observe the fish's response."}
+    ]
+  },
+  "shentailai": {
+    "en_type": "Compound Premix Feed X (Packet A + Packet B Coating Material)",
+    "en_net": "100g/sachet",
+    "en_species": "Grouper, Mandarin Fish",
+    "en_disease": "Nervous Necrosis Virus (NNV)",
+    "en_tags": ["Boosts immunity","Antiviral","Antibiotic-free farming"],
+    "en_faq": [
+      {"q":"What size of grouper is it for?","a":"Market-size fish can use it. NNV mainly affects fry (2-5cm), but adult fish can also use it."},
+      {"q":"How many consecutive days should it be used?","a":"Per label, 5-7 days. In the Shandong case, mortality kept dropping after day 7 and reached zero by day 12."},
+      {"q":"What if grouper stop eating feed?","a":"Manual intervention is needed; the technical team will evaluate."}
+    ]
+  },
+  "zhongtailai": {
+    "en_type": "Compound Premix Feed XII (Packet A + Packet B Coating Material)",
+    "en_net": "100g/sachet",
+    "en_species": "Mandarin Fish",
+    "en_disease": "Infectious Spleen and Kidney Necrosis Virus (ISKNV)",
+    "en_tags": ["Boosts immunity","Antiviral","Antibiotic-free farming"],
+    "en_faq": [
+      {"q":"How does it differ from HongTaiLai?","a":"Both are viral binding protein products, but they target different viruses: HongTaiLai targets RSIV, ZhongTaiLai targets ISKNV."},
+      {"q":"How much feed does one packet mix with?","a":"1 Packet A + 1 Packet B mixes with 20kg of feed."},
+      {"q":"Is PCR testing needed?","a":"It is recommended to confirm the virus type via PCR before use."},
+      {"q":"What if it is used incorrectly?","a":"Stop feeding immediately and observe the fish's response."}
+    ]
+  },
+  "dantailai": {
+    "en_type": "Compound Premix Feed VIII (Packet A + Packet B Coating Material)",
+    "en_net": "100g/sachet",
+    "en_species": "Fish",
+    "en_disease": "Viral Binding Protein (Fish)",
+    "en_tags": ["Boosts immunity","Antiviral","Antibiotic-free farming"],
+    "en_faq": []
+  },
+  "yubaotai": {
+    "en_type": "Florfenicol Powder (Aquaculture) · Veterinary Prescription Drug",
+    "en_net": "100g/sachet",
+    "en_species": "Snakehead",
+    "en_disease": "Nocardiosis",
+    "en_tags": ["Nocardia","Reverse encapsulation","Reduces drug resistance"],
+    "en_faq": [
+      {"q":"Is it an antibiotic? Can it be used?","a":"Florfenicol is an antibiotic class drug and a veterinary prescription product; purchase with a veterinarian's prescription."},
+      {"q":"How much feed does one packet mix with?","a":"100g + 300ml vegetable oil → mixes with 20kg of feed."},
+      {"q":"How to distinguish Nocardiosis from ordinary bacterial disease?","a":"PCR or microscopy is needed for confirmation; manual intervention is recommended."},
+      {"q":"How long after use can fish be sold?","a":"Withdrawal period to be supplemented; please consult the technical team."}
+    ]
+  },
+  "baozhentai_fish": {
+    "en_type": "Compound Premix Feed VI (Packet A + Packet B Coating Material)",
+    "en_net": "100g/sachet",
+    "en_species": "Fish",
+    "en_disease": "Fish Herpesvirus",
+    "en_tags": ["Boosts immunity","Antiviral","Antibiotic-free farming"],
+    "en_faq": []
+  },
+  "watailei": {
+    "en_type": "Compound Premix Feed IV (Packet A + Packet B Coating Material)",
+    "en_net": "100g/sachet",
+    "en_species": "Bullfrog",
+    "en_disease": "Wry-neck Disease (Flavobacterium neuroinfection)",
+    "en_tags": ["Flavobacterium","Wry-neck disease","Bacterial adhesion protein"],
+    "en_faq": [
+      {"q":"How much feed does one packet mix with?","a":"2 Packets A + 2 Packets B (double pack) mix with 20kg of frog feed."},
+      {"q":"How many consecutive days should it be used?","a":"First course 3 consecutive days, then repeat once after a 1-month interval (for prevention)."},
+      {"q":"When should use begin?","a":"At the small four-legged tadpole (froglet) stage."},
+      {"q":"How does it differ from WaBaoTai?","a":"WaTaiLei is a biological preparation (prevention, first choice for wry-neck disease) vs WaBaoTai antibiotic (treatment, acute episodes)."}
+    ]
+  },
+  "wabaotai": {
+    "en_type": "Aquaculture Antibiotic (Proprietary Reverse Encapsulation Technology)",
+    "en_net": "100g/sachet",
+    "en_species": "Bullfrog",
+    "en_disease": "Acute Bacterial Disease (Red Leg / Skin Ulcer / Ascites)",
+    "en_tags": ["Proprietary reverse encapsulation","Reduces drug residue","Controls drug resistance"],
+    "en_faq": [
+      {"q":"Is it an antibiotic?","a":"Yes; the core selling point is 'reverse encapsulation technology' — reducing water pollution and resistant bacteria."},
+      {"q":"How much feed does one packet mix with?","a":"100g + 300ml vegetable oil → mixes with 20kg of frog feed."},
+      {"q":"How to choose between it and WaTaiLei?","a":"Prevention/chronic → WaTaiLei; acute/severe → WaBaoTai; they can be used together."},
+      {"q":"How long after use can frogs be sold?","a":"Withdrawal period to be supplemented; please consult the technical team."}
+    ]
+  },
+  "wataida": {
+    "en_type": "Compound Premix Feed VI",
+    "en_net": "250g/sachet",
+    "en_species": "Bullfrog",
+    "en_disease": "Red Leg / Skin Ulcer / Gastroenteritis",
+    "en_tags": ["Aeromonas","Streptococcus","Red leg / skin ulcer / gastroenteritis"],
+    "en_faq": []
+  },
+  "hutailai": {
+    "en_type": "Compound Premix Feed XI",
+    "en_net": "100g/sachet",
+    "en_species": "Shrimp",
+    "en_disease": "Vibriosis",
+    "en_tags": ["Shrimp Vibrio","Adhesion protein","Natural bactericide"],
+    "en_faq": []
+  },
+  "baotailai": {
+    "en_type": "Compound Premix Feed XV",
+    "en_net": "100g/sachet",
+    "en_species": "Shrimp",
+    "en_disease": "Hepatointestinal Microsporidiosis",
+    "en_tags": ["Hepatointestinal microsporidia","Adhesion protein","Natural parasiticide"],
+    "en_faq": []
+  },
+  "xiahongtai": {
+    "en_type": "Compound Premix Feed XVII",
+    "en_net": "100g/sachet",
+    "en_species": "Shrimp, Giant River Prawn",
+    "en_disease": "Iridovirus",
+    "en_tags": ["Shrimp iridovirus","Boosts immunity","Antibiotic-free farming"],
+    "en_faq": []
+  },
+  "xiajitai": {
+    "en_type": "Compound Premix Feed XIX",
+    "en_net": "100g/sachet",
+    "en_species": "Shrimp",
+    "en_disease": "Muscle Necrosis Virus",
+    "en_tags": ["Shrimp muscle necrosis virus","Boosts immunity","Antibiotic-free farming"],
+    "en_faq": []
+  },
+  "xiabantai": {
+    "en_type": "Compound Premix Feed XVIII",
+    "en_net": "100g/sachet",
+    "en_species": "Shrimp",
+    "en_disease": "White Spot Syndrome Virus (WSSV)",
+    "en_tags": ["Shrimp white spot virus","Boosts immunity","Antibiotic-free farming"],
+    "en_faq": []
+  },
+  "qinbaotai": {
+    "en_type": "Vitamin Premix Feed I (Poultry)",
+    "en_net": "200g · 1000 doses/bottle",
+    "en_species": "Poultry",
+    "en_disease": "Immune Suppression / Viral Control",
+    "en_tags": ["Overcomes immune suppression","Long-lasting protection 60+ days","Activates immune system","Reduces mortality/culling rate"],
+    "en_faq": []
+  },
+  "xubaotai": {
+    "en_type": "Vitamin Premix Feed (Livestock)",
+    "en_net": "Livestock use",
+    "en_species": "Livestock",
+    "en_disease": "Immune Suppression / Diarrhea",
+    "en_tags": ["Overcomes immune suppression","Prevents diarrhea, protects growth","Long-lasting protection 60+ days","Reduces mortality/culling rate"],
+    "en_faq": []
+  },
+  "qintai_live": {
+    "en_type": "Poultry Viral Binding Protein (Vitamin Premix Feed I)",
+    "en_net": "100g · 500 doses for older birds",
+    "en_species": "Poultry",
+    "en_disease": "Poultry Viral Disease",
+    "en_tags": ["Broad-spectrum general use","Directly blocks infection","Highly effective in combination","Safe for breeding/laying birds"],
+    "en_faq": []
+  }
+}

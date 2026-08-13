@@ -1,0 +1,11 @@
+{
+  "name": "haitide-web-chat",
+  "version": "1.0.0",
+  "description": "海泰 AI 问答 · 网站端 HTTP 云函数（调用智谱 GLM，国内节点）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test\""
+  },
+  "dependencies": {},
+  "private": true
+}

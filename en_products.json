@@ -1,0 +1,475 @@
+{
+  "taimiaoja": {
+    "en_lead": "A feline powder nutritional supplement containing receptor-binding proteins against feline panleukopenia (FPV), herpesvirus (FHV) and calicivirus (FCV); combined with vitamins to rapidly replenish nutrition, boost immunity and speed recovery.",
+    "en_usage": [],
+    "en_cases": []
+  },
+  "miaolebao": {
+    "en_lead": "A feline powder containing receptor-binding proteins against FPV, FHV and FCV in easy-to-mix 1.5 g sachets, suited for daily immune support of kittens and picky eaters.",
+    "en_usage": [
+      "Treatment (confirmed or suspected FPV/FHV/FCV): 1 sachet (1.5 g) daily, mixed into food or water (or given directly), for 7–10 consecutive days, used alongside the veterinarian's treatment plan.",
+      "Prevention (multi-cat households / catteries / shelters / stress-prone cats): 1 sachet daily for 2 consecutive days each week."
+    ],
+    "en_cases": []
+  },
+  "futailai": {
+    "en_lead": "A product with receptor-binding protein against Feline Infectious Peritonitis coronavirus (FCoV), available in both powder and tablet forms. The tablets contain plant-derived herbal antiviral ingredients; administer once daily, one tablet per dose, for 10–15 consecutive days.",
+    "en_usage": [],
+    "en_cases": [
+      {
+        "title": "Laboratory treatment observation of oral receptor-binding protein for Feline Infectious Peritonitis (FIP)",
+        "bg": "Cats infected with FIP virus (FIPV); laboratory records show CT value changes before and after treatment in 5 cases: Case 1, low spirits, CT 33.1(+); Case 3, poor appetite and low spirits, CT 31.35(+); Case 4, jaundice and poor appetite, CT 30.96(+); Case 5, abdominal distension (ascitic form), CT 22.75(+).",
+        "plan": "Oral administration of FIP virus receptor-binding protein (FuTaiLai), treatment course of 7–15 doses (compared with 15+ doses for conventional regimens, a short course).",
+        "eff": "After treatment, all 5 cats showed improvement in mental state, appetite and ascites, with CT values turning negative (no CT value) or rising; the data report over 200 cats cumulatively cured, with no relapse after recovery and rapid absorption of ascites."
+      }
+    ]
+  },
+  "baozhentai_cat": {
+    "en_lead": "Contains feline herpesvirus receptor-binding protein plus plant-derived herbal antiviral ingredients, targeting ocular and upper-respiratory symptoms caused by feline herpesvirus; administer once daily, one tablet per dose, for 10–15 consecutive days.",
+    "en_usage": [],
+    "en_cases": [
+      {
+        "title": "Feline Herpesvirus (FHV) Binding-Protein · Lab Treatment Cases",
+        "bg": "11 cats positive for feline herpesvirus (numbered 2-1 to 2-17), pre-use CT values 26.11–34.91: 2-1 29.29, 2-2 30.68, 2-3 33.56, 2-7 26.11, 2-17 34.91.",
+        "plan": "BaoZhenTai (feline herpesvirus binding protein) administered for 1 month.",
+        "eff": "Re-tested after 1 month: 2-1 29.29→36.69, 2-2 30.68→39.06, 2-3 33.56→NoCt(-), 2-4 32.12→NoCt(-), 2-5 29.16→NoCt(-), 2-6 28.05→NoCt(-), 2-7 26.11→NoCt(-), 2-8 NoCt(-)→NoCt(-), 2-12 NoCt(-)→NoCt(-), 2-17 34.91→NoCt(-); most cats turned CT-negative or showed a clear rise."
+      }
+    ]
+  },
+  "beizhuangtai": {
+    "en_lead": "Contains feline calicivirus receptor-binding protein plus plant-derived herbal antiviral ingredients; given orally, 1–2 tablets, for 10–15 consecutive days, targeting oral and respiratory symptoms caused by feline calicivirus.",
+    "en_usage": [],
+    "en_cases": []
+  },
+  "wentailai": {
+    "en_lead": "Contains feline panleukopenia virus receptor-binding protein plus plant-derived herbal antiviral ingredients, targeting feline panleukopenia (FPV); administer once daily, one tablet per dose, for 10–15 consecutive days.",
+    "en_usage": [
+      "Directions: once daily, one tablet per dose, for 10–15 consecutive days (feline tablets containing feline panleukopenia virus receptor-binding protein plus plant-derived herbal antiviral ingredients)."
+    ],
+    "en_cases": []
+  },
+  "yanzhengtai": {
+    "en_lead": "A topical spray for both cats and dogs, containing broad-spectrum antimicrobial protein plus epidermal growth factor (EGF) and fibroblast growth factor (FGF21); suitable for topical use on skin injuries, oral ulcers and surgical wounds.",
+    "en_usage": [],
+    "en_cases": []
+  },
+  "taiwangja": {
+    "en_lead": "A canine powder containing receptor-binding proteins against canine distemper, canine parvovirus and canine coronavirus, combined with vitamins to rapidly replenish nutrition, boost immunity and speed recovery.",
+    "en_usage": [],
+    "en_cases": []
+  },
+  "wanglebao": {
+    "en_lead": "A canine powder nutritional supplement containing receptor-binding proteins against canine distemper, canine parvovirus and canine coronavirus; 2 g sachets are easy to mix into food, suited for puppies and post-illness recovery.",
+    "en_usage": [],
+    "en_cases": []
+  },
+  "xinaowei": {
+    "en_lead": "The safest live Newcastle disease (ND) vaccine (safe for day-old squabs), naturally heat-tolerant with an ICPI of zero, manufactured by Jiujiang Bomeilai Biological Products Co., Ltd.",
+    "en_usage": [],
+    "en_cases": []
+  },
+  "xinsian": {
+    "en_lead": "Antigen content 5× the standard, immunity enhancer boosted by 100%, manufactured by Jiujiang Bomeilai Biological Products Co., Ltd.",
+    "en_usage": [],
+    "en_cases": []
+  },
+  "xinliu": {
+    "en_lead": "Up to 94.4% protection against the H9 subtype; administered by subcutaneous (neck) or intramuscular (under-wing) injection, a single immunization protects simultaneously against Newcastle disease and avian influenza H9.",
+    "en_usage": [
+      "Subcutaneous (neck) / intramuscular (under-wing) injection (inactivated bivalent vaccine for Newcastle disease + avian influenza H9 subtype, 500 ml/bottle, La Sota strain + WD strain, up to 94.4% protection against H9 subtype)."
+    ],
+    "en_cases": []
+  },
+  "baotai_pigeon": {
+    "en_lead": "Efficient expression of endogenous interferon with an innovative encapsulation process; one bottle ideally treats 2,000 birds, providing long-lasting protection of over 60 days.",
+    "en_usage": [
+      "Mix into drinking water or feed; one bottle ideally treats 2,000 birds (Vitamin Premix I, 5 g/bottle; immune activation, >60-day long-lasting protection, efficient endogenous interferon expression)."
+    ],
+    "en_cases": []
+  },
+  "qintaining": {
+    "en_lead": "Subcutaneous (neck) or intramuscular (breast) injection at 0.2 ml/bird; can be mixed with oil-adjuvant vaccines, targeting drug-resistant bacteria with broad-spectrum antibacterial action and no drug residue.",
+    "en_usage": [
+      "Subcutaneous (neck) or intramuscular (breast) injection at 0.2 ml/bird; can be mixed with oil-adjuvant vaccines (Liquid Vitamin Premix IV; effective against drug-resistant bacteria, broad-spectrum antibacterial, no residue)."
+    ],
+    "en_cases": [
+      {
+        "title": "QinTaiNing (antimicrobial protein) animal efficacy study — challenge protection test against Mycoplasma synoviae (MS)",
+        "bg": "Strain: Mycoplasma synoviae (MS); test animals: 5–7-day-old chicks.",
+        "plan": "Injected QinTaiNing (oil emulsion) at 0.2 ml; 24 hours later challenged with Mycoplasma.",
+        "eff": "Recorded as a challenge protection test; the source did not provide specific protection-rate data."
+      }
+    ]
+  },
+  "qintai_pigeon": {
+    "en_lead": "A broad-spectrum, general-purpose vitamin premix with direct action, efficient combination and no stress residue; a foundational product for pigeon nutrition and immune support.",
+    "en_usage": [
+      "Administered via feed mixing or drinking water to reduce stress; gastric-passage technology prevents active ingredients from degrading, enabling targeted release and absorption in the intestine.",
+      "Oral use for 7 days markedly reduces mortality (prevention-focused: monitor CT values rising or turning negative; flocks recover, feed intake rebounds, and regular prevention prevents outbreaks); a biological preparation, non-toxic with no drug residue."
+    ],
+    "en_cases": []
+  },
+  "taikang": {
+    "en_lead": "A pigeon-specific vitamin premix; 1 kg treats 2,400–3,000 birds via drinking water or feed for 2 consecutive days, made with an innovative process and premium raw materials.",
+    "en_usage": [
+      "1 kg treats 2,400–3,000 birds via drinking water or feed for 2 consecutive days (avian vitamin premix, 1 kg)."
+    ],
+    "en_cases": []
+  },
+  "nanhuaweikang": {
+    "en_lead": "A compound vitamin B soluble powder for multiple neuritis, digestive disorders and pellagra-related stomatitis; dissolve 0.5–1.5 g per 1 L of drinking water, used for 3–5 consecutive days.",
+    "en_usage": [
+      "Dissolve in drinking water: 0.5–1.5 g per 1 L of water, for 3–5 consecutive days (compound vitamin B soluble powder, 1000 g; for vitamin B deficiency, multiple neuritis, digestive disorders, pellagra-related stomatitis)."
+    ],
+    "en_cases": []
+  },
+  "wutan": {
+    "en_lead": "Broad-spectrum disinfectant effective against bacterial spores, fungi and viruses; suitable for farm and hatching-egg disinfection; routine dilution 1:2000–4000, outbreak-period dilution 1:500–1000.",
+    "en_usage": [
+      "Routine dilution 1:2000–4000; outbreak-period dilution 1:500–1000 (glutaraldehyde-deciquam solution, 1000 g; for broad-spectrum farm/hatching-egg disinfection against bacterial spores, fungi and viruses)."
+    ],
+    "en_cases": []
+  },
+  "dikang": {
+    "en_lead": "A dimetridazole premix, antiprotozoal and broad-spectrum antibacterial, targeting Treponema and Histomonas; veterinary prescription drug, 400–2500 g per 1000 kg of feed.",
+    "en_usage": [
+      "400–2500 g per 1000 kg of feed (HaiTai DiKang, dimetridazole premix, 100 g; antiprotozoal, broad-spectrum antibacterial, for Treponema and Histomonas)."
+    ],
+    "en_cases": []
+  },
+  "koufu": {
+    "en_lead": "An electrolyte supplement that regulates acid-base balance, for heat stress and diarrhea correction; dissolve 1 sachet in 4 L of water for ad libitum drinking.",
+    "en_usage": [
+      "Dissolve 1 sachet in 4 L of water for ad libitum drinking (oral rehydration salt, 118 g; electrolyte supplement for acid-base balance, heat stress and diarrhea correction)."
+    ],
+    "en_cases": []
+  },
+  "hongtailai": {
+    "en_lead": "A viral receptor-binding protein product targeting ranavirus iridovirus (RSIV) in mandarin fish (Siniperca chuatsi) and sea bass. Administered orally in feed for 5–7 consecutive days; clinical observations show markedly reduced mortality and viral clearance.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "Foshan fish farm: 30,000 mandarin fish · RSIV outbreak",
+        "bg": "A mandarin fish farm hit by ranavirus iridovirus; before using HongTaiLai, approx. 300 fish died per day.",
+        "plan": "Administered orally in feed for 7 consecutive days.",
+        "eff": "By day 15, mortality dropped to 6 fish per day, and the ranavirus iridovirus disease was effectively controlled."
+      },
+      {
+        "title": "Sea Bass · Iridovirus (RSIV), CT 30.18",
+        "bg": "RSIV-infected sea bass (CT 30.18), split into two equal groups under identical husbandry.",
+        "plan": "Trial group fed iridovirus binding-protein-coated feed, one meal daily for 5 consecutive days; tested after 7 days of observation.",
+        "eff": "Trial group turned PCR-negative (CT ≥45) with average survival 65%; control remained positive (CT 31.668) with survival 35%."
+      },
+      {
+        "title": "Sea Bass · Iridovirus (RSIV), High-Dose Group",
+        "bg": "RSIV-infected sea bass, split into two equal groups.",
+        "plan": "Trial group fed iridovirus binding-protein-coated feed, one meal daily for 5 consecutive days; tested after 5 days of observation.",
+        "eff": "Trial group turned PCR-negative (CT ≥45) with average survival 90%; control remained positive (CT 37.34) with survival 68%."
+      }
+    ]
+  },
+  "shentailai": {
+    "en_lead": "A viral receptor-binding protein product targeting nervous necrosis virus (NNV) in grouper and mandarin fish. NNV challenge-protection trials showed significantly higher survival in the treatment group versus the control.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "Dongying, Shandong: 15,000 grouper · NNV challenge",
+        "bg": "Nervous necrosis virus positive, over 100 fish dying per day.",
+        "plan": "Administered ShenTaiLai orally in feed for 7 consecutive days.",
+        "eff": "By day 12, mortality dropped to 0 fish per day, and the nervous necrosis virus disease was effectively controlled."
+      },
+      {
+        "title": "Mandarin fish · challenge test",
+        "bg": "Feed-fed mandarin fish challenged with NNV, with a control group and a treatment group of 30 fish each, all intramuscularly injected with NNV.",
+        "plan": "The treatment group received NNV receptor-binding protein orally in feed for 5 consecutive days.",
+        "eff": "Mortality in the treatment group was significantly lower than in the control group; survival at 5 days was higher than the control, demonstrating significant protection."
+      },
+      {
+        "title": "Grouper · Iridovirus Disease",
+        "bg": "Iridovirus disease outbreak at a grouper farm.",
+        "plan": "ShenTaiLai (binding protein) administered continuously.",
+        "eff": "Disease brought under effective control in clinical observation."
+      }
+    ]
+  },
+  "zhongtailai": {
+    "en_lead": "A viral receptor-binding protein product targeting infectious spleen and kidney necrosis virus (ISKNV) in mandarin fish. Clinical case: PCR-strong-positive mandarin fish fed orally for 5 consecutive days showed zero mortality by day 8 and negative nucleic-acid test.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "Shunde, Foshan: 10,000 feed-fed mandarin fish · ISKNV strongly positive",
+        "bg": "PCR strongly positive (CT value approx. 10), approx. 60 fish dying per day.",
+        "plan": "Administered ZhongTaiLai orally in feed for 5 consecutive days.",
+        "eff": "By day 8, mortality reached zero and ISKNV nucleic-acid test was negative."
+      },
+      {
+        "title": "Mandarin Fish · ISKNV Oral-Subunit-Vaccine Challenge",
+        "bg": "Immunized-challenge group (ISKNV subunit, two oral immunizations) + challenge-control group, 30 fish each, both intramuscularly injected with ISKNV.",
+        "plan": "ISKNV subunit oral vaccine administered as continuous immunization.",
+        "eff": "Cumulative mortality reached 100% in challenge-control by day 9, and 50% in immunized-challenge group by day 12; disease then brought under effective control."
+      },
+      {
+        "title": "Foshan 6.6-mu Mandarin Fish Pond · ISKNV Outbreak",
+        "bg": "A 6.6-mu feed-fed mandarin fish farm in Foshan, Guangdong; ISKNV-positive with rapidly rising mortality.",
+        "plan": "From day 7, one meal daily with ISKNV binding-protein feed for 7 consecutive days, plus 4 additional days of supplementary feeding.",
+        "eff": "By day 26 mortality dropped to zero and ISKNV nucleic-acid test turned negative."
+      }
+    ]
+  },
+  "dantailai": {
+    "en_lead": "A fish viral receptor-binding protein product that enhances immunity and supports antiviral defense, suited for prevention and recovery of various fish viral diseases.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": []
+  },
+  "yubaotai": {
+    "en_lead": "Florfenicol powder (aquaculture use) for nocardiosis in snakehead fish (Channa argus); a veterinary prescription drug. Proprietary reverse-encapsulation technology reduces resistant-bacteria development.",
+    "en_usage": [
+      "Take 100 g of this product, mix thoroughly with 300 ml of vegetable oil, then use to coat 20 kg of fish feed.",
+      "Use this product for 3–7 consecutive days.",
+      "Prepared medicated feed should not be left standing for long.",
+      "Avoid long-term use at high doses.",
+      "This product is for fish feed additive use only."
+    ],
+    "en_cases": [
+      {
+        "title": "Yangchun: 20,000 snakehead fish · nocardiosis",
+        "bg": "250 g per fish, nocardiosis outbreak, 130–150 fish dying per day; conventional antibiotics ineffective.",
+        "plan": "YuBaoTai, 2 packs daily mixed into 80 jin of feed.",
+        "eff": "By the sixth day, the bacterial disease was largely under control."
+      }
+    ]
+  },
+  "baozhentai_fish": {
+    "en_lead": "A fish herpesvirus receptor-binding protein product that enhances immunity and supports antiviral defense, suited for prevention and control of fish herpesvirus-related disease.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "BaoZhenTai / tilapia (fish herpesvirus)",
+        "bg": "Tilapia farming scenario.",
+        "plan": "Used BaoZhenTai (fish herpesvirus receptor-binding protein, Compound Premix VI).",
+        "eff": "Effectively controlled (case library records 1 tilapia case; plus 3 related cases of soft-shell turtle / tilapia / grass carp)."
+      }
+    ]
+  },
+  "watailei": {
+    "en_lead": "A ranavirus receptor-binding protein product targeting bullfrog 'wry-neck disease' (Flavobacterium brain-nerve infection). Controlled trials showed a survival rate of approx. 75% (vs. approx. 44% in controls).",
+    "en_usage": [
+      "Take 2 packs of WaTaiLei Pack A (500 g), add to approx. 1200 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of frog feed.",
+      "Take 2 packs of Pack B (coating material), dissolve in approx. 1200 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Recommended to start at the small four-legged tadpole stage: first feeding for 3 consecutive days, one meal per day; after a one-month interval, feed once more for 3 consecutive days, one meal per day."
+    ],
+    "en_cases": [
+      {
+        "title": "Controlled trial across 3 bullfrog farms (20,000 each)",
+        "bg": "Typical symptoms of bullfrog wry-neck disease (Flavobacterium): some frogs with head tilt and swimming imbalance.",
+        "plan": "WaTaiLei (ranavirus receptor-binding protein) fed mixed into feed per instructions.",
+        "eff": "WaTaiLei group survival rates approx. 75% / 73% / 76%; mortality/culling rate reduced by approx. 50% versus controls."
+      },
+      {
+        "title": "Chenghai Bullfrog Farm · Wry-neck Disease Prevention",
+        "bg": "Two adjacent ponds, 100,000 frogs each, under identical farming conditions.",
+        "plan": "Trial group: 2 packs WaTaiLei + 600 ml vegetable oil mixed with 20 kg feed, one meal daily for 3 consecutive days; repeat once after one month (3 days).",
+        "eff": "Within 14 days after second immunization: trial group cumulative deaths 2,033 vs control 2,526 — a 24.3% reduction in mortality."
+      },
+      {
+        "title": "Jiangmen Bullfrog Farm · Survival Improvement",
+        "bg": "A Jiangmen bullfrog farm, 40,000 juvenile bullfrogs; trial vs control, 20,000 each, in 100 m² net pens.",
+        "plan": "Trial group started at juvenile stage: 3 consecutive days in first month, 3 consecutive days in second month, one meal daily.",
+        "eff": "Survival 75% (trial) vs 60% (control); feed cost saved ¥3,824 per pen, sales increased ¥9,520, ROI ≈ 11.9×."
+      },
+      {
+        "title": "Hainan Wanning Bullfrog Farm · Skin Ulcer Disease",
+        "bg": "A Wanning, Hainan bullfrog farm, 58,000 juvenile bullfrogs; trial vs control, 29,000 each, in 140 m² earthen ponds with flow-through water.",
+        "plan": "Trial group: 2 packs over first month (5 days) + 4 packs over second month (3 days), total 6 packs.",
+        "eff": "After 1 month: mortality 2.17% (trial) vs 2.60% (control); trial frogs had glossier skin, fewer skin-ulcer cases, smaller individual variation and higher uniformity."
+      }
+    ]
+  },
+  "wabaotai": {
+    "en_lead": "An aquaculture antibiotic for acute bacterial disease in bullfrogs, with proprietary reverse-encapsulation technology that reduces water pollution and resistant-bacteria development. First choice for acute outbreaks and severe cases; can be combined with WaTaiLei.",
+    "en_usage": [
+      "Take 100 g of this product, mix thoroughly with 300 ml of vegetable oil, then use to coat 20 kg of frog feed.",
+      "Use this product for 3–7 consecutive days.",
+      "Prepared medicated feed should not be left standing for long.",
+      "Avoid long-term use at high doses.",
+      "This product is for frog feed additive use only."
+    ],
+    "en_cases": [
+      {
+        "title": "Chaozhou, Guangdong bullfrog farm · bacterial disease outbreak",
+        "bg": "Bacterial disease outbreak, 260–380 frogs dying per day; conventional antibiotics ineffective.",
+        "plan": "Switched to WaBaoTai mixed into feed.",
+        "eff": "Rapidly reduced daily mortality; the bacterial disease was brought under control."
+      }
+    ]
+  },
+  "wataida": {
+    "en_lead": "For bullfrog red-leg, skin erosion and gastroenteritis caused by Aeromonas, Streptococcus, etc.; 250 g large pack to eliminate red-leg, gastroenteritis and skin erosion.",
+    "en_usage": [
+      "Take 2 packs of WaTaiDa Pack A, add to approx. 1200 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of frog feed.",
+      "Take 2 packs of Pack B (coating material), dissolve in approx. 1200 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Recommended to start at the small four-legged tadpole stage: first feeding for 3 consecutive days, one meal per day.",
+      "After a one-month interval, feed once more for 3 consecutive days, one meal per day."
+    ],
+    "en_cases": []
+  },
+  "hutailai": {
+    "en_lead": "An adhesion-protein product targeting Vibrio in shrimp, with natural bactericidal action, suited for prevention and control of shrimp vibriosis.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "HuTaiLai / shrimp Vibrio",
+        "bg": "Shrimp farming scenario.",
+        "plan": "Used HuTaiLai (shrimp Vibrio adhesion protein with natural plant and herbal bactericidal factors).",
+        "eff": "Effectively controlled (the shrimp case collection records 2 HuTaiLai shrimp Vibrio cases)."
+      }
+    ]
+  },
+  "baotailai": {
+    "en_lead": "An adhesion-protein product targeting shrimp Enterocytozoon hepatopenaei (EHP); usable in both prevention and treatment scenarios, with marked clearance at low parasite loads.",
+    "en_usage": [],
+    "en_cases": [
+      {
+        "title": "Zhongshan shrimp · Enterocytozoon hepatopenaei (EHP) · within 10⁴",
+        "bg": "Shrimp EHP load within 10⁴ (4th power).",
+        "plan": "Administered BaoTaiLai orally in feed for 7–8 consecutive days.",
+        "eff": "After 7–8 days, EHP load in shrimp was essentially cleared, with markedly improved feed intake and vitality."
+      },
+      {
+        "title": "Zhuhai shrimp · treatment scenario",
+        "bg": "Mid-to-late stage of EHP infection.",
+        "plan": "Dose calculated by body weight, fed continuously.",
+        "eff": "Parasite load dropped significantly versus pre-treatment, and feed intake and vitality gradually recovered."
+      },
+      {
+        "title": "Jiangsu small-shed shrimp · prevention program",
+        "bg": "High stocking density and high disease pressure.",
+        "plan": "Regular preventive feeding after stocking.",
+        "eff": "Infection rate significantly lower than controls; overall farming success rate improved."
+      }
+    ]
+  },
+  "xiahongtai": {
+    "en_lead": "A receptor-binding protein product targeting iridovirus in white shrimp and giant river prawn (Macrobrachium rosenbergii), boosting immunity for antibiotic-free farming.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "XiaHongTai / white shrimp iridovirus (Zhuhai white-shrimp joint trial site)",
+        "bg": "Initial iridovirus load 4.244×10³ UI/ml.",
+        "plan": "Used shrimp iridovirus (ranavirus) receptor-binding protein (XiaHongTai) for 7 consecutive days.",
+        "eff": "Re-sampling showed the iridovirus load in pond shrimp cleared to zero (4.244×10³ → 0 UI/ml; cleared in 7 days)."
+      },
+      {
+        "title": "XiaHongTai / giant river prawn iridovirus",
+        "bg": "Giant river prawn initially tested strongly positive for iridovirus.",
+        "plan": "Used shrimp iridovirus (ranavirus) receptor-binding protein (XiaHongTai) for 7 consecutive days.",
+        "eff": "Re-test of iridovirus in pond giant river prawns was negative (strongly positive → negative)."
+      }
+    ]
+  },
+  "xiajitai": {
+    "en_lead": "A receptor-binding protein product targeting shrimp muscle necrosis virus, boosting immunity for antibiotic-free farming.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "XiaJiTai / shrimp muscle necrosis virus",
+        "bg": "Shrimp farming scenario.",
+        "plan": "Used XiaJiTai (shrimp muscle necrosis virus receptor-binding protein).",
+        "eff": "Effectively controlled (the shrimp case collection records 1 XiaJiTai case)."
+      }
+    ]
+  },
+  "xiabantai": {
+    "en_lead": "A receptor-binding protein product targeting white spot syndrome virus (WSSV) in shrimp, boosting immunity for antibiotic-free farming.",
+    "en_usage": [
+      "Take 1 pack of Pack A, add to approx. 600 ml water while stirring, and mix thoroughly into a suspension.",
+      "Mix thoroughly and evenly with 20 kg of feed.",
+      "Take 1 pack of Pack B (coating material), dissolve in approx. 600 ml water, adding while stirring until fully dissolved.",
+      "Add to the above 20 kg of feed and mix thoroughly and evenly to complete the coating.",
+      "Feed one meal per day for 5–7 consecutive days."
+    ],
+    "en_cases": [
+      {
+        "title": "XiaBanTai / white shrimp white spot syndrome virus (Dongying white-shrimp joint trial site)",
+        "bg": "Initial white spot syndrome virus load 26 UI/ml.",
+        "plan": "Used shrimp white spot syndrome virus receptor-binding protein (XiaBanTai) for 7 consecutive days.",
+        "eff": "White spot syndrome virus load in shrimp cleared to zero (26 → 0 UI/ml; cleared in 7 days)."
+      }
+    ]
+  },
+  "qinbaotai": {
+    "en_lead": "An avian vitamin premix that overcomes immune suppression, activates the immune system and provides >60-day long-lasting protection while lowering mortality/culling rate. First dose at 1–3 days of age, repeated at 7–10 days of age.",
+    "en_usage": [
+      "First dose at 1–3 days of age, repeated at 7–10 days of age (QinBaoTai, Vitamin Premix I (avian), 200 g · 1000 bird-doses/bottle; overcomes immune suppression, >60-day long-lasting protection)."
+    ],
+    "en_cases": []
+  },
+  "xubaotai": {
+    "en_lead": "A livestock vitamin premix that overcomes immune suppression, prevents diarrhea and protects growth, with >60-day long-lasting protection. Piglets: 20 head-doses/bottle; sows: 10 head-doses/bottle. First course 3–7 consecutive days, then once every two months.",
+    "en_usage": [
+      "Piglets: 20 head-doses/bottle; sows: 10 head-doses/bottle; calves: 10 head-doses/bottle; cows: 5 head-doses/bottle.",
+      "First course 3–7 consecutive days, then once every two months (XuBaoTai, Vitamin Premix (livestock); overcomes immune suppression, prevents diarrhea and protects growth, >60-day long-lasting protection)."
+    ],
+    "en_cases": []
+  },
+  "qintai_live": {
+    "en_lead": "An avian viral receptor-binding protein, broad-spectrum and general-purpose, directly blocks infection with efficient combination; safe for breeder and laying birds. Prevention: 3 consecutive days; treatment: 5–7 consecutive days; markedly boosts vaccine efficacy when fed alongside vaccination.",
+    "en_usage": [
+      "Administered via feed mixing or drinking water to reduce stress; gastric-passage technology prevents active ingredients from degrading, enabling targeted release and absorption in the intestine.",
+      "Oral use for 7 days markedly reduces mortality (prevention-focused: monitor CT values rising or turning negative; flocks recover, feed intake rebounds, and regular prevention prevents outbreaks); a biological preparation, non-toxic with no drug residue."
+    ],
+    "en_cases": []
+  }
+}
