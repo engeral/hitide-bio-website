@@ -4,7 +4,7 @@
    本地调试：在页面用 <script>window.HITIDE_AI_ENDPOINT='http://192.168.1.184:3000/chat'</script>
    临时覆盖为本地代理即可。 */
 (function () {
-  var ENDPOINT = window.HITIDE_AI_ENDPOINT || 'https://haitide-web-chat-ai-296443-11-1460003455.sh.run.tcloudbase.com/chat';
+  var ENDPOINT = window.HITIDE_AI_ENDPOINT || 'https://haitide-web-chat-ai-v2-296443-11-1460003455.sh.run.tcloudbase.com/chat';
   var fab = document.getElementById('htChatFab');
   var panel = document.getElementById('htChatPanel');
   var closeBtn = document.getElementById('htChatClose');
@@ -61,28 +61,49 @@
     sendBtn.disabled = true;
 
     var payload = { line: line, messages: history.concat([{ role: 'user', content: text }]) };
+    var streamUrl = ENDPOINT.replace(/\/chat$/, '/chat/stream');
 
-    fetch(ENDPOINT, {
+    fetch(streamUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
-    })
-      .then(function (r) {
-        return r.json().then(function (d) { return { ok: r.ok, d: d }; });
-      })
-      .then(function (res) {
-        typing.remove();
-        if (!res.ok || !res.d.reply) {
-          addMsg('err', 'AI 服务返回异常：' + (res.d && res.d.error ? res.d.error : '未知错误'));
-        } else {
-          addMsg('ai', res.d.reply);
-        }
-      })
-      .catch(function () {
-        typing.remove();
-        addMsg('err', 'AI 服务未连接（代理未运行或网络不通）。');
-      })
-      .finally(function () { sendBtn.disabled = false; input.focus(); });
+    }).then(function (r) {
+      if (!r.ok) {
+        return r.json().then(function (d) { throw new Error((d && d.error) || ('服务异常 ' + r.status)); });
+      }
+      typing.remove();
+      var aiMsg = addMsg('ai', '');
+      var reader = r.body.getReader();
+      var dec = new TextDecoder('utf-8');
+      var buf = '';
+      function pump() {
+        return reader.read().then(function (res) {
+          if (res.done) return;
+          buf += dec.decode(res.value, { stream: true });
+          var idx;
+          while ((idx = buf.indexOf('\n')) >= 0) {
+            var lineStr = buf.slice(0, idx).trim();
+            buf = buf.slice(idx + 1);
+            if (!lineStr.startsWith('data:')) continue;
+            var j = lineStr.slice(5).trim();
+            if (!j || j === '[DONE]') continue;
+            try {
+              var p = JSON.parse(j);
+              if (p.delta) { aiMsg.textContent += p.delta; body.scrollTop = body.scrollHeight; }
+              if (p.error) { aiMsg.textContent += '\n[错误] ' + p.error; }
+            } catch (e) { /* 忽略不完整帧 */ }
+          }
+          return pump();
+        });
+      }
+      return pump();
+    }).then(function () {
+      sendBtn.disabled = false; input.focus();
+    }).catch(function (e) {
+      typing.remove();
+      addMsg('err', 'AI 服务未连接：' + (e && e.message ? e.message : '网络错误'));
+      sendBtn.disabled = false; input.focus();
+    });
   }
 
   sendBtn.addEventListener('click', send);
