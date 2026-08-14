@@ -165,11 +165,11 @@ add(id='wutan',name='戊二醛癸甲溴铵溶液',en='Glutaraldehyde-Deciquam',c
     lead='广谱消毒，对细菌芽孢、真菌、病毒有效，适用于养殖场与种蛋消毒；常规 1:2000~4000 稀释，疫病期 1:500~1000 稀释。',
     meta=['常规 1:2000~4000 稀释','疫病期 1:500~1000 稀释'])
 add(id='dikang',name='海泰滴康',en='HaiTai DiKang',cat='pigeon',img='assets/img/prod/prod_dikang.jpg',
-    type='地美硝唑预混剂',net='100g',std='兽药字 190851143',rx=True,
+    type='地美硝唑预混剂',net='100g',std='兽药字 190851143',
     tags=['抗原虫药','广谱抗菌','密螺旋体','组织滴虫'],
     species=['鸽'],disease='滴虫病 / 密螺旋体',
-    lead='地美硝唑预混剂，抗原虫、广谱抗菌，针对密螺旋体、组织滴虫；兽用处方药，每 1000kg 饲料 400-2500g。',
-    meta=['兽药字 190851143','每 1000kg 饲料 400-2500g','处方药，凭兽医处方购买使用'])
+    lead='地美硝唑预混剂，抗原虫、广谱抗菌，针对密螺旋体、组织滴虫；每 1000kg 饲料 400-2500g。',
+    meta=['兽药字 190851143','每 1000kg 饲料 400-2500g','凭兽医处方购买使用'])
 add(id='koufu',name='口服补液盐',en='Oral Rehydration Salt',cat='pigeon',img='assets/img/prod/prod_koufu.jpg',
     type='电解质补充药',net='118g',std='兽药字 190856407',
     tags=['电解质补充','调节酸碱平衡','热应激','腹泻纠正'],
@@ -237,10 +237,10 @@ add(id='dantailai',name='丹泰莱',en='DanTaiLai',cat='fish',img='assets/img/aq
     lead='鱼用病毒结合蛋白产品，提升机体免疫、辅助抗病毒，适用于多种鱼类病毒病的防控与恢复。',
     meta=['鱼用病毒结合蛋白','Q/SDHTD 65-2025'])
 add(id='yubaotai',name='鱼宝泰',en='YuBaoTai',cat='fish',img='assets/img/aqua/yubaotai.jpg',
-    type='氟苯尼考粉（水产用）· 兽用处方药',net='100 克/包',std='兽药字 190859014',rx=True,
+    type='氟苯尼考粉（水产用）',net='100 克/包',std='兽药字 190859014',
     tags=['诺卡氏菌','反向包裹','减少耐药'],
     species=['生鱼(乌鳢)'],disease='诺卡氏菌病',
-    lead='针对生鱼（乌鳢）诺卡氏菌病的氟苯尼考粉（水产用），兽用处方药。独创反向包裹技术减少耐药菌产生。',
+    lead='针对生鱼（乌鳢）诺卡氏菌病的氟苯尼考粉（水产用）。独创反向包裹技术减少耐药菌产生。',
     meta=['粤兽药字 190859014','100g + 300ml 植物油拌 20kg 饵料','连用 3-7 天'],
     usage=['取本品 100g，加入 300ml 植物油充分混合后，用于拌料 20kg 鱼饲料使用',
            '连用本品 3-7 天',
@@ -248,7 +248,7 @@ add(id='yubaotai',name='鱼宝泰',en='YuBaoTai',cat='fish',img='assets/img/aqua
            '不宜高剂量长期使用',
            '本产品仅适用于鱼用饲料添加'],
     cases=[{'num':'生鱼 · 案例','title':'阳春 2 万尾生鱼 · 诺卡氏菌病','bg':'250 克/尾，暴发诺卡氏菌病，每天死亡 130-150 尾，传统抗生素无效。','plan':'鱼宝泰每日 2 包拌 80 斤料。','eff':'第六天后细菌病基本得到控制。','num2':'130-150 → 基本控制'}],
-    faq=[('是抗生素吗？能用吗？','氟苯尼考抗生素类，兽用处方药，凭兽医处方购买。'),
+    faq=[('是抗生素吗？能用吗？','氟苯尼考抗生素类，凭兽医处方购买。'),
          ('一包拌多少料？','100g + 300ml 植物油 → 拌 20kg 饲料。'),
          ('诺卡氏菌和普通细菌病怎么区分？','需 PCR 或镜检确诊，建议转人工。'),
          ('用药后多久可以卖鱼？','休药期待补充，请咨询技术团队。')])
@@ -279,7 +279,7 @@ add(id='watailei',name='蛙泰莱',en='WaTaiLei',cat='frog',img='assets/img/aqua
          ('什么时候开始用？','小四脚蛙苗阶段。'),
          ('跟蛙宝泰有什么区别？','蛙泰莱生物制剂（预防，歪头病首选）vs 蛙宝泰抗生素（治疗，急性发作）。')])
 add(id='wabaotai',name='蛙宝泰',en='WaBaoTai',cat='frog',img='assets/img/aqua/wabaotai.jpg',
-    type='水产用抗生素（独创反向包裹技术）',net='100 克/包',std='兽药字 190859092',rx=True,
+    type='水产用抗生素（独创反向包裹技术）',net='100 克/包',std='兽药字 190859092',
     tags=['独创反向包裹','降低药残','控制耐药'],
     species=['牛蛙'],disease='急性细菌病（红腿/烂皮/腹水）',
     lead='针对牛蛙急性细菌病的水产用抗生素，独创反向包裹技术减少水体污染与耐药菌产生。急性发作、重症首选，可与蛙泰莱联用。',
@@ -363,7 +363,7 @@ add(id='niubashigan',name='牛多杀性巴氏杆菌病灭活疫苗',en='Bovine P
     species=['牛'],en_species='Cattle',disease='牛多杀性巴氏杆菌病（牛呼吸道肺炎）',en_disease='Bovine Pasteurellosis (Respiratory Pneumonia)',
     lead='用于预防牛多杀性巴氏杆菌病（牛呼吸道肺炎）的灭活疫苗，提供针对巴氏杆菌感染的免疫保护。',
     en_lead='Inactivated vaccine for prevention of bovine pasteurellosis (bovine respiratory pneumonia), providing immune protection against Pasteurella infection.',
-    meta=['兽药生字140393008','净含量 20/50/100/250 ml/瓶','灭活疫苗'],rx=True)
+    meta=['兽药生字140393008','净含量 20/50/100/250 ml/瓶','灭活疫苗'])
 add(id='niushahotan',name='牛副伤寒灭活疫苗',en='Bovine Paratyphoid Vaccine',cat='ruminant',img='assets/img/prod/prod_niushahotan.jpg',
     type='灭活疫苗',net='20 / 50 / 100 ml/瓶',en_type='Inactivated Vaccine',en_net='20 / 50 / 100 ml/vial',std='兽药生字140393009',
     tags=['牛副伤寒','沙门氏菌肠炎','灭活疫苗'],
@@ -371,7 +371,7 @@ add(id='niushahotan',name='牛副伤寒灭活疫苗',en='Bovine Paratyphoid Vacc
     species=['牛'],en_species='Cattle',disease='牛副伤寒（沙门氏菌性肠炎）',en_disease='Bovine Paratyphoid (Salmonella enteritis)',
     lead='用于预防牛副伤寒（沙门氏菌引起的肠炎与败血症）的灭活疫苗。',
     en_lead='Inactivated vaccine for prevention of bovine paratyphoid (Salmonella enteritis and septicemia).',
-    meta=['兽药生字140393009','净含量 20/50/100 ml/瓶','灭活疫苗'],rx=True)
+    meta=['兽药生字140393009','净含量 20/50/100 ml/瓶','灭活疫苗'])
 add(id='yangdachangganjun',name='羊大肠杆菌病灭活疫苗',en='Ovine Colibacillosis Vaccine',cat='ruminant',img='assets/img/prod/prod_yangdachangganjun.jpg',
     type='灭活疫苗',net='20 / 50 / 100 / 250 ml/瓶',en_type='Inactivated Vaccine',en_net='20 / 50 / 100 / 250 ml/vial',std='兽药生字140394009',
     tags=['羊大肠杆菌病','腹泻/败血症','灭活疫苗'],
@@ -379,7 +379,7 @@ add(id='yangdachangganjun',name='羊大肠杆菌病灭活疫苗',en='Ovine Colib
     species=['羊'],en_species='Sheep',disease='羊大肠杆菌病（腹泻/败血症）',en_disease='Ovine Colibacillosis (Diarrhea / Septicemia)',
     lead='用于预防羊大肠杆菌病（腹泻、败血症）的灭活疫苗。',
     en_lead='Inactivated vaccine for prevention of ovine colibacillosis (diarrhea, septicemia).',
-    meta=['兽药生字140394009','净含量 20/50/100/250 ml/瓶','灭活疫苗'],rx=True)
+    meta=['兽药生字140394009','净含量 20/50/100/250 ml/瓶','灭活疫苗'])
 add(id='qizhongji',name='气肿疽灭活疫苗',en='Blackleg Vaccine',cat='ruminant',img='assets/img/prod/prod_qizhongji.jpg',
     type='灭活疫苗',net='—',en_type='Inactivated Vaccine',en_net='—',std='—',
     tags=['气肿疽','黑腿病','牛/羊梭菌病'],
@@ -387,7 +387,7 @@ add(id='qizhongji',name='气肿疽灭活疫苗',en='Blackleg Vaccine',cat='rumin
     species=['牛','羊'],en_species='Cattle / Sheep',disease='气肿疽（黑腿病）',en_disease='Blackleg (Clostridium chauvoei)',
     lead='用于预防牛、羊气肿疽（黑腿病，气肿疽梭菌感染）的灭活疫苗。',
     en_lead='Inactivated vaccine for prevention of blackleg (Clostridium chauvoei infection) in cattle and sheep.',
-    meta=['牛/羊通用','灭活疫苗','具体规格请参照产品说明书'],rx=True)
+    meta=['牛/羊通用','灭活疫苗','具体规格请参照产品说明书'])
 import json as _json
 _ENRICH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'product_enrichment.json')
 _GENERIC = {
@@ -596,7 +596,7 @@ def base(title, body, desc='', rel='', en_title=None):
 </html>'''
 
 def product_card(p, rel=''):
-    rx = '<span class="rx">' + zh_en('处方药','Rx') + '</span>' if p.get('rx') else ''
+    rx = ''
     tags_zh = p.get('tags',[])[:4]
     tags_en = (p.get('en_tags') or [])[:4]
     tags = ''.join(f'<span>{zh_en(t, tags_en[i] if i < len(tags_en) else "")}</span>' for i,t in enumerate(tags_zh))
@@ -881,7 +881,7 @@ def render_products():
 # PRODUCT DETAIL
 # =========================================================
 def render_product(p, rel=''):
-    rx = '<span class="rx">' + zh_en('处方药','Rx') + '</span>' if p.get('rx') else ''
+    rx = ''
     tags_zh = p.get('tags',[])
     tags_en = p.get('en_tags') or []
     tags = ''.join(f'<span>{zh_en(t, tags_en[i] if i < len(tags_en) else "")}</span>' for i,t in enumerate(tags_zh))
@@ -914,7 +914,7 @@ def render_product(p, rel=''):
           <div class="acc open"><div class="acc-head">{zh_en('用法用量','Directions for Use')} <span class="ico">+</span></div><div class="acc-body"><div class="inner"><ol>{steps}</ol></div></div></div>
         </div>'''
     else:
-        usage_pane = '<div class="pane active" data-pane="usage"><p style="color:var(--ink-2);">'+zh_en('详细用法用量与规格资料请联系海泰技术团队获取，凭兽医处方购买处方药。','For detailed dosage and specifications, please contact the HiTide technical team. Prescription-only products require a veterinarian prescription.')+'</p></div>'
+        usage_pane = '<div class="pane active" data-pane="usage"><p style="color:var(--ink-2);">'+zh_en('详细用法用量与规格资料请联系海泰技术团队获取。','For detailed dosage and specifications, please contact the HiTide technical team.')+'</p></div>'
 
     # cases pane (bilingual)
     en_c = p.get('en_cases') or []
@@ -983,7 +983,7 @@ def render_product(p, rel=''):
     rel_html = ''.join(product_card(x, rel) for x in rel_list)
     related_pane = f'<div class="pane" data-pane="related"><div class="related-grid">{rel_html}</div></div>'
 
-    rxnote = f'<div class="cta-strip" style="border-color:var(--gold);"><div class="t"><strong style="color:var(--gold);">{zh_en('⚠ 处方药提示','⚠ Prescription Notice')}</strong> · {zh_en('本品为兽用处方药/抗生素，请凭兽医处方购买使用，遵守休药期规定。','This is a veterinary prescription/antibiotic product. Purchase and use with a veterinarian’s prescription and observe withdrawal periods.')}</div><a class="btn btn-navy" href="{rel}contact.html">{zh_en('联系技术团队','Contact Technical Team')}</a></div>' if p.get('rx') else ''
+    rxnote = ''
 
     body = f'''
 <section style="padding-top:74px;">
