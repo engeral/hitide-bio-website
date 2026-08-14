@@ -1,10 +1,10 @@
-/* 海泰 AI 助手挂件 · 调用 CloudBase HTTP 云函数 POST /haitide-web-chat
-   端点默认指向 CloudBase HTTP 触发地址，上线前把下面 ENDPOINT 换成
-   控制台「云函数 → haitide-web-chat → 触发方式 → HTTP 触发」给出的真实 URL。
+/* 海泰 AI 助手挂件 · 调用 CloudBase 云托管(CloudBase Run)容器后端 POST /chat
+   端点默认指向云托管公网域名，上线前把下面 ENDPOINT 换成
+   控制台「云托管 → haitide-web-chat-ai → 服务配置 → 公网访问域名」给出的真实地址。
    本地调试：在页面用 <script>window.HITIDE_AI_ENDPOINT='http://192.168.1.184:3000/chat'</script>
    临时覆盖为本地代理即可。 */
 (function () {
-  var ENDPOINT = window.HITIDE_AI_ENDPOINT || 'https://REPLACE-ME.ap-shanghai.app.tcloudbase.com/haitide-web-chat';
+  var ENDPOINT = window.HITIDE_AI_ENDPOINT || 'https://haitide-web-chat-ai-296443-11-1460003455.sh.run.tcloudbase.com/chat';
   var fab = document.getElementById('htChatFab');
   var panel = document.getElementById('htChatPanel');
   var closeBtn = document.getElementById('htChatClose');

@@ -1,17 +1,6 @@
 {
   "$schema": "https://cloudbaseframework.cloudbase.net/schema.json",
-  "envId": "YOUR_CLOUDBASE_ENV_ID",
-  "functionRoot": "cloudfunctions",
-  "functions": [
-    {
-      "name": "haitide-web-chat",
-      "runtime": "Nodejs16.13",
-      "handler": "index.main",
-      "memorySize": 256,
-      "timeout": 30,
-      "envVariables": {}
-    }
-  ],
+  "envId": "hitide-d4gbdg9472af41310",
   "static": [
     {
       "src": "./",
