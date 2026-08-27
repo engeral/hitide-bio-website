@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海泰生物 · 内容管理后台</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0d2a4f;
+    --teal: #0d8a9c;
+    --teal-soft: #7ec8d4;
+    --gold: #c8a555;
+    --bg: #f7f9fb;
+    --card: #ffffff;
+    --border: #e3e8ee;
+    --text: #1c2532;
+    --muted: #6b7686;
+    --danger: #c0392b;
+    --success: #27ae60;
+  }
+  html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+  button { font-family: inherit; cursor: pointer; }
+  input, textarea, select { font-family: inherit; font-size: 14px; }
+
+  /* ---------- 登录页 ---------- */
+  #login-view { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  #login-view .logo { font-size: 28px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  #login-view .sub { color: var(--muted); margin-bottom: 32px; font-size: 14px; }
+  #login-card { background: var(--card); padding: 40px; border-radius: 12px; box-shadow: 0 4px 24px rgba(13,42,79,0.08); width: 100%; max-width: 380px; }
+  #login-card label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  #login-card input { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 18px; }
+  #login-card input:focus { outline: none; border-color: var(--teal); }
+  #login-card button { width: 100%; padding: 13px; background: var(--navy); color: #fff; border: none; border-radius: 8px; font-weight: 600; font-size: 15px; }
+  #login-card button:hover { background: #0a2240; }
+  #login-error { color: var(--danger); font-size: 13px; margin-top: 10px; text-align: center; min-height: 18px; }
+
+  /* ---------- 主界面 ---------- */
+  #main-view { display: none; flex-direction: column; height: 100vh; }
+  header.topbar { background: var(--navy); color: #fff; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+  header.topbar h1 { font-size: 18px; font-weight: 600; }
+  header.topbar .right { display: flex; align-items: center; gap: 16px; font-size: 13px; }
+  header.topbar button { background: transparent; border: 1px solid rgba(255,255,255,0.4); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 13px; }
+  header.topbar button:hover { background: rgba(255,255,255,0.1); }
+  .layout { display: flex; flex: 1; min-height: 0; }
+  aside.sidebar { width: 280px; background: var(--card); border-right: 1px solid var(--border); overflow-y: auto; flex-shrink: 0; }
+  aside.sidebar .search-box { padding: 12px; border-bottom: 1px solid var(--border); }
+  aside.sidebar input { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; }
+  aside.sidebar .cat-filter { padding: 8px 12px; font-size: 12px; color: var(--muted); border-bottom: 1px solid var(--border); }
+  aside.sidebar .cat-filter select { margin-left: 8px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 4px; }
+  .product-item { padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background .15s; }
+  .product-item:hover { background: var(--bg); }
+  .product-item.active { background: rgba(13,138,156,0.1); border-left: 3px solid var(--teal); padding-left: 13px; }
+  .product-item .name { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+  .product-item .meta { font-size: 12px; color: var(--muted); }
+
+  main.editor { flex: 1; overflow-y: auto; padding: 24px 32px; background: var(--bg); }
+  main.editor.empty { display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 16px; }
+  main.editor h2 { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  main.editor .sub { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .form-grid .full { grid-column: 1 / -1; }
+  .field { display: flex; flex-direction: column; }
+  .field label { font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .05em; }
+  .field input, .field textarea, .field select { padding: 10px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--card); }
+  .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(13,138,156,0.1); }
+  .field textarea { min-height: 80px; font-family: inherit; resize: resize: vertical; }
+  .field .hint { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  .img-preview { margin-top: 8px; max-width: 200px; max-height: 200px; border: 1px solid var(--border); border-radius: 6px; padding: 4px; background: var(--card); }
+  .img-preview img { max-width: 100%; max-height: 180px; display: block; }
+
+  .toolbar { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+  .toolbar .status { font-size: 13px; color: var(--muted); }
+  .toolbar .status.success { color: var(--success); }
+  .toolbar .status.error { color: var(--danger); }
+  .btn { padding: 10px 18px; border-radius: 6px; border: none; font-size: 14px; font-weight: 600; }
+  .btn-primary { background: var(--navy); color: #fff; }
+  .btn-primary:hover { background: #0a2240; }
+  .btn-primary:disabled { background: #97a3b3; cursor: not-allowed; }
+  .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--text); margin-right: 8px; }
+
+  /* ---------- Toast ---------- */
+  #toast { position: fixed; top: 24px; right: 24px; background: var(--navy); color: #fff; padding: 12px 20px; border-radius: 8px; box-shadow: 0 8px 24px rgba(13,42,79,0.2); opacity: 0; transition: opacity .3s; pointer-events: none; z-index: 1000; font-size: 14px; }
+  #toast.show { opacity: 1; }
+  #toast.error { background: var(--danger); }
+  #toast.success { background: var(--success); }
+
+  /* ---------- Loading ---------- */
+  .loading { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: #fff; animation: spin .8s linear infinite; vertical-align: middle; margin-right: 6px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 900px) {
+    .layout { flex-direction: column; }
+    aside.sidebar { width: 100%; max-height: 240px; }
+    .form-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 登录 -->
+<div id="login-view">
+  <div class="logo">海泰生物</div>
+  <div class="sub">HiTide Biotech · 内容管理后台</div>
+  <div id="login-card">
+    <label for="password">管理密码</label>
+    <input type="password" id="password" placeholder="输入管理员密码" autocomplete="current-password">
+    <button onclick="login()">登录</button>
+    <div id="login-error"></div>
+  </div>
+</div>
+
+<!-- 主界面 -->
+<div id="main-view">
+  <header class="topbar">
+    <h1>海泰生物 · 产品管理</h1>
+    <div class="right">
+      <span id="user-info"></span>
+      <button onclick="logout()">退出</button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="search-box">
+        <input type="text" id="search" placeholder="搜索产品 ID / 名称" oninput="renderList()">
+      </div>
+      <div class="cat-filter">
+        品类:
+        <select id="cat-filter" onchange="renderList()">
+          <option value="">全部</option>
+          <option value="cat">猫用</option>
+          <option value="dog">犬用</option>
+          <option value="pigeon">鸽用</option>
+          <option value="fish">鱼用</option>
+          <option value="shrimp">虾用</option>
+          <option value="frog">蛙用</option>
+          <option value="live">畜禽</option>
+          <option value="ruminant">牛/羊</option>
+        </select>
+      </div>
+      <div id="product-list"></div>
+    </aside>
+    <main class="editor empty" id="editor">
+      <div>← 选择左侧产品开始编辑</div>
+    </main>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// =====================================================
+// CONFIG — Stephen 在部署前修改以下两个值
+// =====================================================
+const CONFIG = {
+  // CloudBase HTTP 函数入口(Stephen 部署云函数后填这里)
+  API: 'https://hitide-d4gbdg9472af41310-1460003455.tcloudbaseapp.com/admin-github-proxy',
+
+  // GitHub repo + 文件路径(可保留默认)
+  REPO: 'engeral/hitide-bio-website',
+  FILE_PATH: 'data/products.json',
+
+  // admin 登录密码(与云函数 ADMIN_PASSWORD 环境变量保持一致)
+  // 默认 'hitide2026',Stephen 部署后可在云函数 env 改
+  ADMIN_PASSWORD: 'hitide2026',
+};
+
+// =====================================================
+// session 管理
+// =====================================================
+const SESSION_KEY = 'hitide_admin_token';
+
+function saveSession(token) {
+  sessionStorage.setItem(SESSION_KEY, token);
+}
+function getSession() {
+  return sessionStorage.getItem(SESSION_KEY);
+}
+function clearSession() {
+  sessionStorage.removeItem(SESSION_KEY);
+}
+
+// =====================================================
+// Toast
+// =====================================================
+let toastTimer = null;
+function toast(msg, type = '') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'show ' + type;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = ''; }, 3000);
+}
+
+// =====================================================
+// API 调用(全部走云函数,不暴露 GitHub PAT)
+// =====================================================
+async function apiCall(action, payload = {}) {
+  const session = getSession();
+  if (!session) throw new Error('未登录');
+  const res = await fetch(CONFIG.API, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ token: session, action, ...payload }),
+  });
+  const data = await res.json();
+  if (!data.ok) throw new Error(data.error || 'API 错误');
+  return data;
+}
+
+async function apiLogin(password) {
+  const res = await fetch(CONFIG.API, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ action: 'login', password }),
+  });
+  return res.json();
+}
+
+// =====================================================
+// 登录流程
+// =====================================================
+async function login() {
+  const pw = document.getElementById('password').value;
+  const err = document.getElementById('login-error');
+  err.textContent = '';
+  if (!pw) { err.textContent = '请输入密码'; return; }
+
+  try {
+    const data = await apiLogin(pw);
+    if (data.ok) {
+      saveSession(data.token);
+      showMain();
+    } else {
+      err.textContent = data.error || '登录失败';
+    }
+  } catch (e) {
+    err.textContent = '无法连接服务器: ' + e.message;
+  }
+}
+
+function logout() {
+  clearSession();
+  document.getElementById('main-view').style.display = 'none';
+  document.getElementById('login-view').style.display = 'flex';
+  document.getElementById('password').value = '';
+}
+
+// =====================================================
+// 主界面
+// =====================================================
+let products = [];
+let current = null;
+let dirty = false;
+
+async function showMain() {
+  document.getElementById('login-view').style.display = 'none';
+  document.getElementById('main-view').style.display = 'flex';
+  document.getElementById('user-info').textContent = '已登录';
+
+  try {
+    const data = await apiCall('load');
+    products = data.products;
+    renderList();
+  } catch (e) {
+    toast('加载产品数据失败: ' + e.message, 'error');
+  }
+}
+
+function renderList() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const cat = document.getElementById('cat-filter').value;
+  const filtered = products.filter(p => {
+    if (cat && p.cat !== cat) return false;
+    if (search && !(p.id.toLowerCase().includes(search) || p.name.toLowerCase().includes(search))) return false;
+    return true;
+  });
+
+  const list = document.getElementById('product-list');
+  list.innerHTML = filtered.map(p => `
+    <div class="product-item ${current && current.id === p.id ? 'active' : ''}" onclick="selectProduct('${p.id}')">
+      <div class="name">${escapeHtml(p.name)} <span style="color:var(--muted);font-weight:400;font-size:12px;">${escapeHtml(p.en)}</span></div>
+      <div class="meta">${escapeHtml(p.id)} · ${escapeHtml(p.cat)}</div>
+    </div>
+  `).join('');
+}
+
+function selectProduct(id) {
+  if (dirty && !confirm('有未保存的修改,确定切换?')) return;
+  current = products.find(p => p.id === id);
+  dirty = false;
+  renderList();
+  renderEditor();
+}
+
+function renderEditor() {
+  const ed = document.getElementById('editor');
+  if (!current) {
+    ed.className = 'editor empty';
+    ed.innerHTML = '<div>← 选择左侧产品开始编辑</div>';
+    return;
+  }
+  ed.className = 'editor';
+  ed.innerHTML = `
+    <h2>${escapeHtml(current.name)} ${escapeHtml(current.en)}</h2>
+    <div class="sub">产品 ID: ${escapeHtml(current.id)}</div>
+
+    <div class="form-grid">
+      <div class="field">
+        <label>中文名</label>
+        <input type="text" id="f-name" value="${escapeHtml(current.name)}" oninput="markDirty()">
+      </div>
+      <div class="field">
+        <label>英文名</label>
+        <input type="text" id="f-en" value="${escapeHtml(current.en)}" oninput="markDirty()">
+      </div>
+      <div class="field">
+        <label>品类</label>
+        <select id="f-cat" onchange="markDirty()">
+          ${['cat','dog','pigeon','fish','shrimp','frog','live','ruminant'].map(c =>
+            `<option value="${c}" ${current.cat===c?'selected':''}>${c}</option>`).join('')}
+        </select>
+      </div>
+      <div class="field">
+        <label>靶标疫病</label>
+        <input type="text" id="f-disease" value="${escapeHtml(current.disease)}" oninput="markDirty()">
+      </div>
+      <div class="field">
+        <label>产品类型</label>
+        <input type="text" id="f-type" value="${escapeHtml(current.type)}" oninput="markDirty()">
+      </div>
+      <div class="field">
+        <label>净含量</label>
+        <input type="text" id="f-net" value="${escapeHtml(current.net)}" oninput="markDirty()">
+      </div>
+      <div class="field">
+        <label>标准编号</label>
+        <input type="text" id="f-std" value="${escapeHtml(current.std)}" oninput="markDirty()">
+      </div>
+      <div class="field">
+        <label>标签(逗号分隔)</label>
+        <input type="text" id="f-tags" value="${(current.tags||[]).map(escapeHtml).join(', ')}" oninput="markDirty()">
+        <div class="hint">例:抑制病毒复制, 猫传腹 FIPV, 7-15 天疗程</div>
+      </div>
+      <div class="field full">
+        <label>规格要点 (每行一条)</label>
+        <textarea id="f-meta" oninput="markDirty()">${escapeHtml((current.meta||[]).join('\n'))}</textarea>
+      </div>
+      <div class="field full">
+        <label>产品图路径</label>
+        <input type="text" id="f-img" value="${escapeHtml(current.img)}" oninput="markDirty();updateImgPreview()">
+        <div class="hint">默认 assets/img/prod/prod_xxx.jpg,改图上传 COS 后把 URL 粘这里</div>
+        <div class="img-preview" id="img-preview"></div>
+      </div>
+      <div class="field full">
+        <label>产品描述 (中文 lead)</label>
+        <textarea id="f-lead" oninput="markDirty()" style="min-height:120px;">${escapeHtml(current.lead||'')}</textarea>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div id="status" class="status">${dirty ? '● 有未保存修改' : '✓ 已保存'}</div>
+      <div>
+        <button class="btn btn-secondary" onclick="resetForm()">放弃修改</button>
+        <button class="btn btn-primary" id="save-btn" onclick="save()">保存到 GitHub</button>
+      </div>
+    </div>
+  `;
+  updateImgPreview();
+}
+
+function updateImgPreview() {
+  const url = document.getElementById('f-img').value;
+  const box = document.getElementById('img-preview');
+  if (url && (url.startsWith('http') || url.startsWith('/') || url.startsWith('assets/'))) {
+    box.innerHTML = `<img src="${escapeHtml(url)}" onerror="this.parentNode.innerHTML='<span style=color:var(--danger);font-size:12px;>图片加载失败</span>'">`;
+  } else {
+    box.innerHTML = '';
+  }
+}
+
+function readForm() {
+  return {
+    id: current.id,
+    name: document.getElementById('f-name').value.trim(),
+    en: document.getElementById('f-en').value.trim(),
+    cat: document.getElementById('f-cat').value,
+    type: document.getElementById('f-type').value.trim(),
+    net: document.getElementById('f-net').value.trim(),
+    std: document.getElementById('f-std').value.trim(),
+    disease: document.getElementById('f-disease').value.trim(),
+    img: document.getElementById('f-img').value.trim(),
+    tags: document.getElementById('f-tags').value.split(',').map(s => s.trim()).filter(Boolean),
+    meta: document.getElementById('f-meta').value.split('\n').map(s => s.trim()).filter(Boolean),
+    lead: document.getElementById('f-lead').value.trim(),
+  };
+}
+
+function markDirty() {
+  dirty = true;
+  const s = document.getElementById('status');
+  if (s) s.textContent = '● 有未保存修改';
+}
+
+function resetForm() {
+  if (!confirm('放弃当前修改?')) return;
+  renderEditor();
+  dirty = false;
+}
+
+async function save() {
+  const btn = document.getElementById('save-btn');
+  const newData = readForm();
+
+  // 基本校验
+  if (!newData.name) { toast('中文名不能为空', 'error'); return; }
+
+  // 更新本地 + 提交 GitHub
+  const idx = products.findIndex(p => p.id === current.id);
+  if (idx < 0) { toast('产品丢失', 'error'); return; }
+  products[idx] = newData;
+  current = newData;
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="loading"></span>提交中...';
+
+  try {
+    const data = await apiCall('save', { products });
+    toast(`保存成功! commit: ${data.commit_sha}`, 'success');
+    dirty = false;
+    document.getElementById('status').textContent = '✓ 已保存';
+    renderList();
+  } catch (e) {
+    toast('保存失败: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '保存到 GitHub';
+  }
+}
+
+// =====================================================
+// 工具
+// =====================================================
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// 回车登录
+document.getElementById('password').addEventListener('keydown', e => {
+  if (e.key === 'Enter') login();
+});
+
+// 退出前提醒未保存
+window.addEventListener('beforeunload', e => {
+  if (dirty) { e.preventDefault(); e.returnValue = ''; }
+});
+</script>
+</body>
+</html>

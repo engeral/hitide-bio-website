@@ -1,0 +1,903 @@
+[
+  {
+    "id": "baotai_pigeon",
+    "name": "鸽宝泰",
+    "en": "GeBaoTai",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_baotai_pigeon.jpg",
+    "type": "维生素预混合饲料 I",
+    "net": "5g/瓶",
+    "std": "Q/GDHTD 41-2024",
+    "disease": "免疫激活 / 病毒防控",
+    "tags": [
+      "免疫激活",
+      "长效保护 60 天+",
+      "创新包裹工艺",
+      "饮水拌料"
+    ],
+    "meta": [
+      "内源性干扰素高效表达",
+      "每瓶用于 2000 羽份最佳"
+    ],
+    "lead": "内源性干扰素高效表达，创新包裹工艺，每瓶用于 2000 羽份最佳，长效保护 60 天以上。"
+  },
+  {
+    "id": "baotailai",
+    "name": "包泰莱",
+    "en": "BaoTaiLai",
+    "cat": "shrimp",
+    "img": "assets/img/aqua/baotailai.jpg",
+    "type": "复合预混合饲料 XV",
+    "net": "100 克/包",
+    "std": "Q/GDHTD 72-2024",
+    "disease": "肝肠孢子虫",
+    "tags": [
+      "肝肠孢子虫",
+      "黏附蛋白",
+      "天然杀虫"
+    ],
+    "meta": [
+      "Q/GDHTD 72-2024",
+      "粤饲预(2021)01011",
+      "案例：4 次方内 7-8 天基本清零"
+    ],
+    "lead": "针对对虾肝肠孢子虫的黏附蛋白产品，可作预防 + 治疗双场景使用。低载量下清零效果显著。"
+  },
+  {
+    "id": "baozhentai_cat",
+    "name": "包珍泰",
+    "en": "BaoZhenTai (Cat)",
+    "cat": "cat",
+    "img": "assets/img/prod/prod_baozhentai.jpg",
+    "type": "宠物营养补充剂（猫用片剂）",
+    "net": "1瓶/盒",
+    "std": "Q/HTD 01-2024",
+    "disease": "猫疱疹病毒",
+    "tags": [
+      "抑制病毒复制",
+      "猫疱疹",
+      "1 个月疗程"
+    ],
+    "meta": [
+      "含猫疱疹病毒结合蛋白",
+      "用法：每天一次，每次一片，连续 1 个月"
+    ],
+    "lead": "含猫疱疹病毒结合蛋白，针对猫疱疹病毒引起的眼部、上呼吸道症状，每天一次、每次一片，连续 1 个月。"
+  },
+  {
+    "id": "baozhentai_fish",
+    "name": "包珍泰",
+    "en": "BaoZhenTai (Fish)",
+    "cat": "fish",
+    "img": "assets/img/aqua/baozhentai_aqua.jpg",
+    "type": "复合预混合饲料 VI（A 包 + B 包包裹材料）",
+    "net": "100 克/包",
+    "std": "Q/GDHTD 46-2024",
+    "disease": "鱼用疱疹病毒",
+    "tags": [
+      "提高免疫力",
+      "抗病毒",
+      "无抗养殖"
+    ],
+    "meta": [
+      "鱼用疱疹病毒结合蛋白",
+      "Q/GDHTD 46-2024"
+    ],
+    "lead": "鱼用疱疹病毒结合蛋白产品，提升机体免疫、辅助抗病毒，适用于鱼用疱疹病毒相关防控。"
+  },
+  {
+    "id": "beizhuangtai",
+    "name": "杯壮泰",
+    "en": "BeiZhuangTai",
+    "cat": "cat",
+    "img": "assets/img/prod/prod_beizhuangtai.jpg",
+    "type": "宠物营养补充剂（猫用片剂）",
+    "net": "1瓶/盒",
+    "std": "Q/HTD 01-2024",
+    "disease": "猫杯状病毒",
+    "tags": [
+      "抑制病毒复制",
+      "猫杯状",
+      "直接口服"
+    ],
+    "meta": [
+      "含猫杯状病毒结合蛋白 + 植物中药抗病毒成分",
+      "用法：直接口服 1-2 片，连续 10-15 天"
+    ],
+    "lead": "含猫杯状病毒结合蛋白 + 植物中药抗病毒成分，直接口服 1-2 片，连续 10-15 天，针对猫杯状病毒引起的口腔、呼吸道症状。"
+  },
+  {
+    "id": "dantailai",
+    "name": "丹泰莱",
+    "en": "DanTaiLai",
+    "cat": "fish",
+    "img": "assets/img/aqua/dantailai.jpg",
+    "type": "复合预混合饲料 VIII（A 包 + B 包包裹材料）",
+    "net": "100 克/包",
+    "std": "Q/SDHTD 65-2025",
+    "disease": "鱼用病毒结合蛋白",
+    "tags": [
+      "提高免疫力",
+      "抗病毒",
+      "无抗养殖"
+    ],
+    "meta": [
+      "鱼用病毒结合蛋白",
+      "Q/SDHTD 65-2025"
+    ],
+    "lead": "鱼用病毒结合蛋白产品，提升机体免疫、辅助抗病毒，适用于多种鱼类病毒病的防控与恢复。"
+  },
+  {
+    "id": "dikang",
+    "name": "海泰滴康",
+    "en": "HaiTai DiKang",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_dikang.jpg",
+    "type": "地美硝唑预混剂",
+    "net": "100g",
+    "std": "兽药字 190851143",
+    "disease": "滴虫病 / 密螺旋体",
+    "tags": [
+      "抗原虫药",
+      "广谱抗菌",
+      "密螺旋体",
+      "组织滴虫"
+    ],
+    "meta": [
+      "兽药字 190851143",
+      "每 1000kg 饲料 400-2500g",
+      "凭兽医处方购买使用"
+    ],
+    "lead": "地美硝唑预混剂，抗原虫、广谱抗菌，针对密螺旋体、组织滴虫；每 1000kg 饲料 400-2500g。"
+  },
+  {
+    "id": "futailai",
+    "name": "福泰莱",
+    "en": "FuTaiLai",
+    "cat": "cat",
+    "img": "assets/img/prod/prod_futailai.jpg",
+    "type": "宠物营养补充剂（猫用）",
+    "net": "粉剂 1.5g×10袋 / 片剂 2瓶/盒",
+    "std": "Q/HTD 01-2024",
+    "disease": "猫传染性腹膜炎（FIPV）",
+    "tags": [
+      "抑制病毒复制",
+      "猫传腹 FIPV",
+      "植物中药抗病毒",
+      "7-15 天疗程"
+    ],
+    "meta": [
+      "含猫传腹病毒结合蛋白 + 嗜酸乳杆菌 NCFM + 动物双歧杆菌 Bb-12",
+      "剂型：粉剂 / 片剂",
+      "用法：每天一次，每次一片，连续 7-15 天"
+    ],
+    "lead": "针对猫传腹病毒（FIPV）结合蛋白产品，粉剂与片剂两种剂型。片剂含植物中药抗病毒成分，每天一次、每次一片，连续 7-15 天。"
+  },
+  {
+    "id": "hongtailai",
+    "name": "虹泰莱",
+    "en": "HongTaiLai",
+    "cat": "fish",
+    "img": "assets/img/aqua/hongtailai.jpg",
+    "type": "复合预混合饲料 VII（A 包 + B 包包裹材料）",
+    "net": "100 克/包",
+    "std": "Q/GDCHTD 64-2025",
+    "disease": "蛙虹彩病毒（RSIV）",
+    "tags": [
+      "提高免疫力",
+      "抗病毒",
+      "无抗养殖"
+    ],
+    "meta": [
+      "鳜鱼 / 鲈鱼 蛙虹彩病毒",
+      "Q/GDCHTD 64-2025",
+      "案例：3 万尾鳜鱼 300尾/天 → 6尾/天"
+    ],
+    "lead": "针对鳜鱼、鲈鱼蛙属虹彩病毒（RSIV）的病毒结合蛋白产品。连续拌饲料口服 5-7 天，临床观察案例显示死亡数显著下降、病毒转阴。"
+  },
+  {
+    "id": "hutailai",
+    "name": "弧泰莱",
+    "en": "HuTaiLai",
+    "cat": "shrimp",
+    "img": "assets/img/aqua/hutailai.jpg",
+    "type": "复合预混合饲料 XI",
+    "net": "100 克/包",
+    "std": "Q/GDHTD 68-2023",
+    "disease": "弧菌病",
+    "tags": [
+      "虾弧菌",
+      "黏附蛋白",
+      "天然杀菌"
+    ],
+    "meta": [
+      "Q/GDHTD 68-2023",
+      "粤饲预(2020)01001"
+    ],
+    "lead": "针对对虾弧菌的黏附蛋白产品，天然杀菌，适用于对虾弧菌病的防控。"
+  },
+  {
+    "id": "koufu",
+    "name": "口服补液盐",
+    "en": "Oral Rehydration Salt",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_koufu.jpg",
+    "type": "电解质补充药",
+    "net": "118g",
+    "std": "兽药字 190856407",
+    "disease": "脱水 / 电解质失衡",
+    "tags": [
+      "电解质补充",
+      "调节酸碱平衡",
+      "热应激",
+      "腹泻纠正"
+    ],
+    "meta": [
+      "兽药字 190856407",
+      "1 包溶于 4L 水，自由饮用"
+    ],
+    "lead": "电解质补充药，调节酸碱平衡，针对热应激、腹泻纠正；1 包溶于 4L 水，自由饮用。"
+  },
+  {
+    "id": "miaolebao",
+    "name": "妙乐宝",
+    "en": "MiaoLeBao",
+    "cat": "cat",
+    "img": "assets/img/prod/prod_miaolebao.jpg",
+    "type": "宠物营养补充剂（猫用）",
+    "net": "1.5g×10包",
+    "std": "Q/HTD 01-2024",
+    "disease": "猫瘟 / 疱疹 / 杯状病毒",
+    "tags": [
+      "抑制病毒复制",
+      "速补营养",
+      "改善胃肠",
+      "增强免疫",
+      "加速康复"
+    ],
+    "meta": [
+      "适用：猫瘟、疱疹、杯状病毒结合蛋白",
+      "规格：1.5g×10包"
+    ],
+    "lead": "猫用粉剂，含猫瘟、疱疹、杯状病毒结合蛋白，1.5g 小包易拌食，适合幼猫与挑食猫日常免疫支持。"
+  },
+  {
+    "id": "nanhuaweikang",
+    "name": "南华维康",
+    "en": "NanHuaWeiKang",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_nanhuaweikang.jpg",
+    "type": "复合维生素 B 可溶性粉",
+    "net": "1000g",
+    "std": "兽药字 190855071",
+    "disease": "B 族维生素缺乏",
+    "tags": [
+      "B 族维生素",
+      "多发性神经炎",
+      "消化障碍",
+      "癞皮病口腔炎"
+    ],
+    "meta": [
+      "兽药字 190855071",
+      "混饮：每 1L 水 0.5~1.5g，连用 3-5 日"
+    ],
+    "lead": "复合维生素 B 可溶性粉，针对多发性神经炎、消化障碍、癞皮病口腔炎，混饮每 1L 水 0.5~1.5g，连用 3-5 日。"
+  },
+  {
+    "id": "niubashigan",
+    "name": "牛多杀性巴氏杆菌病灭活疫苗",
+    "en": "Bovine Pasteurella Vaccine",
+    "cat": "ruminant",
+    "img": "assets/img/prod/prod_niubashigan.jpg",
+    "type": "灭活疫苗",
+    "net": "20 / 50 / 100 / 250 ml/瓶",
+    "std": "兽药生字140393008",
+    "disease": "牛多杀性巴氏杆菌病（牛呼吸道肺炎）",
+    "tags": [
+      "牛巴氏杆菌病",
+      "呼吸道疾病",
+      "灭活疫苗"
+    ],
+    "meta": [
+      "兽药生字140393008",
+      "净含量 20/50/100/250 ml/瓶",
+      "灭活疫苗"
+    ],
+    "lead": "用于预防牛多杀性巴氏杆菌病（牛呼吸道肺炎）的灭活疫苗，提供针对巴氏杆菌感染的免疫保护。"
+  },
+  {
+    "id": "niushahotan",
+    "name": "牛副伤寒灭活疫苗",
+    "en": "Bovine Paratyphoid Vaccine",
+    "cat": "ruminant",
+    "img": "assets/img/prod/prod_niushahotan.jpg",
+    "type": "灭活疫苗",
+    "net": "20 / 50 / 100 ml/瓶",
+    "std": "兽药生字140393009",
+    "disease": "牛副伤寒（沙门氏菌性肠炎）",
+    "tags": [
+      "牛副伤寒",
+      "沙门氏菌肠炎",
+      "灭活疫苗"
+    ],
+    "meta": [
+      "兽药生字140393009",
+      "净含量 20/50/100 ml/瓶",
+      "灭活疫苗"
+    ],
+    "lead": "用于预防牛副伤寒（沙门氏菌引起的肠炎与败血症）的灭活疫苗。"
+  },
+  {
+    "id": "qinbaotai",
+    "name": "禽宝泰",
+    "en": "QinBaoTai",
+    "cat": "live",
+    "img": "assets/img/prod/prod_qinbaotai_pdf.jpg",
+    "type": "维生素预混合饲料 Ⅰ（禽用）",
+    "net": "200g · 1000 羽份/瓶",
+    "std": "Q/GDHTD 41-2024",
+    "disease": "免疫抑制 / 病毒防控",
+    "tags": [
+      "摆脱免疫抑制",
+      "长效保护 60 天+",
+      "激活免疫系统",
+      "降低死淘率"
+    ],
+    "meta": [
+      "粤饲预(2021)13011",
+      "Q/GDHTD 41-2024",
+      "净含量 200g · 1000 羽份/瓶"
+    ],
+    "lead": "禽用维生素预混，摆脱免疫抑制、激活免疫系统、长效保护 60 天以上、降低死淘率。1~3 日龄首次，7~10 日龄再用一次。"
+  },
+  {
+    "id": "qintai_live",
+    "name": "禽泰安",
+    "en": "QinTaiAn (Binding Protein)",
+    "cat": "live",
+    "img": "assets/img/prod/prod_qintai_an.jpg",
+    "type": "家禽病毒结合蛋白（维生素预混合饲料 Ⅰ）",
+    "net": "100g · 大日龄 500 羽份",
+    "std": "Q/GDHTD 43-2024",
+    "disease": "家禽病毒病",
+    "tags": [
+      "广谱通用",
+      "直接阻断感染",
+      "组合高效",
+      "孕产蛋可用"
+    ],
+    "meta": [
+      "粤饲预(2021)13011",
+      "Q/GDHTD 43-2024",
+      "净含量 100g · 大日龄 500 羽份"
+    ],
+    "lead": "家禽病毒结合蛋白，广谱通用、直接阻断感染、组合高效、孕产蛋可用。预防连用 3 天、治疗连用 5-7 天，同时饲喂疫苗增效明显。"
+  },
+  {
+    "id": "qintai_pigeon",
+    "name": "禽泰安",
+    "en": "QinTaiAn (Pigeon)",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_qintai.jpg",
+    "type": "维生素预混合饲料 I",
+    "net": "100g",
+    "std": "Q/GDHTD 41-2024",
+    "disease": "营养补充 / 免疫支持",
+    "tags": [
+      "广谱通用",
+      "作用直接",
+      "组合高效",
+      "无应激残留"
+    ],
+    "meta": [
+      "粤饲预(2021)13011",
+      "Q/GDHTD 41-2024",
+      "净含量 100g"
+    ],
+    "lead": "广谱通用维生素预混，作用直接、组合高效、无应激残留，鸽用营养与免疫支持基础产品。"
+  },
+  {
+    "id": "qintaining",
+    "name": "禽泰宁",
+    "en": "QinTaiNing",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_qintaining.jpg",
+    "type": "液态维生素预混合饲料 IV",
+    "net": "注射型",
+    "std": "兽用 OTC",
+    "disease": "细菌感染 / 耐药菌",
+    "tags": [
+      "耐药菌克星",
+      "广谱抗菌",
+      "无药残"
+    ],
+    "meta": [
+      "颈皮下/胸部肌肉注射 0.2ml/羽",
+      "可与油佐剂疫苗混合使用"
+    ],
+    "lead": "颈皮下/胸部肌肉注射 0.2ml/羽，可与油佐剂疫苗混合使用，针对耐药菌、广谱抗菌、无药残。"
+  },
+  {
+    "id": "qizhongji",
+    "name": "气肿疽灭活疫苗",
+    "en": "Blackleg Vaccine",
+    "cat": "ruminant",
+    "img": "assets/img/prod/prod_qizhongji.jpg",
+    "type": "灭活疫苗",
+    "net": "—",
+    "std": "—",
+    "disease": "气肿疽（黑腿病）",
+    "tags": [
+      "气肿疽",
+      "黑腿病",
+      "牛/羊梭菌病"
+    ],
+    "meta": [
+      "牛/羊通用",
+      "灭活疫苗",
+      "具体规格请参照产品说明书"
+    ],
+    "lead": "用于预防牛、羊气肿疽（黑腿病，气肿疽梭菌感染）的灭活疫苗。"
+  },
+  {
+    "id": "shentailai",
+    "name": "申泰莱",
+    "en": "ShenTaiLai",
+    "cat": "fish",
+    "img": "assets/img/aqua/shentailai.jpg",
+    "type": "复合预混合饲料 X（A 包 + B 包包裹材料）",
+    "net": "100 克/包",
+    "std": "Q/GDCHTD 67-2025",
+    "disease": "神经坏死病毒（NNV）",
+    "tags": [
+      "提高免疫力",
+      "抗病毒",
+      "无抗养殖"
+    ],
+    "meta": [
+      "石斑鱼 / 鳜鱼 神经坏死病毒",
+      "Q/GDCHTD 67-2025",
+      "案例：1.5万尾 120尾/天 → 0尾/天"
+    ],
+    "lead": "针对石斑鱼、鳜鱼神经坏死病毒（NNV）的病毒结合蛋白产品。NNV 攻毒保护试验显示治疗组存活率显著优于对照组。"
+  },
+  {
+    "id": "taikang",
+    "name": "鸽泰康",
+    "en": "GeTaiKang",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_taikang_pigeon.jpg",
+    "type": "禽用维生素预混合饲料",
+    "net": "1kg",
+    "std": "鸽专用",
+    "disease": "营养补充",
+    "tags": [
+      "创新工艺",
+      "省力省心省钱",
+      "有效改善",
+      "优质原料"
+    ],
+    "meta": [
+      "1kg 用于 2400-3000 羽份",
+      "饮水/拌料，连续使用 2 天"
+    ],
+    "lead": "鸽专用维生素预混，1kg 用于 2400-3000 羽份，饮水/拌料，连续使用 2 天，创新工艺、优质原料。"
+  },
+  {
+    "id": "taimiaoja",
+    "name": "泰妙佳",
+    "en": "TaiMiaoJia",
+    "cat": "cat",
+    "img": "assets/img/prod/prod_taimiaoja.jpg",
+    "type": "维生素预混合饲料 III",
+    "net": "100g/瓶 · 10瓶/盒",
+    "std": "Q/HTD 01-2024",
+    "disease": "猫瘟 / 疱疹 / 杯状病毒",
+    "tags": [
+      "抑制病毒复制",
+      "滋补营养",
+      "改善胃肠",
+      "增强免疫",
+      "加速康复"
+    ],
+    "meta": [
+      "适用：猫瘟、疱疹、杯状病毒结合蛋白",
+      "规格：100g/瓶 · 10瓶/盒"
+    ],
+    "lead": "猫用粉剂营养补充剂，含猫瘟、疱疹、杯状病毒结合蛋白，配合维生素快速补充机体营养、增强免疫、加速康复。"
+  },
+  {
+    "id": "taiwangja",
+    "name": "泰旺佳",
+    "en": "TaiWangJia",
+    "cat": "dog",
+    "img": "assets/img/prod/prod_taiwangja.jpg",
+    "type": "维生素预混合饲料 III",
+    "net": "10瓶/盒",
+    "std": "Q/HTD 01-2024",
+    "disease": "犬瘟热 / 犬细小 / 犬冠状",
+    "tags": [
+      "抑制病毒复制",
+      "速补营养",
+      "改善胃肠",
+      "增强免疫",
+      "加速康复"
+    ],
+    "meta": [
+      "适用：犬瘟热、犬细小、犬冠状病毒结合蛋白",
+      "规格：10瓶/盒"
+    ],
+    "lead": "犬用粉剂，含犬瘟热、犬细小、犬冠状病毒结合蛋白，配合维生素快速补充营养、增强免疫、加速康复。"
+  },
+  {
+    "id": "wabaotai",
+    "name": "蛙宝泰",
+    "en": "WaBaoTai",
+    "cat": "frog",
+    "img": "assets/img/aqua/wabaotai.jpg",
+    "type": "水产用抗生素（独创反向包裹技术）",
+    "net": "100 克/包",
+    "std": "兽药字 190859092",
+    "disease": "急性细菌病（红腿/烂皮/腹水）",
+    "tags": [
+      "独创反向包裹",
+      "降低药残",
+      "控制耐药"
+    ],
+    "meta": [
+      "兽药字 190859092",
+      "100g + 300ml 植物油拌 20kg 蛙饲料",
+      "连用 3-7 天"
+    ],
+    "lead": "针对牛蛙急性细菌病的水产用抗生素，独创反向包裹技术减少水体污染与耐药菌产生。急性发作、重症首选，可与蛙泰莱联用。"
+  },
+  {
+    "id": "wanglebao",
+    "name": "汪乐宝",
+    "en": "WangLeBao",
+    "cat": "dog",
+    "img": "assets/img/prod/prod_wanglebao.jpg",
+    "type": "宠物营养补充剂（犬用）",
+    "net": "2g×10包",
+    "std": "Q/HTD 01-2024",
+    "disease": "犬瘟热 / 犬细小 / 犬冠状",
+    "tags": [
+      "抑制病毒复制",
+      "速补营养",
+      "改善胃肠",
+      "增强免疫",
+      "加速康复"
+    ],
+    "meta": [
+      "适用：犬瘟热、犬细小、犬冠状病毒结合蛋白",
+      "规格：2g×10包"
+    ],
+    "lead": "犬用粉剂营养补充剂，含犬瘟热、犬细小、犬冠状病毒结合蛋白，2g 小包易拌食，适合幼犬与病后恢复。"
+  },
+  {
+    "id": "wataida",
+    "name": "蛙泰达",
+    "en": "WaTaiDa",
+    "cat": "frog",
+    "img": "assets/img/aqua/wataida.jpg",
+    "type": "复合预混合饲料 VI",
+    "net": "250 克/包",
+    "std": "Q/HDHTD 62-2023",
+    "disease": "红腿 / 烂皮 / 胃肠炎",
+    "tags": [
+      "气单胞菌",
+      "链球菌",
+      "红腿烂皮胃肠炎"
+    ],
+    "meta": [
+      "Q/HDHTD 62-2023",
+      "告别红腿胃肠炎烂皮"
+    ],
+    "lead": "针对牛蛙气单胞菌、链球菌等引起的红腿、烂皮、胃肠炎，250g 大包装，告别红腿胃肠炎烂皮。"
+  },
+  {
+    "id": "watailei",
+    "name": "蛙泰莱",
+    "en": "WaTaiLei",
+    "cat": "frog",
+    "img": "assets/img/aqua/watailei.jpg",
+    "type": "复合预混合饲料 IV（A 包 + B 包包裹材料）",
+    "net": "100 克/包",
+    "std": "Q/SDHT 0159-2023",
+    "disease": "歪头病（黄杆菌脑神经感染）",
+    "tags": [
+      "黄杆菌",
+      "歪头病",
+      "细菌粘附蛋白"
+    ],
+    "meta": [
+      "成活率约 75%",
+      "Q/SDHT 0159-2023"
+    ],
+    "lead": "针对牛蛙歪头病（黄杆菌脑神经感染）的蛙属虹彩病毒结合蛋白产品。对照试验显示成活率约 75%。"
+  },
+  {
+    "id": "wentailai",
+    "name": "温泰莱",
+    "en": "WenTaiLai",
+    "cat": "cat",
+    "img": "assets/img/prod/prod_wentailai.jpg",
+    "type": "宠物营养补充剂（猫用片剂）",
+    "net": "1瓶/盒",
+    "std": "Q/HTD 01-2024",
+    "disease": "猫瘟病毒（FPV）",
+    "tags": [
+      "抑制病毒复制",
+      "猫瘟",
+      "10-15 天疗程"
+    ],
+    "meta": [
+      "含猫瘟病毒结合蛋白 + 植物中药抗病毒成分",
+      "用法：每天一次，每次一片，连续 10-15 天"
+    ],
+    "lead": "含猫瘟病毒结合蛋白 + 植物中药抗病毒成分，针对猫泛白细胞减少症（猫瘟），每天一次、每次一片，连续 10-15 天。"
+  },
+  {
+    "id": "wutan",
+    "name": "戊二醛癸甲溴铵溶液",
+    "en": "Glutaraldehyde-Deciquam",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_wutan.jpg",
+    "type": "消毒药",
+    "net": "1000g",
+    "std": "兽用 OTC",
+    "disease": "环境消毒",
+    "tags": [
+      "广谱消毒",
+      "细菌芽孢",
+      "真菌病毒",
+      "养殖场/种蛋"
+    ],
+    "meta": [
+      "常规 1:2000~4000 稀释",
+      "疫病期 1:500~1000 稀释"
+    ],
+    "lead": "广谱消毒，对细菌芽孢、真菌、病毒有效，适用于养殖场与种蛋消毒；常规 1:2000~4000 稀释，疫病期 1:500~1000 稀释。"
+  },
+  {
+    "id": "xiabantai",
+    "name": "虾斑泰",
+    "en": "XiaBanTai",
+    "cat": "shrimp",
+    "img": "assets/img/aqua/xiabantai.jpg",
+    "type": "复合预混合饲料 XVIII",
+    "net": "100 克/包",
+    "std": "Q/GDHTD 75-2024",
+    "disease": "白斑病毒（WSSV）",
+    "tags": [
+      "虾白斑病毒",
+      "提高免疫",
+      "无抗养殖"
+    ],
+    "meta": [
+      "Q/GDHTD 75-2024"
+    ],
+    "lead": "针对对虾白斑病毒（WSSV）的结合蛋白产品，提高免疫、无抗养殖。"
+  },
+  {
+    "id": "xiahongtai",
+    "name": "虾虹泰",
+    "en": "XiaHongTai",
+    "cat": "shrimp",
+    "img": "assets/img/aqua/xiahongtai.jpg",
+    "type": "复合预混合饲料 XVII",
+    "net": "100 克/包",
+    "std": "Q/GDHTD 74-2024",
+    "disease": "虹彩病毒",
+    "tags": [
+      "虾虹彩病毒",
+      "提高免疫",
+      "无抗养殖"
+    ],
+    "meta": [
+      "Q/GDHTD 74-2024"
+    ],
+    "lead": "针对对虾、罗氏沼虾虹彩病毒的结合蛋白产品，提高免疫、无抗养殖。"
+  },
+  {
+    "id": "xiajitai",
+    "name": "虾吉泰",
+    "en": "XiaJiTai",
+    "cat": "shrimp",
+    "img": "assets/img/aqua/xiajitai.jpg",
+    "type": "复合预混合饲料 XIX",
+    "net": "100 克/包",
+    "std": "Q/GDHTD 76-2024",
+    "disease": "肌肉坏死病毒",
+    "tags": [
+      "虾肌肉坏死病毒",
+      "提高免疫",
+      "无抗养殖"
+    ],
+    "meta": [
+      "虾肌肉坏死病毒结合蛋白",
+      "Q/GDHTD 76-2024"
+    ],
+    "lead": "针对对虾肌肉坏死病毒的结合蛋白产品，提高免疫、无抗养殖。"
+  },
+  {
+    "id": "xinaowei",
+    "name": "新奥威",
+    "en": "XinAoWei",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_xinaowei.jpg",
+    "type": "新城疫活疫苗（V4/HB92 克隆株）",
+    "net": "10瓶/盒",
+    "std": "SPF",
+    "disease": "新城疫（ND）",
+    "tags": [
+      "黏膜免疫",
+      "体液免疫",
+      "细胞免疫",
+      "鸽/鹌鹑/榛鸡"
+    ],
+    "meta": [
+      "最安全 ND 活疫苗（含一日龄雏鸽）",
+      "天然耐热 · ICPI 为零",
+      "九江博美莱生物制品有限公司"
+    ],
+    "lead": "最安全的新城疫活疫苗（含一日龄雏鸽），天然耐热、ICPI 为零，由九江博美莱生物制品有限公司生产。"
+  },
+  {
+    "id": "xinliu",
+    "name": "新流二联",
+    "en": "XinLiu",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_xinliu.jpg",
+    "type": "新城疫 + 禽流感（H9）二联灭活疫苗",
+    "net": "500ml/瓶",
+    "std": "二联灭活",
+    "disease": "新城疫 + 禽流感 H9",
+    "tags": [
+      "La Sota 株",
+      "WD 株",
+      "10^10 EID₅₀",
+      "抗原浓缩"
+    ],
+    "meta": [
+      "H9 亚型保护率高达 94.4%",
+      "颈皮下/翼下肌肉注射"
+    ],
+    "lead": "H9 亚型保护率高达 94.4%，颈皮下/翼下肌肉注射，一次免疫同时防新城疫与禽流感 H9。"
+  },
+  {
+    "id": "xinsian",
+    "name": "新思安",
+    "en": "XinSiAn",
+    "cat": "pigeon",
+    "img": "assets/img/prod/prod_xinsian.jpg",
+    "type": "鸡新城疫活疫苗（La Sota 株）",
+    "net": "10瓶/盒",
+    "std": "兽用 OTC",
+    "disease": "新城疫（ND）",
+    "tags": [
+      "种毒优选",
+      "独特培养工艺",
+      "SPF 蛋",
+      "专用稀释液"
+    ],
+    "meta": [
+      "抗原含量超标准 5 倍",
+      "免疫增强剂提升 100%",
+      "九江博美莱生物制品有限公司"
+    ],
+    "lead": "抗原含量超标准 5 倍，免疫增强剂提升 100%，由九江博美莱生物制品有限公司生产。"
+  },
+  {
+    "id": "xubaotai",
+    "name": "畜宝泰",
+    "en": "XuBaoTai",
+    "cat": "live",
+    "img": "assets/img/prod/prod_xubaotai_box.jpg",
+    "type": "维生素预混合饲料（畜用）",
+    "net": "畜用",
+    "std": "Q/GDHTD 43-2024",
+    "disease": "免疫抑制 / 腹泻",
+    "tags": [
+      "摆脱免疫抑制",
+      "防腹泻保生长",
+      "长效保护 60 天+",
+      "降低死淘率"
+    ],
+    "meta": [
+      "粤饲预(2021)13011",
+      "Q/GDHTD 43-2024",
+      "仔猪 20 头份/瓶 · 母猪 10 头份/瓶"
+    ],
+    "lead": "畜用维生素预混，摆脱免疫抑制、防腹泻保生长、长效保护 60 天以上。仔猪 20 头份/瓶、母猪 10 头份/瓶；首次连用 3-7 天，以后每两月一次。"
+  },
+  {
+    "id": "yangdachangganjun",
+    "name": "羊大肠杆菌病灭活疫苗",
+    "en": "Ovine Colibacillosis Vaccine",
+    "cat": "ruminant",
+    "img": "assets/img/prod/prod_yangdachangganjun.jpg",
+    "type": "灭活疫苗",
+    "net": "20 / 50 / 100 / 250 ml/瓶",
+    "std": "兽药生字140394009",
+    "disease": "羊大肠杆菌病（腹泻/败血症）",
+    "tags": [
+      "羊大肠杆菌病",
+      "腹泻/败血症",
+      "灭活疫苗"
+    ],
+    "meta": [
+      "兽药生字140394009",
+      "净含量 20/50/100/250 ml/瓶",
+      "灭活疫苗"
+    ],
+    "lead": "用于预防羊大肠杆菌病（腹泻、败血症）的灭活疫苗。"
+  },
+  {
+    "id": "yanzhengtai",
+    "name": "炎证泰",
+    "en": "YanZhengTai",
+    "cat": "cat",
+    "img": "assets/img/prod/prod_yanzhengtai.jpg",
+    "type": "广谱抗菌蛋白外用喷剂",
+    "net": "20ml/瓶",
+    "std": "猫狗双标签",
+    "disease": "皮肤损伤 / 口腔溃疡 / 手术伤口",
+    "tags": [
+      "广谱抗菌蛋白",
+      "EGF + FGF21",
+      "促进愈合",
+      "外用喷涂"
+    ],
+    "meta": [
+      "广谱抗菌蛋白 + EGF + FGF21",
+      "猫用 + 犬用双标签",
+      "外用喷涂"
+    ],
+    "lead": "猫狗通用的外用喷剂，含广谱抗菌蛋白 + 表皮生长因子（EGF）+ 成纤维细胞生长因子（FGF21），适用于皮肤损伤、口腔溃疡、手术伤口等外用场景。"
+  },
+  {
+    "id": "yubaotai",
+    "name": "鱼宝泰",
+    "en": "YuBaoTai",
+    "cat": "fish",
+    "img": "assets/img/aqua/yubaotai.jpg",
+    "type": "氟苯尼考粉（水产用）",
+    "net": "100 克/包",
+    "std": "兽药字 190859014",
+    "disease": "诺卡氏菌病",
+    "tags": [
+      "诺卡氏菌",
+      "反向包裹",
+      "减少耐药"
+    ],
+    "meta": [
+      "粤兽药字 190859014",
+      "100g + 300ml 植物油拌 20kg 饵料",
+      "连用 3-7 天"
+    ],
+    "lead": "针对生鱼（乌鳢）诺卡氏菌病的氟苯尼考粉（水产用）。独创反向包裹技术减少耐药菌产生。"
+  },
+  {
+    "id": "zhongtailai",
+    "name": "仲泰莱",
+    "en": "ZhongTaiLai",
+    "cat": "fish",
+    "img": "assets/img/aqua/zhongtailai.jpg",
+    "type": "复合预混合饲料 XII（A 包 + B 包包裹材料）",
+    "net": "100 克/包",
+    "std": "Q/SDHTD 69-2024",
+    "disease": "传染性脾肾坏死病（ISKNV）",
+    "tags": [
+      "提高免疫力",
+      "抗病毒",
+      "无抗养殖"
+    ],
+    "meta": [
+      "鳜鱼 传染性脾肾坏死病",
+      "Q/SDHTD 69-2024",
+      "案例：1万尾 60尾/天 → 0尾/天"
+    ],
+    "lead": "针对鳜鱼传染性脾肾坏死病（ISKNV）的病毒结合蛋白产品。临床案例：PCR 强阳性鳜鱼连续拌料 5 天，第 8 天死亡归零、核酸检测阴性。"
+  }
+]
