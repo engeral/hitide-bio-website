@@ -155,11 +155,11 @@
     "name": "福泰莱",
     "en": "FuTaiLai",
     "cat": "cat",
-    "img": "assets/img/prod/prod_futailai.jpg",
-    "type": "宠物营养补充剂（猫用）",
+    "type": "**测试-admin改动-2026-08-27**",
     "net": "粉剂 1.5g×10袋 / 片剂 2瓶/盒",
     "std": "Q/HTD 01-2024",
     "disease": "猫传染性腹膜炎（FIPV）",
+    "img": "assets/img/prod/prod_futailai.jpg",
     "tags": [
       "抑制病毒复制",
       "猫传腹 FIPV",
