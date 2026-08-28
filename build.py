@@ -486,14 +486,7 @@ add(id='xinbian',name='新必安',en='XinBiAn',cat='broiler',img='assets/img/pro
     type='活疫苗（弱毒）',net='—',std='—',species=['鸡'],disease='新城疫（Clone 30 株）',
     en_species='Chicken',en_disease='Newcastle Disease (Clone 30, mild virulence)',
     lead='鸡新城疫活疫苗（Clone 30 株，弱毒）。')
-add(id='qintailai',name='禽泰莱',en='QinTaiLai',cat='broiler',img='assets/img/prod/prod_pou_p9_R.jpg',
-    type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
-    en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
-    lead='通用禽泰莱（三联灭活）— 同 qintailai4f/5zf 同株。')
-add(id='qintailai4h',name='禽泰莱 4(H)',en='QinTaiLai 4(H)',cat='universal',img='assets/img/prod/prod_pou_p10_L.jpg',
-    type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
-    en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
-    lead='通用禽泰莱 4(H) — 同 4(F) 株，标签分 H 版。')
+# 禽泰莱家族：qintailai 基础款 + qintailai4h 均合并到 qintailai4f（同株 La Sota+YT+QD）— 8/21 13:50 段拍板"4(H) 与 4(F) 视为同款不同标签，保留 1 款"
 # 鸽用同名禽用版（V4/HB92, La Sota, ND+AI H9）— 仅鸽用 chip 显示
 add(id='xinaowei_poultry',name='新奥威（禽用）',en='XinAoWei (Poultry)',cat='pigeon',img='assets/img/prod/prod_xinaowei.jpg',
     type='活疫苗',net='—',std='—',species=['鸡'],disease='新城疫（V4/HB92 Clone, 鸡所有日龄）',
