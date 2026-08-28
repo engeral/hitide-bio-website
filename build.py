@@ -39,6 +39,8 @@ CATS = [
     ('cat',   '猫用','Cat'),
     ('dog',   '犬用','Dog'),
     ('pigeon','鸽用','Pigeon'),
+    ('pig',   '猪用','Swine'),
+    ('poultry','禽用','Poultry'),
     ('fish',  '鱼用','Fish'),
     ('frog',  '蛙用','Frog'),
     ('shrimp','虾用','Shrimp'),
@@ -388,6 +390,121 @@ add(id='qizhongji',name='气肿疽灭活疫苗',en='Blackleg Vaccine',cat='rumin
     lead='用于预防牛、羊气肿疽（黑腿病，气肿疽梭菌感染）的灭活疫苗。',
     en_lead='Inactivated vaccine for prevention of blackleg (Clostridium chauvoei infection) in cattle and sheep.',
     meta=['牛/羊通用','灭活疫苗','具体规格请参照产品说明书'])
+# ===== PIG (10) — 2026-08-27 恢复自 8/21 拍板 (博美莱-猪苗手册-2025.pdf) =====
+add(id='lantailai',name='蓝泰莱',en='LanTaiLai',cat='pig',img='assets/img/prod/prod_pig_lantailai.jpg',
+    type='灭活疫苗',net='—',std='—',species=['猪'],disease='猪繁殖与呼吸综合征（蓝耳病, PRRS, CH-1a 株）',
+    en_species='Swine',en_disease='Porcine Reproductive and Respiratory Syndrome (PRRS)',
+    lead='用于预防猪蓝耳病（PRRS）的灭活疫苗。')
+add(id='zhimian',name='智免组合',en='ZhiMian',cat='pig',img='assets/img/prod/prod_pig_zhimian.jpg',
+    type='套装（圆泰莱稀释稳泰莱+卫泰莱）',net='—',std='—',species=['猪'],disease='PCV2 + CSF + PR 三联防控',
+    en_species='Swine',en_disease='PCV2 + CSF + PR Combined Prevention',
+    lead='猪用三联稀释套装：圆泰莱稀释稳泰莱+卫泰莱，一次免疫覆盖三种核心病原。')
+add(id='yuanzhifulai',name='圆支福泰莱',en='YuanZhiFuTaiLai',cat='pig',img='assets/img/prod/prod_pig_yuanzhifulai.jpg',
+    type='灭活疫苗',net='—',std='—',species=['猪'],disease='猪支原体肺炎（气喘病, M. hyopneumoniae, ZY 株）',
+    en_species='Swine',en_disease='Mycoplasma hyopneumoniae (Enzootic Pneumonia)',
+    lead='用于预防猪支原体肺炎（气喘病）的灭活疫苗。')
+add(id='yuantailai',name='圆泰莱',en='YuanTaiLai',cat='pig',img='assets/img/prod/prod_pig_yuantailai.jpg',
+    type='灭活疫苗',net='—',std='—',species=['猪'],disease='猪圆环病毒 2 型（PCV2, SH 株）',
+    en_species='Swine',en_disease='Porcine Circovirus Type 2 (PCV2)',
+    lead='用于预防猪圆环病毒 2 型（PCV2）的灭活疫苗。')
+add(id='wentailai_swine',name='稳泰莱',en='WenTaiLai (Swine)',cat='pig',img='assets/img/prod/prod_pig_wentailai.jpg',
+    type='活疫苗',net='—',std='—',species=['猪'],disease='猪瘟（CSF, C 株组织培养源）',
+    en_species='Swine',en_disease='Classical Swine Fever (CSF)',
+    lead='用于预防猪瘟（CSF）的活疫苗。品牌名=稳泰莱。')
+add(id='weitailai',name='卫泰莱',en='WeiTaiLai',cat='pig',img='assets/img/prod/prod_pig_weitailai.jpg',
+    type='活疫苗',net='—',std='—',species=['猪'],disease='伪狂犬（PR, Bartha-K61 株）',
+    en_species='Swine',en_disease='Pseudorabies (PR)',
+    lead='用于预防伪狂犬病的活疫苗。')
+add(id='helikang',name='合立康',en='HeLiKang',cat='pig',img='assets/img/prod/prod_pig_helikang.jpg',
+    type='活疫苗',net='—',std='—',species=['猪'],disease='猪多杀性巴氏杆菌病（猪肺疫, Pasteurella multocida, E0630 株）',
+    en_species='Swine',en_disease='Porcine Pasteurella multocida',
+    lead='用于预防猪多杀性巴氏杆菌病的活疫苗。')
+add(id='zhudanduvaccine',name='猪丹毒活疫苗',en='ZhuDanDu (Swine Erysipelas Live)',cat='pig',img='assets/img/prod/prod_pig_trivalent.jpg',
+    type='活疫苗',net='—',std='—',species=['猪'],disease='猪丹毒（Swine Erysipelas, GC42 株）',
+    en_species='Swine',en_disease='Swine Erysipelas',
+    lead='用于预防猪丹毒的活疫苗。')
+add(id='paratyphus',name='仔猪副伤寒活疫苗',en='Paratyphus Vaccine for Piglets (Live)',cat='pig',img='assets/img/prod/prod_pig_paratyphus.jpg',
+    type='活疫苗',net='—',std='—',species=['仔猪'],disease='仔猪副伤寒（Paratyphus）',
+    en_species='Swine Piglets',en_disease='Paratyphus in Piglets',
+    lead='用于预防仔猪副伤寒的活疫苗。')
+add(id='lianlikang',name='联立康',en='LianLiKang',cat='pig',img='assets/img/prod/prod_pig_lianlikang.jpg',
+    type='活疫苗',net='—',std='—',species=['猪'],disease='猪败血性链球菌病（Streptococcosis Septicemia, St171 株）',
+    en_species='Swine',en_disease='Swine Streptococcosis Septicemia',
+    lead='用于预防猪败血性链球菌病的活疫苗。')
+# ===== POULTRY (15) — 2026-08-27 恢复自 8/21 拍板 (博美莱-禽苗手册-2025（4月定稿）.pdf) =====
+add(id='qintailai4f',name='禽泰莱 4(F)',en='QinTaiLai 4(F)',cat='poultry',img='assets/img/prod/prod_pou_p3_L.jpg',
+    type='三联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
+    en_species='Chicken',en_disease='ND+AI(H9)+Adenovirus (La Sota+YT+QD)',
+    lead='鸡用三联灭活疫苗：新城疫+禽流感(H9)+腺病毒。')
+add(id='qintailai5zf',name='禽泰莱 5(ZF)',en='QinTaiLai 5(ZF)',cat='poultry',img='assets/img/prod/prod_pou_p3_R.jpg',
+    type='三联灭活疫苗',net='—',std='—',species=['水禽（鸭/鹅）'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
+    en_species='Waterfowl (Duck / Goose)',en_disease='ND+AI(H9)+Adenovirus (La Sota+YT+QD)',
+    lead='水禽三联灭活疫苗：新城疫+禽流感(H9)+腺病毒。')
+add(id='xinzhian',name='欣支安',en='XinZhiAn',cat='poultry',img='assets/img/prod/prod_pou_p4_L.jpg',
+    type='二联活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传染性支气管炎（HB1+H120 株）',
+    en_species='Chicken',en_disease='ND + IB (HB1 + H120)',
+    lead='鸡用新城疫+传支二联活疫苗。')
+add(id='xinzhiliu',name='新支流',en='XinZhiLiu',cat='poultry',img='assets/img/prod/prod_pou_p6_R.jpg',
+    type='三联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传支+禽流感(H9)（La Sota+M41+HZ 株）',
+    en_species='Chicken',en_disease='ND + IB + AI(H9) (La Sota + M41 + HZ)',
+    lead='鸡用 ND+IB+AI(H9) 三联灭活疫苗。')
+add(id='xinzhijianliu',name='新支减流',en='XinZhiJianLiu',cat='poultry',img='assets/img/prod/prod_pou_p7_L.jpg',
+    type='四联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传支+减蛋综合征+禽流感(H9)（La Sota+M41+HS25+HZ 株）',
+    en_species='Chicken',en_disease='ND + IB + EDS + AI(H9) (La Sota + M41 + HS25 + HZ)',
+    lead='鸡用四联灭活疫苗：ND+IB+EDS+AI(H9)。')
+add(id='xinkean',name='新可安',en='XinKeAn',cat='poultry',img='assets/img/prod/prod_pou_p8_L.jpg',
+    type='二联活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传染性支气管炎（La Sota+H120 株）',
+    en_species='Chicken',en_disease='ND + IB (La Sota + H120)',
+    lead='鸡用 ND+IB 二联活疫苗（La Sota+H120）。')
+add(id='doulian',name='都利安',en='DouLiAn',cat='poultry',img='assets/img/prod/prod_pou_p9_L.jpg',
+    type='活疫苗',net='—',std='—',species=['鸡'],disease='鸡痘（Fowl Pox）',
+    en_species='Chicken',en_disease='Fowl Pox',
+    lead='鸡痘活疫苗。')
+add(id='qinduosha',name='禽多杀',en='QinDuoSha',cat='poultry',img='assets/img/prod/prod_pou_p10_R.jpg',
+    type='灭活疫苗',net='—',std='—',species=['禽'],disease='禽多杀性巴氏杆菌病（Avian Pasteurella multocida, C48-2 株）',
+    en_species='Poultry',en_disease='Avian Pasteurella multocida (C48-2)',
+    lead='禽巴氏杆菌病灭活疫苗（C48-2 株）。')
+add(id='yalian',name='雅利安',en='YaLiAn',cat='poultry',img='assets/img/prod/prod_pou_p11_L.jpg',
+    type='活疫苗',net='—',std='—',species=['鸭'],disease='鸭瘟（Duck Plague）',
+    en_species='Duck',en_disease='Duck Plague',
+    lead='鸭瘟活疫苗。')
+add(id='falian',name='法利安',en='FaLiAn',cat='poultry',img='assets/img/prod/prod_pou_p12_L.jpg',
+    type='活疫苗',net='—',std='—',species=['鸡'],disease='传染性法氏囊病（IBD / Gumboro, B87 株）',
+    en_species='Chicken',en_disease='Infectious Bursal Disease (IBD / Gumboro, B87)',
+    lead='鸡传染性法氏囊病活疫苗（B87 株）。')
+add(id='xinlian',name='新利安',en='XinLiAn',cat='poultry',img='assets/img/prod/prod_pou_p12_R.jpg',
+    type='活疫苗（中等毒力）',net='—',std='—',species=['鸡'],disease='新城疫（CS2 株）',
+    en_species='Chicken',en_disease='Newcastle Disease (CS2, medium virulence)',
+    lead='鸡新城疫活疫苗（CS2 株，中等毒力）。')
+add(id='xinyian',name='新易安',en='XinYiAn',cat='poultry',img='assets/img/prod/prod_pou_p13_L.jpg',
+    type='二联活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传染性支气管炎（La Sota+H52 株）',
+    en_species='Chicken',en_disease='ND + IB (La Sota + H52)',
+    lead='鸡用 ND+IB 二联活疫苗（La Sota+H52）。')
+add(id='xinbian',name='新必安',en='XinBiAn',cat='poultry',img='assets/img/prod/prod_pou_p13_R.jpg',
+    type='活疫苗（弱毒）',net='—',std='—',species=['鸡'],disease='新城疫（Clone 30 株）',
+    en_species='Chicken',en_disease='Newcastle Disease (Clone 30, mild virulence)',
+    lead='鸡新城疫活疫苗（Clone 30 株，弱毒）。')
+add(id='qintailai',name='禽泰莱',en='QinTaiLai',cat='poultry',img='assets/img/prod/prod_pou_p9_R.jpg',
+    type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
+    en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
+    lead='通用禽泰莱（三联灭活）— 同 qintailai4f/5zf 同株。')
+add(id='qintailai4h',name='禽泰莱 4(H)',en='QinTaiLai 4(H)',cat='poultry',img='assets/img/prod/prod_pou_p10_L.jpg',
+    type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
+    en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
+    lead='通用禽泰莱 4(H) — 同 4(F) 株，标签分 H 版。')
+# 鸽用同名禽用版（V4/HB92, La Sota, ND+AI H9）— 仅鸽用 chip 显示
+add(id='xinaowei_poultry',name='新奥威（禽用）',en='XinAoWei (Poultry)',cat='pigeon',img='assets/img/prod/prod_xinaowei.jpg',
+    type='活疫苗',net='—',std='—',species=['鸡'],disease='新城疫（V4/HB92 Clone, 鸡所有日龄）',
+    en_species='Chicken (all ages)',en_disease='Newcastle Disease (V4 / HB92 Clone)',
+    lead='禽用新城疫活疫苗（V4/HB92 Clone），鸡所有日龄通用。同鸽用 xinaowei。')
+add(id='xinsian_poultry',name='新思安（禽用）',en='XinSiAn (Poultry)',cat='pigeon',img='assets/img/prod/prod_xinsian.jpg',
+    type='活疫苗',net='—',std='—',species=['鸡'],disease='新城疫（La Sota 株）',
+    en_species='Chicken',en_disease='Newcastle Disease (La Sota)',
+    lead='禽用新城疫活疫苗（La Sota）。同鸽用 xinsian。')
+add(id='xinliu_poultry',name='新流二联（禽用）',en='XinLiu (Poultry)',cat='pigeon',img='assets/img/prod/prod_xinliu.jpg',
+    type='二联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+禽流感(H9)（La Sota+WD 株）',
+    en_species='Chicken',en_disease='ND + AI(H9) (La Sota + WD)',
+    lead='禽用 ND+AI(H9) 二联灭活疫苗。同鸽用 xinliu。')
 import json as _json
 _ENRICH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'product_enrichment.json')
 _GENERIC = {
