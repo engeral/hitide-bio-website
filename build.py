@@ -438,10 +438,10 @@ add(id='qintailai4f',name='禽泰莱 4(F)',en='QinTaiLai 4(F)',cat='universal',i
     type='三联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
     en_species='Chicken',en_disease='ND+AI(H9)+Adenovirus (La Sota+YT+QD)',
     lead='鸡用三联灭活疫苗：新城疫+禽流感(H9)+腺病毒。')
-add(id='qintailai5zf',name='禽泰莱 5(ZF)',en='QinTaiLai 5(ZF)',cat='waterfowl',img='assets/img/prod/prod_pou_p3_R.jpg',
-    type='三联灭活疫苗',net='—',std='—',species=['水禽（鸭/鹅）'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
-    en_species='Waterfowl (Duck / Goose)',en_disease='ND+AI(H9)+Adenovirus (La Sota+YT+QD)',
-    lead='水禽三联灭活疫苗：新城疫+禽流感(H9)+腺病毒。')
+add(id='qintailai5zf',name='禽泰莱 5(ZF)',en='QinTaiLai 5(ZF)',cat='universal',img='assets/img/prod/prod_pou_p3_R.jpg',
+    type='三联灭活疫苗',net='—',std='—',species=['禽（肉鸡/蛋鸡通用）'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
+    en_species='Poultry (Broiler / Layer)',en_disease='ND+AI(H9)+Adenovirus (La Sota+YT+QD)',
+    lead='禽泰莱 5(ZF) — 鸡用三联灭活疫苗，肉鸡/蛋鸡通用（La Sota+YT+QD 株）。')
 add(id='xinzhian',name='欣支安',en='XinZhiAn',cat='universal',img='assets/img/prod/prod_pou_p4_L.jpg',
     type='二联活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传染性支气管炎（HB1+H120 株）',
     en_species='Chicken',en_disease='ND + IB (HB1 + H120)',
@@ -486,15 +486,19 @@ add(id='xinbian',name='新必安',en='XinBiAn',cat='broiler',img='assets/img/pro
     type='活疫苗（弱毒）',net='—',std='—',species=['鸡'],disease='新城疫（Clone 30 株）',
     en_species='Chicken',en_disease='Newcastle Disease (Clone 30, mild virulence)',
     lead='鸡新城疫活疫苗（Clone 30 株，弱毒）。')
-# 禽泰莱家族（鸡用三联灭活）— 基础款 + 4(F) + 4(H) + 5(ZF) 是独立产品，分别归 broiler / universal / waterfowl chip
+# 禽泰莱家族（三联灭活疫苗）— 4 个独立产品，按适用对象分 chip：
+# - qintailai (基础款) → 肉鸡 broiler
+# - qintailai4f (4F) → 通用 universal（鸡用，不与肉鸡/蛋鸡 chip 重复）
+# - qintailai4h (4H) → 水禽 waterfowl（鸭/鹅）
+# - qintailai5zf (5ZF) → 通用 universal（肉鸡/蛋鸡通用）
 add(id='qintailai',name='禽泰莱',en='QinTaiLai',cat='broiler',img='assets/img/prod/prod_pou_p9_R.jpg',
     type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
     en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
     lead='禽泰莱基础款 — 鸡用三联灭活疫苗（新城疫+禽流感 H9+腺病毒，La Sota+YT+QD 株）。')
-add(id='qintailai4h',name='禽泰莱 4(H)',en='QinTaiLai 4(H)',cat='broiler',img='assets/img/prod/prod_pou_p10_L.jpg',
+add(id='qintailai4h',name='禽泰莱 4(H)',en='QinTaiLai 4(H)',cat='waterfowl',img='assets/img/prod/prod_pou_p10_L.jpg',
     type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
-    en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
-    lead='禽泰莱 4(H) — 鸡用三联灭活疫苗 H 标签版（同 La Sota+YT+QD 株，规格标签不同）。')
+    en_species='Waterfowl',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
+    lead='禽泰莱 4(H) — 水禽专用三联灭活疫苗（鸭/鹅，La Sota+YT+QD 株）。')
 # 鸽用同名禽用版（V4/HB92, La Sota, ND+AI H9）— 仅鸽用 chip 显示
 add(id='xinaowei_poultry',name='新奥威（禽用）',en='XinAoWei (Poultry)',cat='pigeon',img='assets/img/prod/prod_xinaowei.jpg',
     type='活疫苗',net='—',std='—',species=['鸡'],disease='新城疫（V4/HB92 Clone, 鸡所有日龄）',

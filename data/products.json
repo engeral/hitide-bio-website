@@ -2748,18 +2748,18 @@
     "id": "qintailai5zf",
     "name": "禽泰莱 5(ZF)",
     "en": "QinTaiLai 5(ZF)",
-    "cat": "waterfowl",
+    "cat": "universal",
     "img": "assets/img/prod/prod_pou_p3_R.jpg",
     "type": "三联灭活疫苗",
     "net": "—",
     "std": "—",
     "species": [
-      "水禽（鸭/鹅）"
+      "禽（肉鸡/蛋鸡通用）"
     ],
     "disease": "新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）",
-    "en_species": "Waterfowl (Duck / Goose)",
+    "en_species": "Poultry (Broiler / Layer)",
     "en_disease": "ND+AI(H9)+Adenovirus (La Sota+YT+QD)",
-    "lead": "水禽三联灭活疫苗：新城疫+禽流感(H9)+腺病毒。",
+    "lead": "禽泰莱 5(ZF) — 鸡用三联灭活疫苗，肉鸡/蛋鸡通用（La Sota+YT+QD 株）。",
     "usage": [
       "按产品标签推荐剂量使用；具体用法与剂量请遵医嘱或联系海泰技术团队获取产品说明书。"
     ],
@@ -3047,7 +3047,7 @@
     "id": "qintailai4h",
     "name": "禽泰莱 4(H)",
     "en": "QinTaiLai 4(H)",
-    "cat": "broiler",
+    "cat": "waterfowl",
     "img": "assets/img/prod/prod_pou_p10_L.jpg",
     "type": "三联灭活疫苗",
     "net": "—",
@@ -3056,9 +3056,9 @@
       "禽"
     ],
     "disease": "新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）",
-    "en_species": "Poultry",
+    "en_species": "Waterfowl",
     "en_disease": "ND + AI(H9) + Adenovirus (La Sota + YT + QD)",
-    "lead": "禽泰莱 4(H) — 鸡用三联灭活疫苗 H 标签版（同 La Sota+YT+QD 株，规格标签不同）。",
+    "lead": "禽泰莱 4(H) — 水禽专用三联灭活疫苗（鸭/鹅，La Sota+YT+QD 株）。",
     "usage": [
       "按产品标签推荐剂量使用；具体用法与剂量请遵医嘱或联系海泰技术团队获取产品说明书。"
     ],
