@@ -132,19 +132,19 @@ add(id='xinliu',name='新流二联',en='XinLiu',cat='pigeon',img='assets/img/pro
     species=['鸽'],disease='新城疫 + 禽流感 H9',
     lead='H9 亚型保护率高达 94.4%，颈皮下/翼下肌肉注射，一次免疫同时防新城疫与禽流感 H9。',
     meta=['H9 亚型保护率高达 94.4%','颈皮下/翼下肌肉注射'])
-add(id='baotai_pigeon',name='鸽宝泰',en='GeBaoTai',cat='pigeon',binding='other',img='assets/img/prod/prod_baotai_pigeon.jpg',
+add(id='baotai_pigeon',name='鸽宝泰',en='GeBaoTai',cat='pigeon',binding='binding',img='assets/img/prod/prod_baotai_pigeon.jpg',
     type='维生素预混合饲料 I',net='5g/瓶',std='Q/GDHTD 41-2024',
     tags=['免疫激活','长效保护 60 天+','创新包裹工艺','饮水拌料'],
     species=['鸽'],disease='免疫激活 / 病毒防控',
     lead='内源性干扰素高效表达，创新包裹工艺，每瓶用于 2000 羽份最佳，长效保护 60 天以上。',
     meta=['内源性干扰素高效表达','每瓶用于 2000 羽份最佳'])
-add(id='qintaining',name='禽泰宁',en='QinTaiNing',cat='pigeon',binding='other',img='assets/img/prod/prod_qintaining.jpg',
+add(id='qintaining',name='禽泰宁',en='QinTaiNing',cat='pigeon',binding='binding',img='assets/img/prod/prod_qintaining.jpg',
     type='液态维生素预混合饲料 IV',net='注射型',std='兽用 OTC',
     tags=['耐药菌克星','广谱抗菌','无药残'],
     species=['鸽'],disease='细菌感染 / 耐药菌',
     lead='颈皮下/胸部肌肉注射 0.2ml/羽，可与油佐剂疫苗混合使用，针对耐药菌、广谱抗菌、无药残。',
     meta=['颈皮下/胸部肌肉注射 0.2ml/羽','可与油佐剂疫苗混合使用'])
-add(id='qintai_pigeon',name='禽泰安',en='QinTaiAn (Pigeon)',cat='pigeon',binding='other',img='assets/img/prod/prod_qintai.jpg',
+add(id='qintai_pigeon',name='禽泰安',en='QinTaiAn (Pigeon)',cat='pigeon',binding='binding',img='assets/img/prod/prod_qintai.jpg',
     type='维生素预混合饲料 I',net='100g',std='Q/GDHTD 41-2024',
     tags=['广谱通用','作用直接','组合高效','无应激残留'],
     species=['鸽'],disease='营养补充 / 免疫支持',
