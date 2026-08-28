@@ -3024,18 +3024,18 @@
     "id": "qintailai",
     "name": "禽泰莱",
     "en": "QinTaiLai",
-    "cat": "broiler",
+    "cat": "waterfowl",
     "img": "assets/img/prod/prod_pou_p9_R.jpg",
     "type": "三联灭活疫苗",
     "net": "—",
     "std": "—",
     "species": [
-      "禽"
+      "水禽（鸭/鹅）"
     ],
     "disease": "新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）",
-    "en_species": "Poultry",
+    "en_species": "Waterfowl (Duck / Goose)",
     "en_disease": "ND + AI(H9) + Adenovirus (La Sota + YT + QD)",
-    "lead": "禽泰莱基础款 — 鸡用三联灭活疫苗（新城疫+禽流感 H9+腺病毒，La Sota+YT+QD 株）。",
+    "lead": "禽泰莱基础款 — 水禽专用三联灭活疫苗（鸭/鹅，新城疫+禽流感 H9+腺病毒，La Sota+YT+QD 株）。",
     "usage": [
       "按产品标签推荐剂量使用；具体用法与剂量请遵医嘱或联系海泰技术团队获取产品说明书。"
     ],
