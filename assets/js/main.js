@@ -138,36 +138,48 @@
   if(saved === 'en' && enBtn) applyLang('en');
 
   /* ---- products: filter + search + symptom matcher ---- */
-  var pGrid = document.getElementById('pGrid');
-  if(pGrid){
-    var pChips = document.getElementById('pChips');
-    var pSearch = document.getElementById('pSearch');
-    var pEmpty = document.getElementById('pEmpty');
-    function applyFilter(){
-      var cat = (pChips && pChips.querySelector('.chip.active')) ? pChips.querySelector('.chip.active').dataset.cat : 'all';
-      var q = (pSearch && pSearch.value || '').trim().toLowerCase();
-      var shown = 0;
-      pGrid.querySelectorAll('.product').forEach(function(a){
-        var okCat = (cat==='all' || a.dataset.cat===cat);
-        var hay = ((a.dataset.search||'') + ' ' + (a.dataset.name||'')).toLowerCase();
-        var okQ = !q || hay.indexOf(q) > -1;
-        var vis = okCat && okQ;
-        a.style.display = vis ? '' : 'none';
-        if(vis) shown++;
-      });
-      if(pEmpty) pEmpty.style.display = shown ? 'none' : 'block';
-    }
-    if(pChips){
-      pChips.querySelectorAll('.chip').forEach(function(b){
-        b.addEventListener('click', function(){
-          pChips.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('active'); });
-          b.classList.add('active');
-          applyFilter();
+var pGrid = document.getElementById('pGrid');
+    if(pGrid){
+      var pChips = document.getElementById('pChips');
+      var pTypeChips = document.getElementById('pTypeChips');
+      var pSearch = document.getElementById('pSearch');
+      var pEmpty = document.getElementById('pEmpty');
+      function applyFilter(){
+        var cat = (pChips && pChips.querySelector('.chip.active')) ? pChips.querySelector('.chip.active').dataset.cat : 'all';
+        var btype = (pTypeChips && pTypeChips.querySelector('.chip.active')) ? pTypeChips.querySelector('.chip.active').dataset.binding : 'all';
+        var q = (pSearch && pSearch.value || '').trim().toLowerCase();
+        var shown = 0;
+        pGrid.querySelectorAll('.product').forEach(function(a){
+          var okCat = (cat==='all' || a.dataset.cat===cat);
+          var okB = (btype==='all' || a.dataset.binding===btype);
+          var hay = ((a.dataset.search||'') + ' ' + (a.dataset.name||'')).toLowerCase();
+          var okQ = !q || hay.indexOf(q) > -1;
+          var vis = okCat && okB && okQ;
+          a.style.display = vis ? '' : 'none';
+          if(vis) shown++;
         });
-      });
-    }
-    if(pSearch) pSearch.addEventListener('input', applyFilter);
-    applyFilter();
+        if(pEmpty) pEmpty.style.display = shown ? 'none' : 'block';
+      }
+      if(pChips){
+        pChips.querySelectorAll('.chip').forEach(function(b){
+          b.addEventListener('click', function(){
+            pChips.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('active'); });
+            b.classList.add('active');
+            applyFilter();
+          });
+        });
+      }
+      if(pTypeChips){
+        pTypeChips.querySelectorAll('.chip').forEach(function(b){
+          b.addEventListener('click', function(){
+            pTypeChips.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('active'); });
+            b.classList.add('active');
+            applyFilter();
+          });
+        });
+      }
+      if(pSearch) pSearch.addEventListener('input', applyFilter);
+      applyFilter();
 
     var M = window.__MATCHER__ || [];
     var mSpecies = document.getElementById('mSpecies');

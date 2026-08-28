@@ -43,7 +43,7 @@
       <div class="sec-eyebrow"><span class="t-zh">病症匹配工具</span><span class="t-en">Symptom Matcher</span></div>
       <h3 style="font-size:20px;color:var(--navy);margin-bottom:18px;"><span class="t-zh">选择物种与症状，智能推荐产品</span><span class="t-en">Select species and symptoms for smart product recommendations</span></h3>
       <div class="matcher-steps">
-        <div><div class="matcher-label"><span class="t-zh">第 1 步 · 选择物种</span><span class="t-en">Step 1 · Select species</span></div><div class="pill-row" id="mSpecies"><button class="pill" data-species="鳜鱼" data-en="Mandarin Fish"><span class="t-zh">鳜鱼</span><span class="t-en">Mandarin Fish</span></button><button class="pill" data-species="鲈鱼" data-en="Sea Bass"><span class="t-zh">鲈鱼</span><span class="t-en">Sea Bass</span></button><button class="pill" data-species="石斑鱼" data-en="Grouper"><span class="t-zh">石斑鱼</span><span class="t-en">Grouper</span></button><button class="pill" data-species="生鱼（乌鳢）" data-en="Snakehead"><span class="t-zh">生鱼（乌鳢）</span><span class="t-en">Snakehead</span></button><button class="pill" data-species="牛蛙" data-en="Bullfrog"><span class="t-zh">牛蛙</span><span class="t-en">Bullfrog</span></button><button class="pill" data-species="对虾" data-en="Shrimp"><span class="t-zh">对虾</span><span class="t-en">Shrimp</span></button><button class="pill" data-species="猫" data-en="Cat"><span class="t-zh">猫</span><span class="t-en">Cat</span></button><button class="pill" data-species="犬" data-en="Dog"><span class="t-zh">犬</span><span class="t-en">Dog</span></button><button class="pill" data-species="鸽" data-en="Pigeon"><span class="t-zh">鸽</span><span class="t-en">Pigeon</span></button><button class="pill" data-species="牛" data-en="Cattle"><span class="t-zh">牛</span><span class="t-en">Cattle</span></button><button class="pill" data-species="羊" data-en="Sheep"><span class="t-zh">羊</span><span class="t-en">Sheep</span></button></div></div>
+        <div><div class="matcher-label"><span class="t-zh">第 1 步 · 选择物种</span><span class="t-en">Step 1 · Select species</span></div><div class="pill-row" id="mSpecies"><button class="pill" data-species="鳜鱼" data-en="Mandarin Fish"><span class="t-zh">鳜鱼</span><span class="t-en">Mandarin Fish</span></button><button class="pill" data-species="鲈鱼" data-en="Sea Bass"><span class="t-zh">鲈鱼</span><span class="t-en">Sea Bass</span></button><button class="pill" data-species="石斑鱼" data-en="Grouper"><span class="t-zh">石斑鱼</span><span class="t-en">Grouper</span></button><button class="pill" data-species="生鱼（乌鳢）" data-en="Snakehead"><span class="t-zh">生鱼（乌鳢）</span><span class="t-en">Snakehead</span></button><button class="pill" data-species="牛蛙" data-en="Bullfrog"><span class="t-zh">牛蛙</span><span class="t-en">Bullfrog</span></button><button class="pill" data-species="对虾" data-en="Shrimp"><span class="t-zh">对虾</span><span class="t-en">Shrimp</span></button><button class="pill" data-species="猫" data-en="Cat"><span class="t-zh">猫</span><span class="t-en">Cat</span></button><button class="pill" data-species="犬" data-en="Dog"><span class="t-zh">犬</span><span class="t-en">Dog</span></button><button class="pill" data-species="猪" data-en="Swine"><span class="t-zh">猪</span><span class="t-en">Swine</span></button><button class="pill" data-species="肉鸡" data-en="Broiler"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></button><button class="pill" data-species="蛋鸡" data-en="Layer"><span class="t-zh">蛋鸡</span><span class="t-en">Layer</span></button><button class="pill" data-species="水禽" data-en="Waterfowl"><span class="t-zh">水禽</span><span class="t-en">Waterfowl</span></button><button class="pill" data-species="通用（鸡用）" data-en="Universal"><span class="t-zh">通用（鸡用）</span><span class="t-en">Universal</span></button><button class="pill" data-species="鸽用" data-en="Pigeon"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></button><button class="pill" data-species="牛" data-en="Cattle"><span class="t-zh">牛</span><span class="t-en">Cattle</span></button><button class="pill" data-species="羊" data-en="Sheep"><span class="t-zh">羊</span><span class="t-en">Sheep</span></button></div></div>
         <div><div class="matcher-label"><span class="t-zh">第 2 步 · 选择症状 / 疫病</span><span class="t-en">Step 2 · Select symptom / disease</span></div><div class="pill-row" id="mSymptom"><span style="color:var(--ink-3);font-size:13px;"><span class="t-zh">请先选择物种 ↑</span><span class="t-en">Please select a species first ↑</span></span></div></div>
       </div>
       <div class="matcher-result" id="mResult">
@@ -57,9 +57,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input id="pSearch" type="text" placeholder="搜索产品名称、疫病或关键词…">
       </div>
-      <div class="filters" id="pChips"><button class="chip active" data-cat="all"><span class="t-zh">全部</span><span class="t-en">All</span></button><button class="chip" data-cat="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></button><button class="chip" data-cat="dog"><span class="t-zh">犬用</span><span class="t-en">Dog</span></button><button class="chip" data-cat="pigeon"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></button><button class="chip" data-cat="pig"><span class="t-zh">猪用</span><span class="t-en">Swine</span></button><button class="chip" data-cat="poultry"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></button><button class="chip" data-cat="fish"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></button><button class="chip" data-cat="frog"><span class="t-zh">蛙用</span><span class="t-en">Frog</span></button><button class="chip" data-cat="shrimp"><span class="t-zh">虾用</span><span class="t-en">Shrimp</span></button><button class="chip" data-cat="live"><span class="t-zh">畜禽用</span><span class="t-en">Livestock</span></button><button class="chip" data-cat="ruminant"><span class="t-zh">牛/羊用</span><span class="t-en">Cattle/Sheep</span></button></div>
+      <div class="filters" id="pChips"><button class="chip active" data-cat="all"><span class="t-zh">全部</span><span class="t-en">All</span></button><button class="chip" data-cat="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></button><button class="chip" data-cat="dog"><span class="t-zh">犬用</span><span class="t-en">Dog</span></button><button class="chip" data-cat="pigeon"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></button><button class="chip" data-cat="pig"><span class="t-zh">猪用</span><span class="t-en">Swine</span></button><button class="chip" data-cat="broiler"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></button><button class="chip" data-cat="layer"><span class="t-zh">蛋鸡</span><span class="t-en">Layer</span></button><button class="chip" data-cat="waterfowl"><span class="t-zh">水禽</span><span class="t-en">Waterfowl</span></button><button class="chip" data-cat="universal"><span class="t-zh">通用（鸡用）</span><span class="t-en">Universal</span></button><button class="chip" data-cat="fish"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></button><button class="chip" data-cat="frog"><span class="t-zh">蛙用</span><span class="t-en">Frog</span></button><button class="chip" data-cat="shrimp"><span class="t-zh">虾用</span><span class="t-en">Shrimp</span></button><button class="chip" data-cat="ruminant"><span class="t-zh">牛/羊用</span><span class="t-en">Cattle/Sheep</span></button></div>
+      <div class="filters" id="pTypeChips"><button class="chip active" data-binding="all"><span class="t-zh">全部类型</span><span class="t-en">All Types</span></button><button class="chip" data-binding="binding"><span class="t-zh">结合蛋白 / 抗菌蛋白</span><span class="t-en">Binding Protein / Antimicrobial Protein</span></button><button class="chip" data-binding="vaccine"><span class="t-zh">疫苗</span><span class="t-en">Vaccine</span></button><button class="chip" data-binding="other"><span class="t-zh">其他</span><span class="t-en">Other</span></button></div>
     </div>
-    <div class="product-grid" id="pGrid"><a class="product" href="products/taimiaoja.html" data-cat="cat" data-name="泰妙佳 TaiMiaoJia" data-search="泰妙佳 TaiMiaoJia 维生素预混合饲料 III Vitamin Premix Feed III 猫瘟 / 疱疹 / 杯状病毒 FPV / Herpes / Calici 抑制病毒复制 滋补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Nourishes and tonifies Improves gastrointestinal health Boosts immunity Speeds recovery">
+    <div class="product-grid" id="pGrid"><a class="product" href="products/taimiaoja.html" data-cat="cat" data-binding="binding" data-name="泰妙佳 TaiMiaoJia" data-search="泰妙佳 TaiMiaoJia 维生素预混合饲料 III Vitamin Premix Feed III 猫瘟 / 疱疹 / 杯状病毒 FPV / Herpes / Calici 抑制病毒复制 滋补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Nourishes and tonifies Improves gastrointestinal health Boosts immunity Speeds recovery">
   <div class="img" data-zoom><img src="assets/img/prod/prod_taimiaoja.jpg" alt="泰妙佳" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></div>
@@ -68,7 +69,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">滋补营养</span><span class="t-en">Nourishes and tonifies</span></span><span><span class="t-zh">改善胃肠</span><span class="t-en">Improves gastrointestinal health</span></span><span><span class="t-zh">增强免疫</span><span class="t-en">Boosts immunity</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/miaolebao.html" data-cat="cat" data-name="妙乐宝 MiaoLeBao" data-search="妙乐宝 MiaoLeBao 宠物营养补充剂（猫用） Pet Nutritional Supplement (Cat) 猫瘟 / 疱疹 / 杯状病毒 FPV / Herpes / Calici 抑制病毒复制 速补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Rapid nutrient boost Improves gastrointestinal health Boosts immunity Speeds recovery">
+</a><a class="product" href="products/miaolebao.html" data-cat="cat" data-binding="binding" data-name="妙乐宝 MiaoLeBao" data-search="妙乐宝 MiaoLeBao 宠物营养补充剂（猫用） Pet Nutritional Supplement (Cat) 猫瘟 / 疱疹 / 杯状病毒 FPV / Herpes / Calici 抑制病毒复制 速补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Rapid nutrient boost Improves gastrointestinal health Boosts immunity Speeds recovery">
   <div class="img" data-zoom><img src="assets/img/prod/prod_miaolebao.jpg" alt="妙乐宝" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></div>
@@ -77,7 +78,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">速补营养</span><span class="t-en">Rapid nutrient boost</span></span><span><span class="t-zh">改善胃肠</span><span class="t-en">Improves gastrointestinal health</span></span><span><span class="t-zh">增强免疫</span><span class="t-en">Boosts immunity</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/futailai.html" data-cat="cat" data-name="福泰莱 FuTaiLai" data-search="福泰莱 FuTaiLai 宠物营养补充剂（猫用） Pet Nutritional Supplement (Cat) 猫传染性腹膜炎（FCoV） Feline Infectious Peritonitis (FCoV) 抑制病毒复制 猫传腹 FCoV 植物中药抗病毒 10-15 天疗程 Inhibits viral replication Feline FIP FCoV Botanical antiviral (TCM) 10-15 day course">
+</a><a class="product" href="products/futailai.html" data-cat="cat" data-binding="binding" data-name="福泰莱 FuTaiLai" data-search="福泰莱 FuTaiLai 宠物营养补充剂（猫用） Pet Nutritional Supplement (Cat) 猫传染性腹膜炎（FCoV） Feline Infectious Peritonitis (FCoV) 抑制病毒复制 猫传腹 FCoV 植物中药抗病毒 10-15 天疗程 Inhibits viral replication Feline FIP FCoV Botanical antiviral (TCM) 10-15 day course">
   <div class="img" data-zoom><img src="assets/img/prod/prod_futailai.jpg" alt="福泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></div>
@@ -86,7 +87,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">猫传腹 FCoV</span><span class="t-en">Feline FIP FCoV</span></span><span><span class="t-zh">植物中药抗病毒</span><span class="t-en">Botanical antiviral (TCM)</span></span><span><span class="t-zh">10-15 天疗程</span><span class="t-en">10-15 day course</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/baozhentai_cat.html" data-cat="cat" data-name="包珍泰 BaoZhenTai (Cat)" data-search="包珍泰 BaoZhenTai (Cat) 宠物营养补充剂（猫用片剂） Pet Nutritional Supplement (Cat, Tablets) 猫疱疹病毒 Feline Herpesvirus 抑制病毒复制 猫疱疹 植物中药抗病毒 10-15 天疗程 Inhibits viral replication Feline herpes Botanical antiviral (TCM) 10-15 day course">
+</a><a class="product" href="products/baozhentai_cat.html" data-cat="cat" data-binding="binding" data-name="包珍泰 BaoZhenTai (Cat)" data-search="包珍泰 BaoZhenTai (Cat) 宠物营养补充剂（猫用片剂） Pet Nutritional Supplement (Cat, Tablets) 猫疱疹病毒 Feline Herpesvirus 抑制病毒复制 猫疱疹 植物中药抗病毒 10-15 天疗程 Inhibits viral replication Feline herpes Botanical antiviral (TCM) 10-15 day course">
   <div class="img" data-zoom><img src="assets/img/prod/prod_baozhentai.jpg" alt="包珍泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></div>
@@ -95,7 +96,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">猫疱疹</span><span class="t-en">Feline herpes</span></span><span><span class="t-zh">植物中药抗病毒</span><span class="t-en">Botanical antiviral (TCM)</span></span><span><span class="t-zh">10-15 天疗程</span><span class="t-en">10-15 day course</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/beizhuangtai.html" data-cat="cat" data-name="杯壮泰 BeiZhuangTai" data-search="杯壮泰 BeiZhuangTai 宠物营养补充剂（猫用片剂） Pet Nutritional Supplement (Cat, Tablets) 猫杯状病毒 Feline Calicivirus 抑制病毒复制 猫杯状 直接口服 Inhibits viral replication Feline calici Direct oral administration">
+</a><a class="product" href="products/beizhuangtai.html" data-cat="cat" data-binding="binding" data-name="杯壮泰 BeiZhuangTai" data-search="杯壮泰 BeiZhuangTai 宠物营养补充剂（猫用片剂） Pet Nutritional Supplement (Cat, Tablets) 猫杯状病毒 Feline Calicivirus 抑制病毒复制 猫杯状 直接口服 Inhibits viral replication Feline calici Direct oral administration">
   <div class="img" data-zoom><img src="assets/img/prod/prod_beizhuangtai.jpg" alt="杯壮泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></div>
@@ -104,7 +105,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">猫杯状</span><span class="t-en">Feline calici</span></span><span><span class="t-zh">直接口服</span><span class="t-en">Direct oral administration</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/wentailai.html" data-cat="cat" data-name="温泰莱 WenTaiLai" data-search="温泰莱 WenTaiLai 宠物营养补充剂（猫用片剂） Pet Nutritional Supplement (Cat, Tablets) 猫瘟病毒（FPV） Feline Panleukopenia Virus (FPV) 抑制病毒复制 猫瘟 10-15 天疗程 Inhibits viral replication Feline panleukopenia (FPV) 10-15 day course">
+</a><a class="product" href="products/wentailai.html" data-cat="cat" data-binding="binding" data-name="温泰莱 WenTaiLai" data-search="温泰莱 WenTaiLai 宠物营养补充剂（猫用片剂） Pet Nutritional Supplement (Cat, Tablets) 猫瘟病毒（FPV） Feline Panleukopenia Virus (FPV) 抑制病毒复制 猫瘟 10-15 天疗程 Inhibits viral replication Feline panleukopenia (FPV) 10-15 day course">
   <div class="img" data-zoom><img src="assets/img/prod/prod_wentailai.jpg" alt="温泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></div>
@@ -113,7 +114,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">猫瘟</span><span class="t-en">Feline panleukopenia (FPV)</span></span><span><span class="t-zh">10-15 天疗程</span><span class="t-en">10-15 day course</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/yanzhengtai.html" data-cat="cat" data-name="炎证泰 YanZhengTai" data-search="炎证泰 YanZhengTai 广谱抗菌蛋白外用喷剂 Broad-spectrum Antimicrobial Protein Topical Spray 皮肤损伤 / 口腔溃疡 / 手术伤口 Skin lesions / Oral ulcers / Surgical wounds 广谱抗菌蛋白 EGF + FGF21 促进愈合 外用喷涂 Broad-spectrum antimicrobial protein EGF + FGF21 Promotes healing Topical spray">
+</a><a class="product" href="products/yanzhengtai.html" data-cat="cat" data-binding="binding" data-name="炎证泰 YanZhengTai" data-search="炎证泰 YanZhengTai 广谱抗菌蛋白外用喷剂 Broad-spectrum Antimicrobial Protein Topical Spray 皮肤损伤 / 口腔溃疡 / 手术伤口 Skin lesions / Oral ulcers / Surgical wounds 广谱抗菌蛋白 EGF + FGF21 促进愈合 外用喷涂 Broad-spectrum antimicrobial protein EGF + FGF21 Promotes healing Topical spray">
   <div class="img" data-zoom><img src="assets/img/prod/prod_yanzhengtai.jpg" alt="炎证泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猫用</span><span class="t-en">Cat</span></div>
@@ -122,7 +123,7 @@
     <div class="claims"><span><span class="t-zh">广谱抗菌蛋白</span><span class="t-en">Broad-spectrum antimicrobial protein</span></span><span><span class="t-zh">EGF + FGF21</span><span class="t-en">EGF + FGF21</span></span><span><span class="t-zh">促进愈合</span><span class="t-en">Promotes healing</span></span><span><span class="t-zh">外用喷涂</span><span class="t-en">Topical spray</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/taiwangja.html" data-cat="dog" data-name="泰旺佳 TaiWangJia" data-search="泰旺佳 TaiWangJia 维生素预混合饲料 III Vitamin Premix Feed III 犬瘟热 / 犬细小 / 犬冠状 Canine Distemper / Parvovirus / Coronavirus 抑制病毒复制 速补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Rapid nutrient boost Improves gastrointestinal health Boosts immunity Speeds recovery">
+</a><a class="product" href="products/taiwangja.html" data-cat="dog" data-binding="binding" data-name="泰旺佳 TaiWangJia" data-search="泰旺佳 TaiWangJia 维生素预混合饲料 III Vitamin Premix Feed III 犬瘟热 / 犬细小 / 犬冠状 Canine Distemper / Parvovirus / Coronavirus 抑制病毒复制 速补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Rapid nutrient boost Improves gastrointestinal health Boosts immunity Speeds recovery">
   <div class="img" data-zoom><img src="assets/img/prod/prod_taiwangja.jpg" alt="泰旺佳" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">犬用</span><span class="t-en">Dog</span></div>
@@ -131,7 +132,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">速补营养</span><span class="t-en">Rapid nutrient boost</span></span><span><span class="t-zh">改善胃肠</span><span class="t-en">Improves gastrointestinal health</span></span><span><span class="t-zh">增强免疫</span><span class="t-en">Boosts immunity</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/wanglebao.html" data-cat="dog" data-name="汪乐宝 WangLeBao" data-search="汪乐宝 WangLeBao 宠物营养补充剂（犬用） Pet Nutritional Supplement (Dog) 犬瘟热 / 犬细小 / 犬冠状 Canine Distemper / Parvovirus / Coronavirus 抑制病毒复制 速补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Rapid nutrient boost Improves gastrointestinal health Boosts immunity Speeds recovery">
+</a><a class="product" href="products/wanglebao.html" data-cat="dog" data-binding="binding" data-name="汪乐宝 WangLeBao" data-search="汪乐宝 WangLeBao 宠物营养补充剂（犬用） Pet Nutritional Supplement (Dog) 犬瘟热 / 犬细小 / 犬冠状 Canine Distemper / Parvovirus / Coronavirus 抑制病毒复制 速补营养 改善胃肠 增强免疫 加速康复 Inhibits viral replication Rapid nutrient boost Improves gastrointestinal health Boosts immunity Speeds recovery">
   <div class="img" data-zoom><img src="assets/img/prod/prod_wanglebao.jpg" alt="汪乐宝" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">犬用</span><span class="t-en">Dog</span></div>
@@ -140,7 +141,7 @@
     <div class="claims"><span><span class="t-zh">抑制病毒复制</span><span class="t-en">Inhibits viral replication</span></span><span><span class="t-zh">速补营养</span><span class="t-en">Rapid nutrient boost</span></span><span><span class="t-zh">改善胃肠</span><span class="t-en">Improves gastrointestinal health</span></span><span><span class="t-zh">增强免疫</span><span class="t-en">Boosts immunity</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinaowei.html" data-cat="pigeon" data-name="新奥威 XinAoWei" data-search="新奥威 XinAoWei 新城疫活疫苗（V4/HB92 克隆株） Newcastle Disease Live Vaccine (V4/HB92 Clone Strain) 新城疫（ND） Newcastle Disease (ND) 黏膜免疫 体液免疫 细胞免疫 鸽/鹌鹑/榛鸡 Mucosal immunity Humoral immunity Cellular immunity Pigeon / Quail / Hazel grouse">
+</a><a class="product" href="products/xinaowei.html" data-cat="pigeon" data-binding="vaccine" data-name="新奥威 XinAoWei" data-search="新奥威 XinAoWei 新城疫活疫苗（V4/HB92 克隆株） Newcastle Disease Live Vaccine (V4/HB92 Clone Strain) 新城疫（ND） Newcastle Disease (ND) 黏膜免疫 体液免疫 细胞免疫 鸽/鹌鹑/榛鸡 Mucosal immunity Humoral immunity Cellular immunity Pigeon / Quail / Hazel grouse">
   <div class="img" data-zoom><img src="assets/img/prod/prod_xinaowei.jpg" alt="新奥威" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -149,7 +150,7 @@
     <div class="claims"><span><span class="t-zh">黏膜免疫</span><span class="t-en">Mucosal immunity</span></span><span><span class="t-zh">体液免疫</span><span class="t-en">Humoral immunity</span></span><span><span class="t-zh">细胞免疫</span><span class="t-en">Cellular immunity</span></span><span><span class="t-zh">鸽/鹌鹑/榛鸡</span><span class="t-en">Pigeon / Quail / Hazel grouse</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinsian.html" data-cat="pigeon" data-name="新思安 XinSiAn" data-search="新思安 XinSiAn 鸡新城疫活疫苗（La Sota 株） Avian Newcastle Disease Live Vaccine (La Sota Strain) 新城疫（ND） Newcastle Disease (ND) 种毒优选 独特培养工艺 SPF 蛋 专用稀释液 Optimized seed virus Unique culture process SPF eggs Dedicated diluent">
+</a><a class="product" href="products/xinsian.html" data-cat="pigeon" data-binding="vaccine" data-name="新思安 XinSiAn" data-search="新思安 XinSiAn 鸡新城疫活疫苗（La Sota 株） Avian Newcastle Disease Live Vaccine (La Sota Strain) 新城疫（ND） Newcastle Disease (ND) 种毒优选 独特培养工艺 SPF 蛋 专用稀释液 Optimized seed virus Unique culture process SPF eggs Dedicated diluent">
   <div class="img" data-zoom><img src="assets/img/prod/prod_xinsian.jpg" alt="新思安" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -158,7 +159,7 @@
     <div class="claims"><span><span class="t-zh">种毒优选</span><span class="t-en">Optimized seed virus</span></span><span><span class="t-zh">独特培养工艺</span><span class="t-en">Unique culture process</span></span><span><span class="t-zh">SPF 蛋</span><span class="t-en">SPF eggs</span></span><span><span class="t-zh">专用稀释液</span><span class="t-en">Dedicated diluent</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinliu.html" data-cat="pigeon" data-name="新流二联 XinLiu" data-search="新流二联 XinLiu 新城疫 + 禽流感（H9）二联灭活疫苗 Newcastle Disease + Avian Influenza (H9) Bivalent Inactivated Vaccine 新城疫 + 禽流感 H9 Newcastle Disease + Avian Influenza H9 La Sota 株 WD 株 10^10 EID₅₀ 抗原浓缩 La Sota strain WD strain 10^10 EID50 Antigen concentration">
+</a><a class="product" href="products/xinliu.html" data-cat="pigeon" data-binding="vaccine" data-name="新流二联 XinLiu" data-search="新流二联 XinLiu 新城疫 + 禽流感（H9）二联灭活疫苗 Newcastle Disease + Avian Influenza (H9) Bivalent Inactivated Vaccine 新城疫 + 禽流感 H9 Newcastle Disease + Avian Influenza H9 La Sota 株 WD 株 10^10 EID₅₀ 抗原浓缩 La Sota strain WD strain 10^10 EID50 Antigen concentration">
   <div class="img" data-zoom><img src="assets/img/prod/prod_xinliu.jpg" alt="新流二联" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -167,7 +168,7 @@
     <div class="claims"><span><span class="t-zh">La Sota 株</span><span class="t-en">La Sota strain</span></span><span><span class="t-zh">WD 株</span><span class="t-en">WD strain</span></span><span><span class="t-zh">10^10 EID₅₀</span><span class="t-en">10^10 EID50</span></span><span><span class="t-zh">抗原浓缩</span><span class="t-en">Antigen concentration</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/baotai_pigeon.html" data-cat="pigeon" data-name="鸽宝泰 GeBaoTai" data-search="鸽宝泰 GeBaoTai 维生素预混合饲料 I Vitamin Premix Feed I 免疫激活 / 病毒防控 Immune Activation / Viral Control 免疫激活 长效保护 60 天+ 创新包裹工艺 饮水拌料 Immune activation Long-lasting protection 60+ days Innovative encapsulation technology Water-drinking / feed mixing">
+</a><a class="product" href="products/baotai_pigeon.html" data-cat="pigeon" data-binding="other" data-name="鸽宝泰 GeBaoTai" data-search="鸽宝泰 GeBaoTai 维生素预混合饲料 I Vitamin Premix Feed I 免疫激活 / 病毒防控 Immune Activation / Viral Control 免疫激活 长效保护 60 天+ 创新包裹工艺 饮水拌料 Immune activation Long-lasting protection 60+ days Innovative encapsulation technology Water-drinking / feed mixing">
   <div class="img" data-zoom><img src="assets/img/prod/prod_baotai_pigeon.jpg" alt="鸽宝泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -176,7 +177,7 @@
     <div class="claims"><span><span class="t-zh">免疫激活</span><span class="t-en">Immune activation</span></span><span><span class="t-zh">长效保护 60 天+</span><span class="t-en">Long-lasting protection 60+ days</span></span><span><span class="t-zh">创新包裹工艺</span><span class="t-en">Innovative encapsulation technology</span></span><span><span class="t-zh">饮水拌料</span><span class="t-en">Water-drinking / feed mixing</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qintaining.html" data-cat="pigeon" data-name="禽泰宁 QinTaiNing" data-search="禽泰宁 QinTaiNing 液态维生素预混合饲料 IV Liquid Vitamin Premix Feed IV 细菌感染 / 耐药菌 Bacterial Infection / Drug-Resistant Bacteria 耐药菌克星 广谱抗菌 无药残 Drug-resistant bacteria killer Broad-spectrum antibacterial No drug residue">
+</a><a class="product" href="products/qintaining.html" data-cat="pigeon" data-binding="other" data-name="禽泰宁 QinTaiNing" data-search="禽泰宁 QinTaiNing 液态维生素预混合饲料 IV Liquid Vitamin Premix Feed IV 细菌感染 / 耐药菌 Bacterial Infection / Drug-Resistant Bacteria 耐药菌克星 广谱抗菌 无药残 Drug-resistant bacteria killer Broad-spectrum antibacterial No drug residue">
   <div class="img" data-zoom><img src="assets/img/prod/prod_qintaining.jpg" alt="禽泰宁" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -185,7 +186,7 @@
     <div class="claims"><span><span class="t-zh">耐药菌克星</span><span class="t-en">Drug-resistant bacteria killer</span></span><span><span class="t-zh">广谱抗菌</span><span class="t-en">Broad-spectrum antibacterial</span></span><span><span class="t-zh">无药残</span><span class="t-en">No drug residue</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qintai_pigeon.html" data-cat="pigeon" data-name="禽泰安 QinTaiAn (Pigeon)" data-search="禽泰安 QinTaiAn (Pigeon) 维生素预混合饲料 I Vitamin Premix Feed I 营养补充 / 免疫支持 Nutritional Supplement / Immune Support 广谱通用 作用直接 组合高效 无应激残留 Broad-spectrum general use Direct action Highly effective in combination No stress residue">
+</a><a class="product" href="products/qintai_pigeon.html" data-cat="pigeon" data-binding="other" data-name="禽泰安 QinTaiAn (Pigeon)" data-search="禽泰安 QinTaiAn (Pigeon) 维生素预混合饲料 I Vitamin Premix Feed I 营养补充 / 免疫支持 Nutritional Supplement / Immune Support 广谱通用 作用直接 组合高效 无应激残留 Broad-spectrum general use Direct action Highly effective in combination No stress residue">
   <div class="img" data-zoom><img src="assets/img/prod/prod_qintai.jpg" alt="禽泰安" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -194,7 +195,7 @@
     <div class="claims"><span><span class="t-zh">广谱通用</span><span class="t-en">Broad-spectrum general use</span></span><span><span class="t-zh">作用直接</span><span class="t-en">Direct action</span></span><span><span class="t-zh">组合高效</span><span class="t-en">Highly effective in combination</span></span><span><span class="t-zh">无应激残留</span><span class="t-en">No stress residue</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/taikang.html" data-cat="pigeon" data-name="鸽泰康 GeTaiKang" data-search="鸽泰康 GeTaiKang 禽用维生素预混合饲料 Poultry Vitamin Premix Feed 营养补充 Nutritional Supplement 创新工艺 省力省心省钱 有效改善 优质原料 Innovative process Labor-saving, worry-free, cost-saving Effectively improves Premium ingredients">
+</a><a class="product" href="products/taikang.html" data-cat="pigeon" data-binding="other" data-name="鸽泰康 GeTaiKang" data-search="鸽泰康 GeTaiKang 禽用维生素预混合饲料 Poultry Vitamin Premix Feed 营养补充 Nutritional Supplement 创新工艺 省力省心省钱 有效改善 优质原料 Innovative process Labor-saving, worry-free, cost-saving Effectively improves Premium ingredients">
   <div class="img" data-zoom><img src="assets/img/prod/prod_taikang_pigeon.jpg" alt="鸽泰康" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -203,7 +204,7 @@
     <div class="claims"><span><span class="t-zh">创新工艺</span><span class="t-en">Innovative process</span></span><span><span class="t-zh">省力省心省钱</span><span class="t-en">Labor-saving, worry-free, cost-saving</span></span><span><span class="t-zh">有效改善</span><span class="t-en">Effectively improves</span></span><span><span class="t-zh">优质原料</span><span class="t-en">Premium ingredients</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/nanhuaweikang.html" data-cat="pigeon" data-name="南华维康 NanHuaWeiKang" data-search="南华维康 NanHuaWeiKang 复合维生素 B 可溶性粉 Compound Vitamin B Soluble Powder B 族维生素缺乏 Vitamin B Complex Deficiency B 族维生素 多发性神经炎 消化障碍 癞皮病口腔炎 Vitamin B complex Multiple neuritis Digestive disorders Pellagra stomatitis">
+</a><a class="product" href="products/nanhuaweikang.html" data-cat="pigeon" data-binding="other" data-name="南华维康 NanHuaWeiKang" data-search="南华维康 NanHuaWeiKang 复合维生素 B 可溶性粉 Compound Vitamin B Soluble Powder B 族维生素缺乏 Vitamin B Complex Deficiency B 族维生素 多发性神经炎 消化障碍 癞皮病口腔炎 Vitamin B complex Multiple neuritis Digestive disorders Pellagra stomatitis">
   <div class="img" data-zoom><img src="assets/img/prod/prod_nanhuaweikang.jpg" alt="南华维康" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -212,7 +213,7 @@
     <div class="claims"><span><span class="t-zh">B 族维生素</span><span class="t-en">Vitamin B complex</span></span><span><span class="t-zh">多发性神经炎</span><span class="t-en">Multiple neuritis</span></span><span><span class="t-zh">消化障碍</span><span class="t-en">Digestive disorders</span></span><span><span class="t-zh">癞皮病口腔炎</span><span class="t-en">Pellagra stomatitis</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/wutan.html" data-cat="pigeon" data-name="戊二醛癸甲溴铵溶液 Glutaraldehyde-Deciquam" data-search="戊二醛癸甲溴铵溶液 Glutaraldehyde-Deciquam 消毒药 Disinfectant 环境消毒 Environmental Disinfection 广谱消毒 细菌芽孢 真菌病毒 养殖场/种蛋 Broad-spectrum disinfection Bacterial spores Fungi and viruses Farms / hatching eggs">
+</a><a class="product" href="products/wutan.html" data-cat="pigeon" data-binding="other" data-name="戊二醛癸甲溴铵溶液 Glutaraldehyde-Deciquam" data-search="戊二醛癸甲溴铵溶液 Glutaraldehyde-Deciquam 消毒药 Disinfectant 环境消毒 Environmental Disinfection 广谱消毒 细菌芽孢 真菌病毒 养殖场/种蛋 Broad-spectrum disinfection Bacterial spores Fungi and viruses Farms / hatching eggs">
   <div class="img" data-zoom><img src="assets/img/prod/prod_wutan.jpg" alt="戊二醛癸甲溴铵溶液" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -221,7 +222,7 @@
     <div class="claims"><span><span class="t-zh">广谱消毒</span><span class="t-en">Broad-spectrum disinfection</span></span><span><span class="t-zh">细菌芽孢</span><span class="t-en">Bacterial spores</span></span><span><span class="t-zh">真菌病毒</span><span class="t-en">Fungi and viruses</span></span><span><span class="t-zh">养殖场/种蛋</span><span class="t-en">Farms / hatching eggs</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/dikang.html" data-cat="pigeon" data-name="海泰滴康 HaiTai DiKang" data-search="海泰滴康 HaiTai DiKang 地美硝唑预混剂 Dimetridazole Premix 滴虫病 / 密螺旋体 Trichomoniasis / Spirochetes 抗原虫药 广谱抗菌 密螺旋体 组织滴虫 Antiprotozoal drug Broad-spectrum antibacterial Spirochetes Histomonas">
+</a><a class="product" href="products/dikang.html" data-cat="pigeon" data-binding="other" data-name="海泰滴康 HaiTai DiKang" data-search="海泰滴康 HaiTai DiKang 地美硝唑预混剂 Dimetridazole Premix 滴虫病 / 密螺旋体 Trichomoniasis / Spirochetes 抗原虫药 广谱抗菌 密螺旋体 组织滴虫 Antiprotozoal drug Broad-spectrum antibacterial Spirochetes Histomonas">
   <div class="img" data-zoom><img src="assets/img/prod/prod_dikang.jpg" alt="海泰滴康" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -230,7 +231,7 @@
     <div class="claims"><span><span class="t-zh">抗原虫药</span><span class="t-en">Antiprotozoal drug</span></span><span><span class="t-zh">广谱抗菌</span><span class="t-en">Broad-spectrum antibacterial</span></span><span><span class="t-zh">密螺旋体</span><span class="t-en">Spirochetes</span></span><span><span class="t-zh">组织滴虫</span><span class="t-en">Histomonas</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/koufu.html" data-cat="pigeon" data-name="口服补液盐 Oral Rehydration Salt" data-search="口服补液盐 Oral Rehydration Salt 电解质补充药 Electrolyte Supplement 脱水 / 电解质失衡 Dehydration / Electrolyte Imbalance 电解质补充 调节酸碱平衡 热应激 腹泻纠正 Electrolyte supplement Regulates acid-base balance Heat stress Diarrhea correction">
+</a><a class="product" href="products/koufu.html" data-cat="pigeon" data-binding="other" data-name="口服补液盐 Oral Rehydration Salt" data-search="口服补液盐 Oral Rehydration Salt 电解质补充药 Electrolyte Supplement 脱水 / 电解质失衡 Dehydration / Electrolyte Imbalance 电解质补充 调节酸碱平衡 热应激 腹泻纠正 Electrolyte supplement Regulates acid-base balance Heat stress Diarrhea correction">
   <div class="img" data-zoom><img src="assets/img/prod/prod_koufu.jpg" alt="口服补液盐" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -239,7 +240,7 @@
     <div class="claims"><span><span class="t-zh">电解质补充</span><span class="t-en">Electrolyte supplement</span></span><span><span class="t-zh">调节酸碱平衡</span><span class="t-en">Regulates acid-base balance</span></span><span><span class="t-zh">热应激</span><span class="t-en">Heat stress</span></span><span><span class="t-zh">腹泻纠正</span><span class="t-en">Diarrhea correction</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/hongtailai.html" data-cat="fish" data-name="虹泰莱 HongTaiLai" data-search="虹泰莱 HongTaiLai 复合预混合饲料 VII（A 包 + B 包包裹材料） Compound Premix Feed VII (Packet A + Packet B Coating Material) 蛙虹彩病毒（RSIV） Frog Iridovirus (RSIV) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
+</a><a class="product" href="products/hongtailai.html" data-cat="fish" data-binding="binding" data-name="虹泰莱 HongTaiLai" data-search="虹泰莱 HongTaiLai 复合预混合饲料 VII（A 包 + B 包包裹材料） Compound Premix Feed VII (Packet A + Packet B Coating Material) 蛙虹彩病毒（RSIV） Frog Iridovirus (RSIV) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/hongtailai.jpg" alt="虹泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></div>
@@ -248,7 +249,7 @@
     <div class="claims"><span><span class="t-zh">提高免疫力</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">抗病毒</span><span class="t-en">Antiviral</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/shentailai.html" data-cat="fish" data-name="申泰莱 ShenTaiLai" data-search="申泰莱 ShenTaiLai 复合预混合饲料 X（A 包 + B 包包裹材料） Compound Premix Feed X (Packet A + Packet B Coating Material) 神经坏死病毒（NNV） Nervous Necrosis Virus (NNV) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
+</a><a class="product" href="products/shentailai.html" data-cat="fish" data-binding="binding" data-name="申泰莱 ShenTaiLai" data-search="申泰莱 ShenTaiLai 复合预混合饲料 X（A 包 + B 包包裹材料） Compound Premix Feed X (Packet A + Packet B Coating Material) 神经坏死病毒（NNV） Nervous Necrosis Virus (NNV) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/shentailai.jpg" alt="申泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></div>
@@ -257,7 +258,7 @@
     <div class="claims"><span><span class="t-zh">提高免疫力</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">抗病毒</span><span class="t-en">Antiviral</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/zhongtailai.html" data-cat="fish" data-name="仲泰莱 ZhongTaiLai" data-search="仲泰莱 ZhongTaiLai 复合预混合饲料 XII（A 包 + B 包包裹材料） Compound Premix Feed XII (Packet A + Packet B Coating Material) 传染性脾肾坏死病（ISKNV） Infectious Spleen and Kidney Necrosis Virus (ISKNV) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
+</a><a class="product" href="products/zhongtailai.html" data-cat="fish" data-binding="binding" data-name="仲泰莱 ZhongTaiLai" data-search="仲泰莱 ZhongTaiLai 复合预混合饲料 XII（A 包 + B 包包裹材料） Compound Premix Feed XII (Packet A + Packet B Coating Material) 传染性脾肾坏死病（ISKNV） Infectious Spleen and Kidney Necrosis Virus (ISKNV) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/zhongtailai.jpg" alt="仲泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></div>
@@ -266,7 +267,7 @@
     <div class="claims"><span><span class="t-zh">提高免疫力</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">抗病毒</span><span class="t-en">Antiviral</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/dantailai.html" data-cat="fish" data-name="丹泰莱 DanTaiLai" data-search="丹泰莱 DanTaiLai 复合预混合饲料 VIII（A 包 + B 包包裹材料） Compound Premix Feed VIII (Packet A + Packet B Coating Material) 鱼用病毒结合蛋白 Viral Binding Protein (Fish) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
+</a><a class="product" href="products/dantailai.html" data-cat="fish" data-binding="binding" data-name="丹泰莱 DanTaiLai" data-search="丹泰莱 DanTaiLai 复合预混合饲料 VIII（A 包 + B 包包裹材料） Compound Premix Feed VIII (Packet A + Packet B Coating Material) 鱼用病毒结合蛋白 Viral Binding Protein (Fish) 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/dantailai.jpg" alt="丹泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></div>
@@ -275,7 +276,7 @@
     <div class="claims"><span><span class="t-zh">提高免疫力</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">抗病毒</span><span class="t-en">Antiviral</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/yubaotai.html" data-cat="fish" data-name="鱼宝泰 YuBaoTai" data-search="鱼宝泰 YuBaoTai 氟苯尼考粉（水产用） Florfenicol Powder (Aquaculture) · Veterinary Prescription Drug 诺卡氏菌病 Nocardiosis 诺卡氏菌 反向包裹 减少耐药 Nocardia Reverse encapsulation Reduces drug resistance">
+</a><a class="product" href="products/yubaotai.html" data-cat="fish" data-binding="binding" data-name="鱼宝泰 YuBaoTai" data-search="鱼宝泰 YuBaoTai 氟苯尼考粉（水产用） Florfenicol Powder (Aquaculture) · Veterinary Prescription Drug 诺卡氏菌病 Nocardiosis 诺卡氏菌 反向包裹 减少耐药 Nocardia Reverse encapsulation Reduces drug resistance">
   <div class="img" data-zoom><img src="assets/img/aqua/yubaotai.jpg" alt="鱼宝泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></div>
@@ -284,7 +285,7 @@
     <div class="claims"><span><span class="t-zh">诺卡氏菌</span><span class="t-en">Nocardia</span></span><span><span class="t-zh">反向包裹</span><span class="t-en">Reverse encapsulation</span></span><span><span class="t-zh">减少耐药</span><span class="t-en">Reduces drug resistance</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/baozhentai_fish.html" data-cat="fish" data-name="包珍泰 BaoZhenTai (Fish)" data-search="包珍泰 BaoZhenTai (Fish) 复合预混合饲料 VI（A 包 + B 包包裹材料） Compound Premix Feed VI (Packet A + Packet B Coating Material) 鱼用疱疹病毒 Fish Herpesvirus 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
+</a><a class="product" href="products/baozhentai_fish.html" data-cat="fish" data-binding="binding" data-name="包珍泰 BaoZhenTai (Fish)" data-search="包珍泰 BaoZhenTai (Fish) 复合预混合饲料 VI（A 包 + B 包包裹材料） Compound Premix Feed VI (Packet A + Packet B Coating Material) 鱼用疱疹病毒 Fish Herpesvirus 提高免疫力 抗病毒 无抗养殖 Boosts immunity Antiviral Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/baozhentai_aqua.jpg" alt="包珍泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鱼用</span><span class="t-en">Fish</span></div>
@@ -293,7 +294,7 @@
     <div class="claims"><span><span class="t-zh">提高免疫力</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">抗病毒</span><span class="t-en">Antiviral</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/watailei.html" data-cat="frog" data-name="蛙泰莱 WaTaiLei" data-search="蛙泰莱 WaTaiLei 复合预混合饲料 IV（A 包 + B 包包裹材料） Compound Premix Feed IV (Packet A + Packet B Coating Material) 歪头病（黄杆菌脑神经感染） Wry-neck Disease (Flavobacterium neuroinfection) 黄杆菌 歪头病 细菌粘附蛋白 Flavobacterium Wry-neck disease Bacterial adhesion protein">
+</a><a class="product" href="products/watailei.html" data-cat="frog" data-binding="binding" data-name="蛙泰莱 WaTaiLei" data-search="蛙泰莱 WaTaiLei 复合预混合饲料 IV（A 包 + B 包包裹材料） Compound Premix Feed IV (Packet A + Packet B Coating Material) 歪头病（黄杆菌脑神经感染） Wry-neck Disease (Flavobacterium neuroinfection) 黄杆菌 歪头病 细菌粘附蛋白 Flavobacterium Wry-neck disease Bacterial adhesion protein">
   <div class="img" data-zoom><img src="assets/img/aqua/watailei.jpg" alt="蛙泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">蛙用</span><span class="t-en">Frog</span></div>
@@ -302,7 +303,7 @@
     <div class="claims"><span><span class="t-zh">黄杆菌</span><span class="t-en">Flavobacterium</span></span><span><span class="t-zh">歪头病</span><span class="t-en">Wry-neck disease</span></span><span><span class="t-zh">细菌粘附蛋白</span><span class="t-en">Bacterial adhesion protein</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/wabaotai.html" data-cat="frog" data-name="蛙宝泰 WaBaoTai" data-search="蛙宝泰 WaBaoTai 水产用抗生素（独创反向包裹技术） Aquaculture Antibiotic (Proprietary Reverse Encapsulation Technology) 急性细菌病（红腿/烂皮/腹水） Acute Bacterial Disease (Red Leg / Skin Ulcer / Ascites) 独创反向包裹 降低药残 控制耐药 Proprietary reverse encapsulation Reduces drug residue Controls drug resistance">
+</a><a class="product" href="products/wabaotai.html" data-cat="frog" data-binding="binding" data-name="蛙宝泰 WaBaoTai" data-search="蛙宝泰 WaBaoTai 水产用抗生素（独创反向包裹技术） Aquaculture Antibiotic (Proprietary Reverse Encapsulation Technology) 急性细菌病（红腿/烂皮/腹水） Acute Bacterial Disease (Red Leg / Skin Ulcer / Ascites) 独创反向包裹 降低药残 控制耐药 Proprietary reverse encapsulation Reduces drug residue Controls drug resistance">
   <div class="img" data-zoom><img src="assets/img/aqua/wabaotai.jpg" alt="蛙宝泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">蛙用</span><span class="t-en">Frog</span></div>
@@ -311,7 +312,7 @@
     <div class="claims"><span><span class="t-zh">独创反向包裹</span><span class="t-en">Proprietary reverse encapsulation</span></span><span><span class="t-zh">降低药残</span><span class="t-en">Reduces drug residue</span></span><span><span class="t-zh">控制耐药</span><span class="t-en">Controls drug resistance</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/wataida.html" data-cat="frog" data-name="蛙泰达 WaTaiDa" data-search="蛙泰达 WaTaiDa 复合预混合饲料 VI Compound Premix Feed VI 红腿 / 烂皮 / 胃肠炎 Red Leg / Skin Ulcer / Gastroenteritis 气单胞菌 链球菌 红腿烂皮胃肠炎 Aeromonas Streptococcus Red leg / skin ulcer / gastroenteritis">
+</a><a class="product" href="products/wataida.html" data-cat="frog" data-binding="binding" data-name="蛙泰达 WaTaiDa" data-search="蛙泰达 WaTaiDa 复合预混合饲料 VI Compound Premix Feed VI 红腿 / 烂皮 / 胃肠炎 Red Leg / Skin Ulcer / Gastroenteritis 气单胞菌 链球菌 红腿烂皮胃肠炎 Aeromonas Streptococcus Red leg / skin ulcer / gastroenteritis">
   <div class="img" data-zoom><img src="assets/img/aqua/wataida.jpg" alt="蛙泰达" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">蛙用</span><span class="t-en">Frog</span></div>
@@ -320,7 +321,7 @@
     <div class="claims"><span><span class="t-zh">气单胞菌</span><span class="t-en">Aeromonas</span></span><span><span class="t-zh">链球菌</span><span class="t-en">Streptococcus</span></span><span><span class="t-zh">红腿烂皮胃肠炎</span><span class="t-en">Red leg / skin ulcer / gastroenteritis</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/hutailai.html" data-cat="shrimp" data-name="弧泰莱 HuTaiLai" data-search="弧泰莱 HuTaiLai 复合预混合饲料 XI Compound Premix Feed XI 弧菌病 Vibriosis 虾弧菌 黏附蛋白 天然杀菌 Shrimp Vibrio Adhesion protein Natural bactericide">
+</a><a class="product" href="products/hutailai.html" data-cat="shrimp" data-binding="binding" data-name="弧泰莱 HuTaiLai" data-search="弧泰莱 HuTaiLai 复合预混合饲料 XI Compound Premix Feed XI 弧菌病 Vibriosis 虾弧菌 黏附蛋白 天然杀菌 Shrimp Vibrio Adhesion protein Natural bactericide">
   <div class="img" data-zoom><img src="assets/img/aqua/hutailai.jpg" alt="弧泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">虾用</span><span class="t-en">Shrimp</span></div>
@@ -329,7 +330,7 @@
     <div class="claims"><span><span class="t-zh">虾弧菌</span><span class="t-en">Shrimp Vibrio</span></span><span><span class="t-zh">黏附蛋白</span><span class="t-en">Adhesion protein</span></span><span><span class="t-zh">天然杀菌</span><span class="t-en">Natural bactericide</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/baotailai.html" data-cat="shrimp" data-name="包泰莱 BaoTaiLai" data-search="包泰莱 BaoTaiLai 复合预混合饲料 XV Compound Premix Feed XV 肝肠孢子虫 Hepatointestinal Microsporidiosis 肝肠孢子虫 黏附蛋白 天然杀虫 Hepatointestinal microsporidia Adhesion protein Natural parasiticide">
+</a><a class="product" href="products/baotailai.html" data-cat="shrimp" data-binding="binding" data-name="包泰莱 BaoTaiLai" data-search="包泰莱 BaoTaiLai 复合预混合饲料 XV Compound Premix Feed XV 肝肠孢子虫 Hepatointestinal Microsporidiosis 肝肠孢子虫 黏附蛋白 天然杀虫 Hepatointestinal microsporidia Adhesion protein Natural parasiticide">
   <div class="img" data-zoom><img src="assets/img/aqua/baotailai.jpg" alt="包泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">虾用</span><span class="t-en">Shrimp</span></div>
@@ -338,7 +339,7 @@
     <div class="claims"><span><span class="t-zh">肝肠孢子虫</span><span class="t-en">Hepatointestinal microsporidia</span></span><span><span class="t-zh">黏附蛋白</span><span class="t-en">Adhesion protein</span></span><span><span class="t-zh">天然杀虫</span><span class="t-en">Natural parasiticide</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xiahongtai.html" data-cat="shrimp" data-name="虾虹泰 XiaHongTai" data-search="虾虹泰 XiaHongTai 复合预混合饲料 XVII Compound Premix Feed XVII 虹彩病毒 Iridovirus 虾虹彩病毒 提高免疫 无抗养殖 Shrimp iridovirus Boosts immunity Antibiotic-free farming">
+</a><a class="product" href="products/xiahongtai.html" data-cat="shrimp" data-binding="binding" data-name="虾虹泰 XiaHongTai" data-search="虾虹泰 XiaHongTai 复合预混合饲料 XVII Compound Premix Feed XVII 虹彩病毒 Iridovirus 虾虹彩病毒 提高免疫 无抗养殖 Shrimp iridovirus Boosts immunity Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/xiahongtai.jpg" alt="虾虹泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">虾用</span><span class="t-en">Shrimp</span></div>
@@ -347,7 +348,7 @@
     <div class="claims"><span><span class="t-zh">虾虹彩病毒</span><span class="t-en">Shrimp iridovirus</span></span><span><span class="t-zh">提高免疫</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xiajitai.html" data-cat="shrimp" data-name="虾吉泰 XiaJiTai" data-search="虾吉泰 XiaJiTai 复合预混合饲料 XIX Compound Premix Feed XIX 肌肉坏死病毒 Muscle Necrosis Virus 虾肌肉坏死病毒 提高免疫 无抗养殖 Shrimp muscle necrosis virus Boosts immunity Antibiotic-free farming">
+</a><a class="product" href="products/xiajitai.html" data-cat="shrimp" data-binding="binding" data-name="虾吉泰 XiaJiTai" data-search="虾吉泰 XiaJiTai 复合预混合饲料 XIX Compound Premix Feed XIX 肌肉坏死病毒 Muscle Necrosis Virus 虾肌肉坏死病毒 提高免疫 无抗养殖 Shrimp muscle necrosis virus Boosts immunity Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/xiajitai.jpg" alt="虾吉泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">虾用</span><span class="t-en">Shrimp</span></div>
@@ -356,7 +357,7 @@
     <div class="claims"><span><span class="t-zh">虾肌肉坏死病毒</span><span class="t-en">Shrimp muscle necrosis virus</span></span><span><span class="t-zh">提高免疫</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xiabantai.html" data-cat="shrimp" data-name="虾斑泰 XiaBanTai" data-search="虾斑泰 XiaBanTai 复合预混合饲料 XVIII Compound Premix Feed XVIII 白斑病毒（WSSV） White Spot Syndrome Virus (WSSV) 虾白斑病毒 提高免疫 无抗养殖 Shrimp white spot virus Boosts immunity Antibiotic-free farming">
+</a><a class="product" href="products/xiabantai.html" data-cat="shrimp" data-binding="binding" data-name="虾斑泰 XiaBanTai" data-search="虾斑泰 XiaBanTai 复合预混合饲料 XVIII Compound Premix Feed XVIII 白斑病毒（WSSV） White Spot Syndrome Virus (WSSV) 虾白斑病毒 提高免疫 无抗养殖 Shrimp white spot virus Boosts immunity Antibiotic-free farming">
   <div class="img" data-zoom><img src="assets/img/aqua/xiabantai.jpg" alt="虾斑泰" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">虾用</span><span class="t-en">Shrimp</span></div>
@@ -365,34 +366,34 @@
     <div class="claims"><span><span class="t-zh">虾白斑病毒</span><span class="t-en">Shrimp white spot virus</span></span><span><span class="t-zh">提高免疫</span><span class="t-en">Boosts immunity</span></span><span><span class="t-zh">无抗养殖</span><span class="t-en">Antibiotic-free farming</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qinbaotai.html" data-cat="live" data-name="禽宝泰 QinBaoTai" data-search="禽宝泰 QinBaoTai 维生素预混合饲料 Ⅰ（禽用） Vitamin Premix Feed I (Poultry) 免疫抑制 / 病毒防控 Immune Suppression / Viral Control 摆脱免疫抑制 长效保护 60 天+ 激活免疫系统 降低死淘率 Overcomes immune suppression Long-lasting protection 60+ days Activates immune system Reduces mortality/culling rate">
+</a><a class="product" href="products/qinbaotai.html" data-cat="broiler" data-binding="binding" data-name="禽宝泰 QinBaoTai" data-search="禽宝泰 QinBaoTai 维生素预混合饲料 Ⅰ（禽用） Vitamin Premix Feed I (Poultry) 免疫抑制 / 病毒防控 Immune Suppression / Viral Control 摆脱免疫抑制 长效保护 60 天+ 激活免疫系统 降低死淘率 Overcomes immune suppression Long-lasting protection 60+ days Activates immune system Reduces mortality/culling rate">
   <div class="img" data-zoom><img src="assets/img/prod/prod_qinbaotai_pdf.jpg" alt="禽宝泰" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">畜禽用</span><span class="t-en">Livestock</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">禽宝泰</span><span class="t-en">QinBaoTai</span></h5>
     <div class="subname"><span class="t-zh">维生素预混合饲料 Ⅰ（禽用）</span><span class="t-en">Vitamin Premix Feed I (Poultry)</span></div>
     <div class="claims"><span><span class="t-zh">摆脱免疫抑制</span><span class="t-en">Overcomes immune suppression</span></span><span><span class="t-zh">长效保护 60 天+</span><span class="t-en">Long-lasting protection 60+ days</span></span><span><span class="t-zh">激活免疫系统</span><span class="t-en">Activates immune system</span></span><span><span class="t-zh">降低死淘率</span><span class="t-en">Reduces mortality/culling rate</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xubaotai.html" data-cat="live" data-name="畜宝泰 XuBaoTai" data-search="畜宝泰 XuBaoTai 维生素预混合饲料（畜用） Vitamin Premix Feed (Livestock) 免疫抑制 / 腹泻 Immune Suppression / Diarrhea 摆脱免疫抑制 防腹泻保生长 长效保护 60 天+ 降低死淘率 Overcomes immune suppression Prevents diarrhea, protects growth Long-lasting protection 60+ days Reduces mortality/culling rate">
+</a><a class="product" href="products/xubaotai.html" data-cat="ruminant" data-binding="binding" data-name="畜宝泰 XuBaoTai" data-search="畜宝泰 XuBaoTai 维生素预混合饲料（畜用） Vitamin Premix Feed (Livestock) 免疫抑制 / 腹泻 Immune Suppression / Diarrhea 摆脱免疫抑制 防腹泻保生长 长效保护 60 天+ 降低死淘率 Overcomes immune suppression Prevents diarrhea, protects growth Long-lasting protection 60+ days Reduces mortality/culling rate">
   <div class="img" data-zoom><img src="assets/img/prod/prod_xubaotai_box.jpg" alt="畜宝泰" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">畜禽用</span><span class="t-en">Livestock</span></div>
+    <div class="cat"><span class="t-zh">牛/羊用</span><span class="t-en">Cattle/Sheep</span></div>
     <h5><span class="t-zh">畜宝泰</span><span class="t-en">XuBaoTai</span></h5>
     <div class="subname"><span class="t-zh">维生素预混合饲料（畜用）</span><span class="t-en">Vitamin Premix Feed (Livestock)</span></div>
     <div class="claims"><span><span class="t-zh">摆脱免疫抑制</span><span class="t-en">Overcomes immune suppression</span></span><span><span class="t-zh">防腹泻保生长</span><span class="t-en">Prevents diarrhea, protects growth</span></span><span><span class="t-zh">长效保护 60 天+</span><span class="t-en">Long-lasting protection 60+ days</span></span><span><span class="t-zh">降低死淘率</span><span class="t-en">Reduces mortality/culling rate</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qintai_live.html" data-cat="live" data-name="禽泰安 QinTaiAn (Binding Protein)" data-search="禽泰安 QinTaiAn (Binding Protein) 家禽病毒结合蛋白（维生素预混合饲料 Ⅰ） Poultry Viral Binding Protein (Vitamin Premix Feed I) 家禽病毒病 Poultry Viral Disease 广谱通用 直接阻断感染 组合高效 孕产蛋可用 Broad-spectrum general use Directly blocks infection Highly effective in combination Safe for breeding/laying birds">
+</a><a class="product" href="products/qintai_live.html" data-cat="broiler" data-binding="binding" data-name="禽泰安 QinTaiAn (Binding Protein)" data-search="禽泰安 QinTaiAn (Binding Protein) 家禽病毒结合蛋白（维生素预混合饲料 Ⅰ） Poultry Viral Binding Protein (Vitamin Premix Feed I) 家禽病毒病 Poultry Viral Disease 广谱通用 直接阻断感染 组合高效 孕产蛋可用 Broad-spectrum general use Directly blocks infection Highly effective in combination Safe for breeding/laying birds">
   <div class="img" data-zoom><img src="assets/img/prod/prod_qintai_an.jpg" alt="禽泰安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">畜禽用</span><span class="t-en">Livestock</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">禽泰安</span><span class="t-en">QinTaiAn (Binding Protein)</span></h5>
     <div class="subname"><span class="t-zh">家禽病毒结合蛋白（维生素预混合饲料 Ⅰ）</span><span class="t-en">Poultry Viral Binding Protein (Vitamin Premix Feed I)</span></div>
     <div class="claims"><span><span class="t-zh">广谱通用</span><span class="t-en">Broad-spectrum general use</span></span><span><span class="t-zh">直接阻断感染</span><span class="t-en">Directly blocks infection</span></span><span><span class="t-zh">组合高效</span><span class="t-en">Highly effective in combination</span></span><span><span class="t-zh">孕产蛋可用</span><span class="t-en">Safe for breeding/laying birds</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/niubashigan.html" data-cat="ruminant" data-name="牛多杀性巴氏杆菌病灭活疫苗 Bovine Pasteurella Vaccine" data-search="牛多杀性巴氏杆菌病灭活疫苗 Bovine Pasteurella Vaccine 灭活疫苗 Inactivated Vaccine 牛多杀性巴氏杆菌病（牛呼吸道肺炎） Bovine Pasteurellosis (Respiratory Pneumonia) 牛巴氏杆菌病 呼吸道疾病 灭活疫苗 Bovine pasteurellosis Respiratory disease Inactivated vaccine">
+</a><a class="product" href="products/niubashigan.html" data-cat="ruminant" data-binding="vaccine" data-name="牛多杀性巴氏杆菌病灭活疫苗 Bovine Pasteurella Vaccine" data-search="牛多杀性巴氏杆菌病灭活疫苗 Bovine Pasteurella Vaccine 灭活疫苗 Inactivated Vaccine 牛多杀性巴氏杆菌病（牛呼吸道肺炎） Bovine Pasteurellosis (Respiratory Pneumonia) 牛巴氏杆菌病 呼吸道疾病 灭活疫苗 Bovine pasteurellosis Respiratory disease Inactivated vaccine">
   <div class="img" data-zoom><img src="assets/img/prod/prod_niubashigan.jpg" alt="牛多杀性巴氏杆菌病灭活疫苗" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">牛/羊用</span><span class="t-en">Cattle/Sheep</span></div>
@@ -401,7 +402,7 @@
     <div class="claims"><span><span class="t-zh">牛巴氏杆菌病</span><span class="t-en">Bovine pasteurellosis</span></span><span><span class="t-zh">呼吸道疾病</span><span class="t-en">Respiratory disease</span></span><span><span class="t-zh">灭活疫苗</span><span class="t-en">Inactivated vaccine</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/niushahotan.html" data-cat="ruminant" data-name="牛副伤寒灭活疫苗 Bovine Paratyphoid Vaccine" data-search="牛副伤寒灭活疫苗 Bovine Paratyphoid Vaccine 灭活疫苗 Inactivated Vaccine 牛副伤寒（沙门氏菌性肠炎） Bovine Paratyphoid (Salmonella enteritis) 牛副伤寒 沙门氏菌肠炎 灭活疫苗 Bovine paratyphoid Salmonella enteritis Inactivated vaccine">
+</a><a class="product" href="products/niushahotan.html" data-cat="ruminant" data-binding="vaccine" data-name="牛副伤寒灭活疫苗 Bovine Paratyphoid Vaccine" data-search="牛副伤寒灭活疫苗 Bovine Paratyphoid Vaccine 灭活疫苗 Inactivated Vaccine 牛副伤寒（沙门氏菌性肠炎） Bovine Paratyphoid (Salmonella enteritis) 牛副伤寒 沙门氏菌肠炎 灭活疫苗 Bovine paratyphoid Salmonella enteritis Inactivated vaccine">
   <div class="img" data-zoom><img src="assets/img/prod/prod_niushahotan.jpg" alt="牛副伤寒灭活疫苗" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">牛/羊用</span><span class="t-en">Cattle/Sheep</span></div>
@@ -410,7 +411,7 @@
     <div class="claims"><span><span class="t-zh">牛副伤寒</span><span class="t-en">Bovine paratyphoid</span></span><span><span class="t-zh">沙门氏菌肠炎</span><span class="t-en">Salmonella enteritis</span></span><span><span class="t-zh">灭活疫苗</span><span class="t-en">Inactivated vaccine</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/yangdachangganjun.html" data-cat="ruminant" data-name="羊大肠杆菌病灭活疫苗 Ovine Colibacillosis Vaccine" data-search="羊大肠杆菌病灭活疫苗 Ovine Colibacillosis Vaccine 灭活疫苗 Inactivated Vaccine 羊大肠杆菌病（腹泻/败血症） Ovine Colibacillosis (Diarrhea / Septicemia) 羊大肠杆菌病 腹泻/败血症 灭活疫苗 Ovine colibacillosis Diarrhea / Septicemia Inactivated vaccine">
+</a><a class="product" href="products/yangdachangganjun.html" data-cat="ruminant" data-binding="vaccine" data-name="羊大肠杆菌病灭活疫苗 Ovine Colibacillosis Vaccine" data-search="羊大肠杆菌病灭活疫苗 Ovine Colibacillosis Vaccine 灭活疫苗 Inactivated Vaccine 羊大肠杆菌病（腹泻/败血症） Ovine Colibacillosis (Diarrhea / Septicemia) 羊大肠杆菌病 腹泻/败血症 灭活疫苗 Ovine colibacillosis Diarrhea / Septicemia Inactivated vaccine">
   <div class="img" data-zoom><img src="assets/img/prod/prod_yangdachangganjun.jpg" alt="羊大肠杆菌病灭活疫苗" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">牛/羊用</span><span class="t-en">Cattle/Sheep</span></div>
@@ -419,7 +420,7 @@
     <div class="claims"><span><span class="t-zh">羊大肠杆菌病</span><span class="t-en">Ovine colibacillosis</span></span><span><span class="t-zh">腹泻/败血症</span><span class="t-en">Diarrhea / Septicemia</span></span><span><span class="t-zh">灭活疫苗</span><span class="t-en">Inactivated vaccine</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qizhongji.html" data-cat="ruminant" data-name="气肿疽灭活疫苗 Blackleg Vaccine" data-search="气肿疽灭活疫苗 Blackleg Vaccine 灭活疫苗 Inactivated Vaccine 气肿疽（黑腿病） Blackleg (Clostridium chauvoei) 气肿疽 黑腿病 牛/羊梭菌病 Blackleg Clostridial disease Cattle / Sheep">
+</a><a class="product" href="products/qizhongji.html" data-cat="ruminant" data-binding="vaccine" data-name="气肿疽灭活疫苗 Blackleg Vaccine" data-search="气肿疽灭活疫苗 Blackleg Vaccine 灭活疫苗 Inactivated Vaccine 气肿疽（黑腿病） Blackleg (Clostridium chauvoei) 气肿疽 黑腿病 牛/羊梭菌病 Blackleg Clostridial disease Cattle / Sheep">
   <div class="img" data-zoom><img src="assets/img/prod/prod_qizhongji.jpg" alt="气肿疽灭活疫苗" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">牛/羊用</span><span class="t-en">Cattle/Sheep</span></div>
@@ -428,7 +429,7 @@
     <div class="claims"><span><span class="t-zh">气肿疽</span><span class="t-en">Blackleg</span></span><span><span class="t-zh">黑腿病</span><span class="t-en">Clostridial disease</span></span><span><span class="t-zh">牛/羊梭菌病</span><span class="t-en">Cattle / Sheep</span></span></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/lantailai.html" data-cat="pig" data-name="蓝泰莱 LanTaiLai" data-search="蓝泰莱 LanTaiLai 灭活疫苗  猪繁殖与呼吸综合征（蓝耳病, PRRS, CH-1a 株） Porcine Reproductive and Respiratory Syndrome (PRRS)  ">
+</a><a class="product" href="products/lantailai.html" data-cat="pig" data-binding="vaccine" data-name="蓝泰莱 LanTaiLai" data-search="蓝泰莱 LanTaiLai 灭活疫苗  猪繁殖与呼吸综合征（蓝耳病, PRRS, CH-1a 株） Porcine Reproductive and Respiratory Syndrome (PRRS)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_lantailai.jpg" alt="蓝泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -437,7 +438,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/zhimian.html" data-cat="pig" data-name="智免组合 ZhiMian" data-search="智免组合 ZhiMian 套装（圆泰莱稀释稳泰莱+卫泰莱）  PCV2 + CSF + PR 三联防控 PCV2 + CSF + PR Combined Prevention  ">
+</a><a class="product" href="products/zhimian.html" data-cat="pig" data-binding="vaccine" data-name="智免组合 ZhiMian" data-search="智免组合 ZhiMian 套装（圆泰莱稀释稳泰莱+卫泰莱）  PCV2 + CSF + PR 三联防控 PCV2 + CSF + PR Combined Prevention  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_zhimian.jpg" alt="智免组合" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -446,7 +447,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/yuanzhifulai.html" data-cat="pig" data-name="圆支福泰莱 YuanZhiFuTaiLai" data-search="圆支福泰莱 YuanZhiFuTaiLai 灭活疫苗  猪支原体肺炎（气喘病, M. hyopneumoniae, ZY 株） Mycoplasma hyopneumoniae (Enzootic Pneumonia)  ">
+</a><a class="product" href="products/yuanzhifulai.html" data-cat="pig" data-binding="vaccine" data-name="圆支福泰莱 YuanZhiFuTaiLai" data-search="圆支福泰莱 YuanZhiFuTaiLai 灭活疫苗  猪支原体肺炎（气喘病, M. hyopneumoniae, ZY 株） Mycoplasma hyopneumoniae (Enzootic Pneumonia)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_yuanzhifulai.jpg" alt="圆支福泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -455,7 +456,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/yuantailai.html" data-cat="pig" data-name="圆泰莱 YuanTaiLai" data-search="圆泰莱 YuanTaiLai 灭活疫苗  猪圆环病毒 2 型（PCV2, SH 株） Porcine Circovirus Type 2 (PCV2)  ">
+</a><a class="product" href="products/yuantailai.html" data-cat="pig" data-binding="vaccine" data-name="圆泰莱 YuanTaiLai" data-search="圆泰莱 YuanTaiLai 灭活疫苗  猪圆环病毒 2 型（PCV2, SH 株） Porcine Circovirus Type 2 (PCV2)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_yuantailai.jpg" alt="圆泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -464,7 +465,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/wentailai_swine.html" data-cat="pig" data-name="稳泰莱 WenTaiLai (Swine)" data-search="稳泰莱 WenTaiLai (Swine) 活疫苗  猪瘟（CSF, C 株组织培养源） Classical Swine Fever (CSF)  ">
+</a><a class="product" href="products/wentailai_swine.html" data-cat="pig" data-binding="vaccine" data-name="稳泰莱 WenTaiLai (Swine)" data-search="稳泰莱 WenTaiLai (Swine) 活疫苗  猪瘟（CSF, C 株组织培养源） Classical Swine Fever (CSF)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_wentailai.jpg" alt="稳泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -473,7 +474,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/weitailai.html" data-cat="pig" data-name="卫泰莱 WeiTaiLai" data-search="卫泰莱 WeiTaiLai 活疫苗  伪狂犬（PR, Bartha-K61 株） Pseudorabies (PR)  ">
+</a><a class="product" href="products/weitailai.html" data-cat="pig" data-binding="vaccine" data-name="卫泰莱 WeiTaiLai" data-search="卫泰莱 WeiTaiLai 活疫苗  伪狂犬（PR, Bartha-K61 株） Pseudorabies (PR)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_weitailai.jpg" alt="卫泰莱" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -482,7 +483,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/helikang.html" data-cat="pig" data-name="合立康 HeLiKang" data-search="合立康 HeLiKang 活疫苗  猪多杀性巴氏杆菌病（猪肺疫, Pasteurella multocida, E0630 株） Porcine Pasteurella multocida  ">
+</a><a class="product" href="products/helikang.html" data-cat="pig" data-binding="vaccine" data-name="合立康 HeLiKang" data-search="合立康 HeLiKang 活疫苗  猪多杀性巴氏杆菌病（猪肺疫, Pasteurella multocida, E0630 株） Porcine Pasteurella multocida  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_helikang.jpg" alt="合立康" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -491,7 +492,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/zhudanduvaccine.html" data-cat="pig" data-name="猪丹毒活疫苗 ZhuDanDu (Swine Erysipelas Live)" data-search="猪丹毒活疫苗 ZhuDanDu (Swine Erysipelas Live) 活疫苗  猪丹毒（Swine Erysipelas, GC42 株） Swine Erysipelas  ">
+</a><a class="product" href="products/zhudanduvaccine.html" data-cat="pig" data-binding="vaccine" data-name="猪丹毒活疫苗 ZhuDanDu (Swine Erysipelas Live)" data-search="猪丹毒活疫苗 ZhuDanDu (Swine Erysipelas Live) 活疫苗  猪丹毒（Swine Erysipelas, GC42 株） Swine Erysipelas  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_trivalent.jpg" alt="猪丹毒活疫苗" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -500,7 +501,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/paratyphus.html" data-cat="pig" data-name="仔猪副伤寒活疫苗 Paratyphus Vaccine for Piglets (Live)" data-search="仔猪副伤寒活疫苗 Paratyphus Vaccine for Piglets (Live) 活疫苗  仔猪副伤寒（Paratyphus） Paratyphus in Piglets  ">
+</a><a class="product" href="products/paratyphus.html" data-cat="pig" data-binding="vaccine" data-name="仔猪副伤寒活疫苗 Paratyphus Vaccine for Piglets (Live)" data-search="仔猪副伤寒活疫苗 Paratyphus Vaccine for Piglets (Live) 活疫苗  仔猪副伤寒（Paratyphus） Paratyphus in Piglets  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_paratyphus.jpg" alt="仔猪副伤寒活疫苗" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -509,7 +510,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/lianlikang.html" data-cat="pig" data-name="联立康 LianLiKang" data-search="联立康 LianLiKang 活疫苗  猪败血性链球菌病（Streptococcosis Septicemia, St171 株） Swine Streptococcosis Septicemia  ">
+</a><a class="product" href="products/lianlikang.html" data-cat="pig" data-binding="vaccine" data-name="联立康 LianLiKang" data-search="联立康 LianLiKang 活疫苗  猪败血性链球菌病（Streptococcosis Septicemia, St171 株） Swine Streptococcosis Septicemia  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pig_lianlikang.jpg" alt="联立康" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">猪用</span><span class="t-en">Swine</span></div>
@@ -518,142 +519,142 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qintailai4f.html" data-cat="poultry" data-name="禽泰莱 4(F) QinTaiLai 4(F)" data-search="禽泰莱 4(F) QinTaiLai 4(F) 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND+AI(H9)+Adenovirus (La Sota+YT+QD)  ">
+</a><a class="product" href="products/qintailai4f.html" data-cat="universal" data-binding="vaccine" data-name="禽泰莱 4(F) QinTaiLai 4(F)" data-search="禽泰莱 4(F) QinTaiLai 4(F) 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND+AI(H9)+Adenovirus (La Sota+YT+QD)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p3_L.jpg" alt="禽泰莱 4(F)" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">通用（鸡用）</span><span class="t-en">Universal</span></div>
     <h5><span class="t-zh">禽泰莱 4(F)</span><span class="t-en">QinTaiLai 4(F)</span></h5>
     <div class="subname">三联灭活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qintailai5zf.html" data-cat="poultry" data-name="禽泰莱 5(ZF) QinTaiLai 5(ZF)" data-search="禽泰莱 5(ZF) QinTaiLai 5(ZF) 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND+AI(H9)+Adenovirus (La Sota+YT+QD)  ">
+</a><a class="product" href="products/qintailai5zf.html" data-cat="waterfowl" data-binding="vaccine" data-name="禽泰莱 5(ZF) QinTaiLai 5(ZF)" data-search="禽泰莱 5(ZF) QinTaiLai 5(ZF) 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND+AI(H9)+Adenovirus (La Sota+YT+QD)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p3_R.jpg" alt="禽泰莱 5(ZF)" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">水禽</span><span class="t-en">Waterfowl</span></div>
     <h5><span class="t-zh">禽泰莱 5(ZF)</span><span class="t-en">QinTaiLai 5(ZF)</span></h5>
     <div class="subname">三联灭活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinzhian.html" data-cat="poultry" data-name="欣支安 XinZhiAn" data-search="欣支安 XinZhiAn 二联活疫苗  新城疫+传染性支气管炎（HB1+H120 株） ND + IB (HB1 + H120)  ">
+</a><a class="product" href="products/xinzhian.html" data-cat="universal" data-binding="vaccine" data-name="欣支安 XinZhiAn" data-search="欣支安 XinZhiAn 二联活疫苗  新城疫+传染性支气管炎（HB1+H120 株） ND + IB (HB1 + H120)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p4_L.jpg" alt="欣支安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">通用（鸡用）</span><span class="t-en">Universal</span></div>
     <h5><span class="t-zh">欣支安</span><span class="t-en">XinZhiAn</span></h5>
     <div class="subname">二联活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinzhiliu.html" data-cat="poultry" data-name="新支流 XinZhiLiu" data-search="新支流 XinZhiLiu 三联灭活疫苗  新城疫+传支+禽流感(H9)（La Sota+M41+HZ 株） ND + IB + AI(H9) (La Sota + M41 + HZ)  ">
+</a><a class="product" href="products/xinzhiliu.html" data-cat="universal" data-binding="vaccine" data-name="新支流 XinZhiLiu" data-search="新支流 XinZhiLiu 三联灭活疫苗  新城疫+传支+禽流感(H9)（La Sota+M41+HZ 株） ND + IB + AI(H9) (La Sota + M41 + HZ)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p6_R.jpg" alt="新支流" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">通用（鸡用）</span><span class="t-en">Universal</span></div>
     <h5><span class="t-zh">新支流</span><span class="t-en">XinZhiLiu</span></h5>
     <div class="subname">三联灭活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinzhijianliu.html" data-cat="poultry" data-name="新支减流 XinZhiJianLiu" data-search="新支减流 XinZhiJianLiu 四联灭活疫苗  新城疫+传支+减蛋综合征+禽流感(H9)（La Sota+M41+HS25+HZ 株） ND + IB + EDS + AI(H9) (La Sota + M41 + HS25 + HZ)  ">
+</a><a class="product" href="products/xinzhijianliu.html" data-cat="layer" data-binding="vaccine" data-name="新支减流 XinZhiJianLiu" data-search="新支减流 XinZhiJianLiu 四联灭活疫苗  新城疫+传支+减蛋综合征+禽流感(H9)（La Sota+M41+HS25+HZ 株） ND + IB + EDS + AI(H9) (La Sota + M41 + HS25 + HZ)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p7_L.jpg" alt="新支减流" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">蛋鸡</span><span class="t-en">Layer</span></div>
     <h5><span class="t-zh">新支减流</span><span class="t-en">XinZhiJianLiu</span></h5>
     <div class="subname">四联灭活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinkean.html" data-cat="poultry" data-name="新可安 XinKeAn" data-search="新可安 XinKeAn 二联活疫苗  新城疫+传染性支气管炎（La Sota+H120 株） ND + IB (La Sota + H120)  ">
+</a><a class="product" href="products/xinkean.html" data-cat="broiler" data-binding="vaccine" data-name="新可安 XinKeAn" data-search="新可安 XinKeAn 二联活疫苗  新城疫+传染性支气管炎（La Sota+H120 株） ND + IB (La Sota + H120)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p8_L.jpg" alt="新可安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">新可安</span><span class="t-en">XinKeAn</span></h5>
     <div class="subname">二联活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/doulian.html" data-cat="poultry" data-name="都利安 DouLiAn" data-search="都利安 DouLiAn 活疫苗  鸡痘（Fowl Pox） Fowl Pox  ">
+</a><a class="product" href="products/doulian.html" data-cat="broiler" data-binding="vaccine" data-name="都利安 DouLiAn" data-search="都利安 DouLiAn 活疫苗  鸡痘（Fowl Pox） Fowl Pox  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p9_L.jpg" alt="都利安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">都利安</span><span class="t-en">DouLiAn</span></h5>
     <div class="subname">活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qinduosha.html" data-cat="poultry" data-name="禽多杀 QinDuoSha" data-search="禽多杀 QinDuoSha 灭活疫苗  禽多杀性巴氏杆菌病（Avian Pasteurella multocida, C48-2 株） Avian Pasteurella multocida (C48-2)  ">
+</a><a class="product" href="products/qinduosha.html" data-cat="broiler" data-binding="vaccine" data-name="禽多杀 QinDuoSha" data-search="禽多杀 QinDuoSha 灭活疫苗  禽多杀性巴氏杆菌病（Avian Pasteurella multocida, C48-2 株） Avian Pasteurella multocida (C48-2)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p10_R.jpg" alt="禽多杀" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">禽多杀</span><span class="t-en">QinDuoSha</span></h5>
     <div class="subname">灭活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/yalian.html" data-cat="poultry" data-name="雅利安 YaLiAn" data-search="雅利安 YaLiAn 活疫苗  鸭瘟（Duck Plague） Duck Plague  ">
+</a><a class="product" href="products/yalian.html" data-cat="waterfowl" data-binding="vaccine" data-name="雅利安 YaLiAn" data-search="雅利安 YaLiAn 活疫苗  鸭瘟（Duck Plague） Duck Plague  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p11_L.jpg" alt="雅利安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">水禽</span><span class="t-en">Waterfowl</span></div>
     <h5><span class="t-zh">雅利安</span><span class="t-en">YaLiAn</span></h5>
     <div class="subname">活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/falian.html" data-cat="poultry" data-name="法利安 FaLiAn" data-search="法利安 FaLiAn 活疫苗  传染性法氏囊病（IBD / Gumboro, B87 株） Infectious Bursal Disease (IBD / Gumboro, B87)  ">
+</a><a class="product" href="products/falian.html" data-cat="broiler" data-binding="vaccine" data-name="法利安 FaLiAn" data-search="法利安 FaLiAn 活疫苗  传染性法氏囊病（IBD / Gumboro, B87 株） Infectious Bursal Disease (IBD / Gumboro, B87)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p12_L.jpg" alt="法利安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">法利安</span><span class="t-en">FaLiAn</span></h5>
     <div class="subname">活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinlian.html" data-cat="poultry" data-name="新利安 XinLiAn" data-search="新利安 XinLiAn 活疫苗（中等毒力）  新城疫（CS2 株） Newcastle Disease (CS2, medium virulence)  ">
+</a><a class="product" href="products/xinlian.html" data-cat="layer" data-binding="vaccine" data-name="新利安 XinLiAn" data-search="新利安 XinLiAn 活疫苗（中等毒力）  新城疫（CS2 株） Newcastle Disease (CS2, medium virulence)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p12_R.jpg" alt="新利安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">蛋鸡</span><span class="t-en">Layer</span></div>
     <h5><span class="t-zh">新利安</span><span class="t-en">XinLiAn</span></h5>
     <div class="subname">活疫苗（中等毒力）</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinyian.html" data-cat="poultry" data-name="新易安 XinYiAn" data-search="新易安 XinYiAn 二联活疫苗  新城疫+传染性支气管炎（La Sota+H52 株） ND + IB (La Sota + H52)  ">
+</a><a class="product" href="products/xinyian.html" data-cat="layer" data-binding="vaccine" data-name="新易安 XinYiAn" data-search="新易安 XinYiAn 二联活疫苗  新城疫+传染性支气管炎（La Sota+H52 株） ND + IB (La Sota + H52)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p13_L.jpg" alt="新易安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">蛋鸡</span><span class="t-en">Layer</span></div>
     <h5><span class="t-zh">新易安</span><span class="t-en">XinYiAn</span></h5>
     <div class="subname">二联活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinbian.html" data-cat="poultry" data-name="新必安 XinBiAn" data-search="新必安 XinBiAn 活疫苗（弱毒）  新城疫（Clone 30 株） Newcastle Disease (Clone 30, mild virulence)  ">
+</a><a class="product" href="products/xinbian.html" data-cat="broiler" data-binding="vaccine" data-name="新必安 XinBiAn" data-search="新必安 XinBiAn 活疫苗（弱毒）  新城疫（Clone 30 株） Newcastle Disease (Clone 30, mild virulence)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p13_R.jpg" alt="新必安" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">新必安</span><span class="t-en">XinBiAn</span></h5>
     <div class="subname">活疫苗（弱毒）</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qintailai.html" data-cat="poultry" data-name="禽泰莱 QinTaiLai" data-search="禽泰莱 QinTaiLai 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND + AI(H9) + Adenovirus (La Sota + YT + QD)  ">
+</a><a class="product" href="products/qintailai.html" data-cat="broiler" data-binding="vaccine" data-name="禽泰莱 QinTaiLai" data-search="禽泰莱 QinTaiLai 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND + AI(H9) + Adenovirus (La Sota + YT + QD)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p9_R.jpg" alt="禽泰莱" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">肉鸡</span><span class="t-en">Broiler</span></div>
     <h5><span class="t-zh">禽泰莱</span><span class="t-en">QinTaiLai</span></h5>
     <div class="subname">三联灭活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/qintailai4h.html" data-cat="poultry" data-name="禽泰莱 4(H) QinTaiLai 4(H)" data-search="禽泰莱 4(H) QinTaiLai 4(H) 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND + AI(H9) + Adenovirus (La Sota + YT + QD)  ">
+</a><a class="product" href="products/qintailai4h.html" data-cat="universal" data-binding="vaccine" data-name="禽泰莱 4(H) QinTaiLai 4(H)" data-search="禽泰莱 4(H) QinTaiLai 4(H) 三联灭活疫苗  新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株） ND + AI(H9) + Adenovirus (La Sota + YT + QD)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_pou_p10_L.jpg" alt="禽泰莱 4(H)" loading="lazy"></div>
   <div class="body">
-    <div class="cat"><span class="t-zh">禽用</span><span class="t-en">Poultry</span></div>
+    <div class="cat"><span class="t-zh">通用（鸡用）</span><span class="t-en">Universal</span></div>
     <h5><span class="t-zh">禽泰莱 4(H)</span><span class="t-en">QinTaiLai 4(H)</span></h5>
     <div class="subname">三联灭活疫苗</div>
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinaowei_poultry.html" data-cat="pigeon" data-name="新奥威（禽用） XinAoWei (Poultry)" data-search="新奥威（禽用） XinAoWei (Poultry) 活疫苗  新城疫（V4/HB92 Clone, 鸡所有日龄） Newcastle Disease (V4 / HB92 Clone)  ">
+</a><a class="product" href="products/xinaowei_poultry.html" data-cat="pigeon" data-binding="vaccine" data-name="新奥威（禽用） XinAoWei (Poultry)" data-search="新奥威（禽用） XinAoWei (Poultry) 活疫苗  新城疫（V4/HB92 Clone, 鸡所有日龄） Newcastle Disease (V4 / HB92 Clone)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_xinaowei.jpg" alt="新奥威（禽用）" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -662,7 +663,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinsian_poultry.html" data-cat="pigeon" data-name="新思安（禽用） XinSiAn (Poultry)" data-search="新思安（禽用） XinSiAn (Poultry) 活疫苗  新城疫（La Sota 株） Newcastle Disease (La Sota)  ">
+</a><a class="product" href="products/xinsian_poultry.html" data-cat="pigeon" data-binding="vaccine" data-name="新思安（禽用） XinSiAn (Poultry)" data-search="新思安（禽用） XinSiAn (Poultry) 活疫苗  新城疫（La Sota 株） Newcastle Disease (La Sota)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_xinsian.jpg" alt="新思安（禽用）" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -671,7 +672,7 @@
     <div class="claims"></div>
     <span class="more"><span class="t-zh">查看详情 →</span><span class="t-en">View Details →</span></span>
   </div>
-</a><a class="product" href="products/xinliu_poultry.html" data-cat="pigeon" data-name="新流二联（禽用） XinLiu (Poultry)" data-search="新流二联（禽用） XinLiu (Poultry) 二联灭活疫苗  新城疫+禽流感(H9)（La Sota+WD 株） ND + AI(H9) (La Sota + WD)  ">
+</a><a class="product" href="products/xinliu_poultry.html" data-cat="pigeon" data-binding="vaccine" data-name="新流二联（禽用） XinLiu (Poultry)" data-search="新流二联（禽用） XinLiu (Poultry) 二联灭活疫苗  新城疫+禽流感(H9)（La Sota+WD 株） ND + AI(H9) (La Sota + WD)  ">
   <div class="img" data-zoom><img src="assets/img/prod/prod_xinliu.jpg" alt="新流二联（禽用）" loading="lazy"></div>
   <div class="body">
     <div class="cat"><span class="t-zh">鸽用</span><span class="t-en">Pigeon</span></div>
@@ -684,7 +685,7 @@
     <div class="empty" id="pEmpty" style="display:none;"><span class="t-zh">未找到匹配的产品，换个关键词试试。</span><span class="t-en">No matching products found. Try another keyword.</span></div>
   </div>
 </section>
-<script>window.__MATCHER__=[{"sp": "鳜鱼", "en": "Mandarin Fish", "sym": [{"n": "脾肾坏死 / ISKNV", "en": "Spleen-Kidney Necrosis / ISKNV", "id": "zhongtailai"}, {"n": "神经坏死 / NNV", "en": "Nervous Necrosis / NNV", "id": "shentailai"}, {"n": "蛙虹彩 / RSIV / 烂身溃疡", "en": "Frog Iridovirus / RSIV / Sores", "id": "hongtailai"}]}, {"sp": "鲈鱼", "en": "Sea Bass", "sym": [{"n": "蛙虹彩 / RSIV", "en": "Frog Iridovirus / RSIV", "id": "hongtailai"}]}, {"sp": "石斑鱼", "en": "Grouper", "sym": [{"n": "神经坏死 / NNV", "en": "Nervous Necrosis / NNV", "id": "shentailai"}]}, {"sp": "生鱼（乌鳢）", "en": "Snakehead", "sym": [{"n": "诺卡氏菌 / 结节烂身", "en": "Nocardiosis / Nodules & Sores", "id": "yubaotai"}]}, {"sp": "牛蛙", "en": "Bullfrog", "sym": [{"n": "歪头病 / 黄杆菌", "en": "Wry-neck / Flavobacterium", "id": "watailei"}, {"n": "红腿 / 烂皮 / 细菌病", "en": "Red Leg / Skin Ulcer / Bacterial", "id": "wabaotai"}]}, {"sp": "对虾", "en": "Shrimp", "sym": [{"n": "肝肠孢子虫", "en": "Hepatointestinal Microsporidia", "id": "baotailai"}, {"n": "白斑病毒 / WSSV", "en": "White Spot Virus / WSSV", "id": "xiabantai"}, {"n": "虹彩病毒", "en": "Iridovirus", "id": "xiahongtai"}, {"n": "肌肉坏死", "en": "Muscle Necrosis", "id": "xiajitai"}, {"n": "弧菌", "en": "Vibriosis", "id": "hutailai"}]}, {"sp": "猫", "en": "Cat", "sym": [{"n": "猫瘟 / FPV", "en": "FPV / Panleukopenia", "id": "wentailai"}, {"n": "疱疹", "en": "Herpes", "id": "baozhentai_cat"}, {"n": "杯状", "en": "Calici", "id": "beizhuangtai"}, {"n": "传腹 / FCoV", "en": "FIP / FCoV", "id": "futailai"}, {"n": "猫鼻支 / 泛白细胞减少", "en": "Feline Rhinotracheitis / Panleukopenia", "id": "taimiaoja"}]}, {"sp": "犬", "en": "Dog", "sym": [{"n": "犬瘟 / 细小 / 冠状", "en": "Distemper / Parvo / Corona", "id": "taiwangja"}]}, {"sp": "鸽", "en": "Pigeon", "sym": [{"n": "新城疫 / ND", "en": "Newcastle Disease / ND", "id": "xinaowei"}, {"n": "禽流感 H9", "en": "Avian Influenza H9", "id": "xinliu"}]}, {"sp": "牛", "en": "Cattle", "sym": [{"n": "巴氏杆菌病 / 肺炎", "en": "Pasteurellosis / Pneumonia", "id": "niubashigan"}, {"n": "副伤寒 / 肠炎", "en": "Paratyphoid / Enteritis", "id": "niushahotan"}, {"n": "气肿疽 / 黑腿病", "en": "Blackleg", "id": "qizhongji"}]}, {"sp": "羊", "en": "Sheep", "sym": [{"n": "大肠杆菌病 / 腹泻", "en": "Colibacillosis / Diarrhea", "id": "yangdachangganjun"}, {"n": "气肿疽 / 黑腿病", "en": "Blackleg", "id": "qizhongji"}]}];</script>
+<script>window.__MATCHER__=[{"sp": "鳜鱼", "en": "Mandarin Fish", "sym": [{"n": "脾肾坏死 / ISKNV", "en": "Spleen-Kidney Necrosis / ISKNV", "id": "zhongtailai"}, {"n": "神经坏死 / NNV", "en": "Nervous Necrosis / NNV", "id": "shentailai"}, {"n": "蛙虹彩 / RSIV / 烂身溃疡", "en": "Frog Iridovirus / RSIV / Sores", "id": "hongtailai"}]}, {"sp": "鲈鱼", "en": "Sea Bass", "sym": [{"n": "蛙虹彩 / RSIV", "en": "Frog Iridovirus / RSIV", "id": "hongtailai"}]}, {"sp": "石斑鱼", "en": "Grouper", "sym": [{"n": "神经坏死 / NNV", "en": "Nervous Necrosis / NNV", "id": "shentailai"}]}, {"sp": "生鱼（乌鳢）", "en": "Snakehead", "sym": [{"n": "诺卡氏菌 / 结节烂身", "en": "Nocardiosis / Nodules & Sores", "id": "yubaotai"}]}, {"sp": "牛蛙", "en": "Bullfrog", "sym": [{"n": "歪头病 / 黄杆菌", "en": "Wry-neck / Flavobacterium", "id": "watailei"}, {"n": "红腿 / 烂皮 / 细菌病", "en": "Red Leg / Skin Ulcer / Bacterial", "id": "wabaotai"}]}, {"sp": "对虾", "en": "Shrimp", "sym": [{"n": "肝肠孢子虫", "en": "Hepatointestinal Microsporidia", "id": "baotailai"}, {"n": "白斑病毒 / WSSV", "en": "White Spot Virus / WSSV", "id": "xiabantai"}, {"n": "虹彩病毒", "en": "Iridovirus", "id": "xiahongtai"}, {"n": "肌肉坏死", "en": "Muscle Necrosis", "id": "xiajitai"}, {"n": "弧菌", "en": "Vibriosis", "id": "hutailai"}]}, {"sp": "猫", "en": "Cat", "sym": [{"n": "猫瘟 / FPV", "en": "FPV / Panleukopenia", "id": "wentailai"}, {"n": "疱疹", "en": "Herpes", "id": "baozhentai_cat"}, {"n": "杯状", "en": "Calici", "id": "beizhuangtai"}, {"n": "传腹 / FCoV", "en": "FIP / FCoV", "id": "futailai"}, {"n": "猫鼻支 / 泛白细胞减少", "en": "Feline Rhinotracheitis / Panleukopenia", "id": "taimiaoja"}]}, {"sp": "犬", "en": "Dog", "sym": [{"n": "犬瘟 / 细小 / 冠状", "en": "Distemper / Parvo / Corona", "id": "taiwangja"}]}, {"sp": "猪", "en": "Swine", "sym": [{"n": "蓝耳 / PRRS", "en": "PRRS", "id": "lantailai"}, {"n": "圆环+猪瘟+伪狂犬 / 三联", "en": "PCV2+CSF+PR Combo", "id": "zhimian"}, {"n": "支原体 / 气喘病", "en": "M. hyopneumoniae", "id": "yuanzhifulai"}, {"n": "圆环 / PCV2", "en": "PCV2", "id": "yuantailai"}, {"n": "猪瘟 / CSF", "en": "CSF / Classical Swine Fever", "id": "wentailai_swine"}, {"n": "伪狂犬", "en": "Pseudorabies / PR", "id": "weitailai"}, {"n": "巴氏杆菌 / 猪肺疫", "en": "Pasteurella multocida", "id": "helikang"}, {"n": "猪丹毒", "en": "Swine Erysipelas", "id": "zhudanduvaccine"}, {"n": "副伤寒", "en": "Paratyphus", "id": "paratyphus"}, {"n": "链球菌", "en": "Streptococcosis", "id": "lianlikang"}]}, {"sp": "肉鸡", "en": "Broiler", "sym": [{"n": "新城疫 / ND+AI+腺病毒", "en": "ND+AI(H9)+Adenovirus", "id": "qintailai"}, {"n": "新城疫弱毒 / Clone30", "en": "ND Live Clone30", "id": "xinbian"}, {"n": "新城疫+IB / La Sota+H120", "en": "ND+IB Live", "id": "xinkean"}, {"n": "禽多杀 / 禽霍乱", "en": "Avian Pasteurella multocida", "id": "qinduosha"}, {"n": "传染性法氏囊 / IBD", "en": "Infectious Bursal Disease", "id": "falian"}, {"n": "鸡痘", "en": "Fowl Pox", "id": "doulian"}, {"n": "禽维生素预混料", "en": "Poultry Vitamin Premix", "id": "qinbaotai"}, {"n": "禽用结合蛋白", "en": "Poultry Binding Protein", "id": "qintai_live"}]}, {"sp": "蛋鸡", "en": "Layer", "sym": [{"n": "新城疫+IB+EDS+AI / 减蛋", "en": "ND+IB+EDS+AI", "id": "xinzhijianliu"}, {"n": "新城疫+IB / H52", "en": "ND+IB H52", "id": "xinyian"}, {"n": "新城疫 / CS2", "en": "ND CS2", "id": "xinlian"}]}, {"sp": "水禽", "en": "Waterfowl", "sym": [{"n": "鸭瘟", "en": "Duck Plague", "id": "yalian"}, {"n": "新城疫+AI+腺病毒 / 5ZF", "en": "ND+AI(H9)+Adenovirus (waterfowl)", "id": "qintailai5zf"}]}, {"sp": "通用（鸡用）", "en": "Universal", "sym": [{"n": "新城疫+AI+腺病毒 / 4F", "en": "ND+AI(H9)+Adenovirus (broiler)", "id": "qintailai4f"}, {"n": "新城疫+IB / HB1+H120", "en": "ND+IB HB1+H120", "id": "xinzhian"}, {"n": "新城疫+IB+AI(H9)", "en": "ND+IB+AI(H9)", "id": "xinzhiliu"}, {"n": "新城疫+AI+腺病毒 / 4H", "en": "ND+AI(H9)+Adenovirus (broiler)", "id": "qintailai4h"}]}, {"sp": "鸽用", "en": "Pigeon", "sym": [{"n": "新城疫 / V4/HB92", "en": "ND V4/HB92 Clone", "id": "xinaowei"}, {"n": "新城疫 / La Sota", "en": "ND La Sota", "id": "xinsian"}, {"n": "新城疫+AI H9", "en": "ND+AI(H9)", "id": "xinliu"}, {"n": "新城疫 / 中等毒力", "en": "ND medium virulence", "id": "qintai_pigeon"}, {"n": "禽泰宁", "en": "QinTaiNing", "id": "qintaining"}, {"n": "鸽宝泰", "en": "GeBaoTai", "id": "baotai_pigeon"}, {"n": "鸽泰康", "en": "GeTaiKang", "id": "taikang"}, {"n": "南华维康", "en": "NanHuaWeiKang", "id": "nanhuaweikang"}, {"n": "海泰滴康", "en": "HaiTai DiKang", "id": "dikang"}, {"n": "口服补液盐", "en": "Oral Rehydration Salt", "id": "koufu"}, {"n": "戊二醛癸甲溴铵溶液", "en": "Glutaraldehyde-Deciquam Solution", "id": "wutan"}]}, {"sp": "牛", "en": "Cattle", "sym": [{"n": "巴氏杆菌病 / 肺炎", "en": "Pasteurellosis / Pneumonia", "id": "niubashigan"}, {"n": "副伤寒 / 肠炎", "en": "Paratyphoid / Enteritis", "id": "niushahotan"}, {"n": "气肿疽 / 黑腿病", "en": "Blackleg", "id": "qizhongji"}]}, {"sp": "羊", "en": "Sheep", "sym": [{"n": "大肠杆菌病 / 腹泻", "en": "Colibacillosis / Diarrhea", "id": "yangdachangganjun"}, {"n": "气肿疽 / 黑腿病", "en": "Blackleg", "id": "qizhongji"}]}];</script>
 <footer>
   <div class="wrap">
     <div class="footer-grid">

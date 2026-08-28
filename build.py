@@ -40,11 +40,13 @@ CATS = [
     ('dog',   '犬用','Dog'),
     ('pigeon','鸽用','Pigeon'),
     ('pig',   '猪用','Swine'),
-    ('poultry','禽用','Poultry'),
+    ('broiler','肉鸡','Broiler'),
+    ('layer','蛋鸡','Layer'),
+    ('waterfowl','水禽','Waterfowl'),
+    ('universal','通用（鸡用）','Universal'),
     ('fish',  '鱼用','Fish'),
     ('frog',  '蛙用','Frog'),
     ('shrimp','虾用','Shrimp'),
-    ('live',  '畜禽用','Livestock'),
     ('ruminant','牛/羊用','Cattle/Sheep'),
 ]
 CAT_LABEL = {k:{'cn':cn,'en':en} for k,cn,en in CATS}
@@ -56,56 +58,56 @@ P = []
 def add(**kw): P.append(kw)
 
 # ===== CAT =====
-add(id='taimiaoja',name='泰妙佳',en='TaiMiaoJia',cat='cat',img='assets/img/prod/prod_taimiaoja.jpg',
+add(id='taimiaoja',name='泰妙佳',en='TaiMiaoJia',cat='cat',binding='binding',img='assets/img/prod/prod_taimiaoja.jpg',
     type='维生素预混合饲料 III',net='100g/瓶 · 10瓶/盒',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','滋补营养','改善胃肠','增强免疫','加速康复'],
     species=['猫'],disease='猫瘟 / 疱疹 / 杯状病毒',
     lead='猫用粉剂营养补充剂，含猫瘟、疱疹、杯状病毒结合蛋白，配合维生素快速补充机体营养、增强免疫、加速康复。',
     meta=['适用：猫瘟、疱疹、杯状病毒结合蛋白','规格：100g/瓶 · 10瓶/盒'])
-add(id='miaolebao',name='妙乐宝',en='MiaoLeBao',cat='cat',img='assets/img/prod/prod_miaolebao.jpg',
+add(id='miaolebao',name='妙乐宝',en='MiaoLeBao',cat='cat',binding='binding',img='assets/img/prod/prod_miaolebao.jpg',
     type='宠物营养补充剂（猫用）',net='1.5g×10包',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','速补营养','改善胃肠','增强免疫','加速康复'],
     species=['猫'],disease='猫瘟 / 疱疹 / 杯状病毒',
     lead='猫用粉剂，含猫瘟、疱疹、杯状病毒结合蛋白，1.5g 小包易拌食，适合幼猫与挑食猫日常免疫支持。',
     meta=['适用：猫瘟、疱疹、杯状病毒结合蛋白','规格：1.5g×10包'])
-add(id='futailai',name='福泰莱',en='FuTaiLai',cat='cat',img='assets/img/prod/prod_futailai.jpg',
+add(id='futailai',name='福泰莱',en='FuTaiLai',cat='cat',binding='binding',img='assets/img/prod/prod_futailai.jpg',
     type='宠物营养补充剂（猫用）',net='粉剂 1.5g×10袋 / 片剂 2瓶/盒',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','猫传腹 FCoV','植物中药抗病毒','10-15 天疗程'],
     species=['猫'],disease='猫传染性腹膜炎（FCoV）',
     lead='针对猫传腹病毒（FCoV）结合蛋白产品，粉剂与片剂两种剂型。片剂含植物中药抗病毒成分，每天一次、每次一片，连续 10-15 天。',
     meta=['含猫传腹病毒结合蛋白 + 嗜酸乳杆菌 NCFM + 动物双歧杆菌 Bb-12','剂型：粉剂 / 片剂','用法：每天一次，每次一片，连续 10-15 天'])
-add(id='baozhentai_cat',name='包珍泰',en='BaoZhenTai (Cat)',cat='cat',img='assets/img/prod/prod_baozhentai.jpg',
+add(id='baozhentai_cat',name='包珍泰',en='BaoZhenTai (Cat)',cat='cat',binding='binding',img='assets/img/prod/prod_baozhentai.jpg',
     type='宠物营养补充剂（猫用片剂）',net='1瓶/盒',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','猫疱疹','植物中药抗病毒','10-15 天疗程'],
     species=['猫'],disease='猫疱疹病毒',
     lead='含猫疱疹病毒结合蛋白 + 植物中药抗病毒成分，针对猫疱疹病毒引起的眼部、上呼吸道症状，每天一次、每次一片，连续 10-15 天。',
     meta=['含猫疱疹病毒结合蛋白 + 植物中药抗病毒成分','用法：每天一次，每次一片，连续 10-15 天'])
-add(id='beizhuangtai',name='杯壮泰',en='BeiZhuangTai',cat='cat',img='assets/img/prod/prod_beizhuangtai.jpg',
+add(id='beizhuangtai',name='杯壮泰',en='BeiZhuangTai',cat='cat',binding='binding',img='assets/img/prod/prod_beizhuangtai.jpg',
     type='宠物营养补充剂（猫用片剂）',net='1瓶/盒',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','猫杯状','直接口服'],
     species=['猫'],disease='猫杯状病毒',
     lead='含猫杯状病毒结合蛋白 + 植物中药抗病毒成分，直接口服 1-2 片，连续 10-15 天，针对猫杯状病毒引起的口腔、呼吸道症状。',
     meta=['含猫杯状病毒结合蛋白 + 植物中药抗病毒成分','用法：直接口服 1-2 片，连续 10-15 天'])
-add(id='wentailai',name='温泰莱',en='WenTaiLai',cat='cat',img='assets/img/prod/prod_wentailai.jpg',
+add(id='wentailai',name='温泰莱',en='WenTaiLai',cat='cat',binding='binding',img='assets/img/prod/prod_wentailai.jpg',
     type='宠物营养补充剂（猫用片剂）',net='1瓶/盒',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','猫瘟','10-15 天疗程'],
     species=['猫'],disease='猫瘟病毒（FPV）',
     lead='含猫瘟病毒结合蛋白 + 植物中药抗病毒成分，针对猫泛白细胞减少症（猫瘟），每天一次、每次一片，连续 10-15 天。',
     meta=['含猫瘟病毒结合蛋白 + 植物中药抗病毒成分','用法：每天一次，每次一片，连续 10-15 天'])
-add(id='yanzhengtai',name='炎证泰',en='YanZhengTai',cat='cat',img='assets/img/prod/prod_yanzhengtai.jpg',
+add(id='yanzhengtai',name='炎证泰',en='YanZhengTai',cat='cat',binding='binding',img='assets/img/prod/prod_yanzhengtai.jpg',
     type='广谱抗菌蛋白外用喷剂',net='20ml/瓶',std='猫狗双标签',
     tags=['广谱抗菌蛋白','EGF + FGF21','促进愈合','外用喷涂'],
     species=['猫','犬'],disease='皮肤损伤 / 口腔溃疡 / 手术伤口',
     lead='猫狗通用的外用喷剂，含广谱抗菌蛋白 + 表皮生长因子（EGF）+ 成纤维细胞生长因子（FGF21），适用于皮肤损伤、口腔溃疡、手术伤口等外用场景。',
     meta=['广谱抗菌蛋白 + EGF + FGF21','猫用 + 犬用双标签','外用喷涂'])
 # ===== DOG =====
-add(id='taiwangja',name='泰旺佳',en='TaiWangJia',cat='dog',img='assets/img/prod/prod_taiwangja.jpg',
+add(id='taiwangja',name='泰旺佳',en='TaiWangJia',cat='dog',binding='binding',img='assets/img/prod/prod_taiwangja.jpg',
     type='维生素预混合饲料 III',net='10瓶/盒',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','速补营养','改善胃肠','增强免疫','加速康复'],
     species=['犬'],disease='犬瘟热 / 犬细小 / 犬冠状',
     lead='犬用粉剂，含犬瘟热、犬细小、犬冠状病毒结合蛋白，配合维生素快速补充营养、增强免疫、加速康复。',
     meta=['适用：犬瘟热、犬细小、犬冠状病毒结合蛋白','规格：10瓶/盒'])
-add(id='wanglebao',name='汪乐宝',en='WangLeBao',cat='dog',img='assets/img/prod/prod_wanglebao.jpg',
+add(id='wanglebao',name='汪乐宝',en='WangLeBao',cat='dog',binding='binding',img='assets/img/prod/prod_wanglebao.jpg',
     type='宠物营养补充剂（犬用）',net='2g×10包',std='Q/HTD 01-2024',
     tags=['抑制病毒复制','速补营养','改善胃肠','增强免疫','加速康复'],
     species=['犬'],disease='犬瘟热 / 犬细小 / 犬冠状',
@@ -130,56 +132,56 @@ add(id='xinliu',name='新流二联',en='XinLiu',cat='pigeon',img='assets/img/pro
     species=['鸽'],disease='新城疫 + 禽流感 H9',
     lead='H9 亚型保护率高达 94.4%，颈皮下/翼下肌肉注射，一次免疫同时防新城疫与禽流感 H9。',
     meta=['H9 亚型保护率高达 94.4%','颈皮下/翼下肌肉注射'])
-add(id='baotai_pigeon',name='鸽宝泰',en='GeBaoTai',cat='pigeon',img='assets/img/prod/prod_baotai_pigeon.jpg',
+add(id='baotai_pigeon',name='鸽宝泰',en='GeBaoTai',cat='pigeon',binding='other',img='assets/img/prod/prod_baotai_pigeon.jpg',
     type='维生素预混合饲料 I',net='5g/瓶',std='Q/GDHTD 41-2024',
     tags=['免疫激活','长效保护 60 天+','创新包裹工艺','饮水拌料'],
     species=['鸽'],disease='免疫激活 / 病毒防控',
     lead='内源性干扰素高效表达，创新包裹工艺，每瓶用于 2000 羽份最佳，长效保护 60 天以上。',
     meta=['内源性干扰素高效表达','每瓶用于 2000 羽份最佳'])
-add(id='qintaining',name='禽泰宁',en='QinTaiNing',cat='pigeon',img='assets/img/prod/prod_qintaining.jpg',
+add(id='qintaining',name='禽泰宁',en='QinTaiNing',cat='pigeon',binding='other',img='assets/img/prod/prod_qintaining.jpg',
     type='液态维生素预混合饲料 IV',net='注射型',std='兽用 OTC',
     tags=['耐药菌克星','广谱抗菌','无药残'],
     species=['鸽'],disease='细菌感染 / 耐药菌',
     lead='颈皮下/胸部肌肉注射 0.2ml/羽，可与油佐剂疫苗混合使用，针对耐药菌、广谱抗菌、无药残。',
     meta=['颈皮下/胸部肌肉注射 0.2ml/羽','可与油佐剂疫苗混合使用'])
-add(id='qintai_pigeon',name='禽泰安',en='QinTaiAn (Pigeon)',cat='pigeon',img='assets/img/prod/prod_qintai.jpg',
+add(id='qintai_pigeon',name='禽泰安',en='QinTaiAn (Pigeon)',cat='pigeon',binding='other',img='assets/img/prod/prod_qintai.jpg',
     type='维生素预混合饲料 I',net='100g',std='Q/GDHTD 41-2024',
     tags=['广谱通用','作用直接','组合高效','无应激残留'],
     species=['鸽'],disease='营养补充 / 免疫支持',
     lead='广谱通用维生素预混，作用直接、组合高效、无应激残留，鸽用营养与免疫支持基础产品。',
     meta=['粤饲预(2021)13011','Q/GDHTD 41-2024','净含量 100g'])
-add(id='taikang',name='鸽泰康',en='GeTaiKang',cat='pigeon',img='assets/img/prod/prod_taikang_pigeon.jpg',
+add(id='taikang',name='鸽泰康',en='GeTaiKang',cat='pigeon',binding='other',img='assets/img/prod/prod_taikang_pigeon.jpg',
     type='禽用维生素预混合饲料',net='1kg',std='鸽专用',
     tags=['创新工艺','省力省心省钱','有效改善','优质原料'],
     species=['鸽'],disease='营养补充',
     lead='鸽专用维生素预混，1kg 用于 2400-3000 羽份，饮水/拌料，连续使用 2 天，创新工艺、优质原料。',
     meta=['1kg 用于 2400-3000 羽份','饮水/拌料，连续使用 2 天'])
-add(id='nanhuaweikang',name='南华维康',en='NanHuaWeiKang',cat='pigeon',img='assets/img/prod/prod_nanhuaweikang.jpg',
+add(id='nanhuaweikang',name='南华维康',en='NanHuaWeiKang',cat='pigeon',binding='other',img='assets/img/prod/prod_nanhuaweikang.jpg',
     type='复合维生素 B 可溶性粉',net='1000g',std='兽药字 190855071',
     tags=['B 族维生素','多发性神经炎','消化障碍','癞皮病口腔炎'],
     species=['鸽'],disease='B 族维生素缺乏',
     lead='复合维生素 B 可溶性粉，针对多发性神经炎、消化障碍、癞皮病口腔炎，混饮每 1L 水 0.5~1.5g，连用 3-5 日。',
     meta=['兽药字 190855071','混饮：每 1L 水 0.5~1.5g，连用 3-5 日'])
-add(id='wutan',name='戊二醛癸甲溴铵溶液',en='Glutaraldehyde-Deciquam',cat='pigeon',img='assets/img/prod/prod_wutan.jpg',
+add(id='wutan',name='戊二醛癸甲溴铵溶液',en='Glutaraldehyde-Deciquam',cat='pigeon',binding='other',img='assets/img/prod/prod_wutan.jpg',
     type='消毒药',net='1000g',std='兽用 OTC',
     tags=['广谱消毒','细菌芽孢','真菌病毒','养殖场/种蛋'],
     species=['鸽'],disease='环境消毒',
     lead='广谱消毒，对细菌芽孢、真菌、病毒有效，适用于养殖场与种蛋消毒；常规 1:2000~4000 稀释，疫病期 1:500~1000 稀释。',
     meta=['常规 1:2000~4000 稀释','疫病期 1:500~1000 稀释'])
-add(id='dikang',name='海泰滴康',en='HaiTai DiKang',cat='pigeon',img='assets/img/prod/prod_dikang.jpg',
+add(id='dikang',name='海泰滴康',en='HaiTai DiKang',cat='pigeon',binding='other',img='assets/img/prod/prod_dikang.jpg',
     type='地美硝唑预混剂',net='100g',std='兽药字 190851143',
     tags=['抗原虫药','广谱抗菌','密螺旋体','组织滴虫'],
     species=['鸽'],disease='滴虫病 / 密螺旋体',
     lead='地美硝唑预混剂，抗原虫、广谱抗菌，针对密螺旋体、组织滴虫；每 1000kg 饲料 400-2500g。',
     meta=['兽药字 190851143','每 1000kg 饲料 400-2500g','凭兽医处方购买使用'])
-add(id='koufu',name='口服补液盐',en='Oral Rehydration Salt',cat='pigeon',img='assets/img/prod/prod_koufu.jpg',
+add(id='koufu',name='口服补液盐',en='Oral Rehydration Salt',cat='pigeon',binding='other',img='assets/img/prod/prod_koufu.jpg',
     type='电解质补充药',net='118g',std='兽药字 190856407',
     tags=['电解质补充','调节酸碱平衡','热应激','腹泻纠正'],
     species=['鸽'],disease='脱水 / 电解质失衡',
     lead='电解质补充药，调节酸碱平衡，针对热应激、腹泻纠正；1 包溶于 4L 水，自由饮用。',
     meta=['兽药字 190856407','1 包溶于 4L 水，自由饮用'])
 # ===== FISH (rich) =====
-add(id='hongtailai',name='虹泰莱',en='HongTaiLai',cat='fish',img='assets/img/aqua/hongtailai.jpg',
+add(id='hongtailai',name='虹泰莱',en='HongTaiLai',cat='fish',binding='binding',img='assets/img/aqua/hongtailai.jpg',
     type='复合预混合饲料 VII（A 包 + B 包包裹材料）',net='100 克/包',std='Q/GDCHTD 64-2025',
     tags=['提高免疫力','抗病毒','无抗养殖'],
     species=['鳜鱼','鲈鱼'],disease='蛙虹彩病毒（RSIV）',calc=True,
@@ -197,7 +199,7 @@ add(id='hongtailai',name='虹泰莱',en='HongTaiLai',cat='fish',img='assets/img/
          ('连续用几天？','说明书 5-7 天。佛山案例用到第 7 天后死亡数持续下降，观察期到第 15 天。'),
          ('用后多久见效？','临床观察案例显示连续使用 7 天后死亡数明显下降。'),
          ('用错了怎么办？','立即停止投喂，观察鱼体反应。')])
-add(id='shentailai',name='申泰莱',en='ShenTaiLai',cat='fish',img='assets/img/aqua/shentailai.jpg',
+add(id='shentailai',name='申泰莱',en='ShenTaiLai',cat='fish',binding='binding',img='assets/img/aqua/shentailai.jpg',
     type='复合预混合饲料 X（A 包 + B 包包裹材料）',net='100 克/包',std='Q/GDCHTD 67-2025',
     tags=['提高免疫力','抗病毒','无抗养殖'],
     species=['石斑鱼','鳜鱼'],disease='神经坏死病毒（NNV）',calc=True,
@@ -214,7 +216,7 @@ add(id='shentailai',name='申泰莱',en='ShenTaiLai',cat='fish',img='assets/img/
     faq=[('什么规格的石斑鱼用？','商品规格可用。神经坏死病毒主要危害苗期（2-5cm），成鱼期也可用。'),
          ('连续用几天？','说明书 5-7 天。山东案例用到第 7 天后死亡持续下降，第 12 天归零。'),
          ('石斑鱼不吃料怎么办？','需转人工，由技术团队评估。')])
-add(id='zhongtailai',name='仲泰莱',en='ZhongTaiLai',cat='fish',img='assets/img/aqua/zhongtailai.jpg',
+add(id='zhongtailai',name='仲泰莱',en='ZhongTaiLai',cat='fish',binding='binding',img='assets/img/aqua/zhongtailai.jpg',
     type='复合预混合饲料 XII（A 包 + B 包包裹材料）',net='100 克/包',std='Q/SDHTD 69-2024',
     tags=['提高免疫力','抗病毒','无抗养殖'],
     species=['鳜鱼'],disease='传染性脾肾坏死病（ISKNV）',calc=True,
@@ -232,13 +234,13 @@ add(id='zhongtailai',name='仲泰莱',en='ZhongTaiLai',cat='fish',img='assets/im
          ('一包拌多少料？','1 包 A 包 + 1 包 B 包配 20kg 饲料。'),
          ('需要做 PCR 吗？','建议做 PCR 确诊病毒种类再用药。'),
          ('用错了怎么办？','立即停止投喂，观察鱼体反应。')])
-add(id='dantailai',name='丹泰莱',en='DanTaiLai',cat='fish',img='assets/img/aqua/dantailai.jpg',
+add(id='dantailai',name='丹泰莱',en='DanTaiLai',cat='fish',binding='binding',img='assets/img/aqua/dantailai.jpg',
     type='复合预混合饲料 VIII（A 包 + B 包包裹材料）',net='100 克/包',std='Q/SDHTD 65-2025',
     tags=['提高免疫力','抗病毒','无抗养殖'],
     species=['鱼'],disease='鱼用病毒结合蛋白',calc=True,
     lead='鱼用病毒结合蛋白产品，提升机体免疫、辅助抗病毒，适用于多种鱼类病毒病的防控与恢复。',
     meta=['鱼用病毒结合蛋白','Q/SDHTD 65-2025'])
-add(id='yubaotai',name='鱼宝泰',en='YuBaoTai',cat='fish',img='assets/img/aqua/yubaotai.jpg',
+add(id='yubaotai',name='鱼宝泰',en='YuBaoTai',cat='fish',binding='binding',img='assets/img/aqua/yubaotai.jpg',
     type='氟苯尼考粉（水产用）',net='100 克/包',std='兽药字 190859014',
     tags=['诺卡氏菌','反向包裹','减少耐药'],
     species=['生鱼(乌鳢)'],disease='诺卡氏菌病',
@@ -254,14 +256,14 @@ add(id='yubaotai',name='鱼宝泰',en='YuBaoTai',cat='fish',img='assets/img/aqua
          ('一包拌多少料？','100g + 300ml 植物油 → 拌 20kg 饲料。'),
          ('诺卡氏菌和普通细菌病怎么区分？','需 PCR 或镜检确诊，建议转人工。'),
          ('用药后多久可以卖鱼？','休药期待补充，请咨询技术团队。')])
-add(id='baozhentai_fish',name='包珍泰',en='BaoZhenTai (Fish)',cat='fish',img='assets/img/aqua/baozhentai_aqua.jpg',
+add(id='baozhentai_fish',name='包珍泰',en='BaoZhenTai (Fish)',cat='fish',binding='binding',img='assets/img/aqua/baozhentai_aqua.jpg',
     type='复合预混合饲料 VI（A 包 + B 包包裹材料）',net='100 克/包',std='Q/GDHTD 46-2024',
     tags=['提高免疫力','抗病毒','无抗养殖'],
     species=['鱼'],disease='鱼用疱疹病毒',calc=True,
     lead='鱼用疱疹病毒结合蛋白产品，提升机体免疫、辅助抗病毒，适用于鱼用疱疹病毒相关防控。',
     meta=['鱼用疱疹病毒结合蛋白','Q/GDHTD 46-2024'])
 # ===== FROG (rich) =====
-add(id='watailei',name='蛙泰莱',en='WaTaiLei',cat='frog',img='assets/img/aqua/watailei.jpg',
+add(id='watailei',name='蛙泰莱',en='WaTaiLei',cat='frog',binding='binding',img='assets/img/aqua/watailei.jpg',
     type='复合预混合饲料 IV（A 包 + B 包包裹材料）',net='100 克/包',std='Q/SDHT 0159-2023',
     tags=['黄杆菌','歪头病','细菌粘附蛋白'],
     species=['牛蛙'],disease='歪头病（黄杆菌脑神经感染）',calc=True,
@@ -280,7 +282,7 @@ add(id='watailei',name='蛙泰莱',en='WaTaiLei',cat='frog',img='assets/img/aqua
          ('连续用几天？','首次连续 3 天，间隔 1 月再用一次（预防性）。'),
          ('什么时候开始用？','小四脚蛙苗阶段。'),
          ('跟蛙宝泰有什么区别？','蛙泰莱生物制剂（预防，歪头病首选）vs 蛙宝泰抗生素（治疗，急性发作）。')])
-add(id='wabaotai',name='蛙宝泰',en='WaBaoTai',cat='frog',img='assets/img/aqua/wabaotai.jpg',
+add(id='wabaotai',name='蛙宝泰',en='WaBaoTai',cat='frog',binding='binding',img='assets/img/aqua/wabaotai.jpg',
     type='水产用抗生素（独创反向包裹技术）',net='100 克/包',std='兽药字 190859092',
     tags=['独创反向包裹','降低药残','控制耐药'],
     species=['牛蛙'],disease='急性细菌病（红腿/烂皮/腹水）',
@@ -296,20 +298,20 @@ add(id='wabaotai',name='蛙宝泰',en='WaBaoTai',cat='frog',img='assets/img/aqua
          ('一包拌多少料？','100g + 300ml 植物油 → 拌 20kg 蛙饲料。'),
          ('跟蛙泰莱怎么选？','预防/慢病 → 蛙泰莱；急性/重症 → 蛙宝泰；可联合使用。'),
          ('用药后多久卖蛙？','休药期待补充，请咨询技术团队。')])
-add(id='wataida',name='蛙泰达',en='WaTaiDa',cat='frog',img='assets/img/aqua/wataida.jpg',
+add(id='wataida',name='蛙泰达',en='WaTaiDa',cat='frog',binding='binding',img='assets/img/aqua/wataida.jpg',
     type='复合预混合饲料 VI',net='250 克/包',std='Q/HDHTD 62-2023',
     tags=['气单胞菌','链球菌','红腿烂皮胃肠炎'],
     species=['牛蛙'],disease='红腿 / 烂皮 / 胃肠炎',
     lead='针对牛蛙气单胞菌、链球菌等引起的红腿、烂皮、胃肠炎，250g 大包装，告别红腿胃肠炎烂皮。',
     meta=['Q/HDHTD 62-2023','告别红腿胃肠炎烂皮'])
 # ===== SHRIMP =====
-add(id='hutailai',name='弧泰莱',en='HuTaiLai',cat='shrimp',img='assets/img/aqua/hutailai.jpg',
+add(id='hutailai',name='弧泰莱',en='HuTaiLai',cat='shrimp',binding='binding',img='assets/img/aqua/hutailai.jpg',
     type='复合预混合饲料 XI',net='100 克/包',std='Q/GDHTD 68-2023',
     tags=['虾弧菌','黏附蛋白','天然杀菌'],
     species=['对虾'],disease='弧菌病',
     lead='针对对虾弧菌的黏附蛋白产品，天然杀菌，适用于对虾弧菌病的防控。',
     meta=['Q/GDHTD 68-2023','粤饲预(2020)01001'])
-add(id='baotailai',name='包泰莱',en='BaoTaiLai',cat='shrimp',img='assets/img/aqua/baotailai.jpg',
+add(id='baotailai',name='包泰莱',en='BaoTaiLai',cat='shrimp',binding='binding',img='assets/img/aqua/baotailai.jpg',
     type='复合预混合饲料 XV',net='100 克/包',std='Q/GDHTD 72-2024',
     tags=['肝肠孢子虫','黏附蛋白','天然杀虫'],
     species=['对虾'],disease='肝肠孢子虫',
@@ -318,38 +320,38 @@ add(id='baotailai',name='包泰莱',en='BaoTaiLai',cat='shrimp',img='assets/img/
     cases=[{'num':'对虾 · 案例 01','title':'中山虾 · 肝肠孢子虫 · 4 次方内','bg':'虾体内肝肠孢子虫载量在 4 次方以内。','plan':'连续 7-8 天使用包泰莱拌饲料口服。','eff':'7-8 天后虾体内肝肠孢子虫数量基本清零，摄食量与活力显著改善。','num2':'载量 4 次方 → 基本清零'},
           {'num':'对虾 · 案例 02','title':'珠海虾 · 治疗场景','bg':'肝肠孢子虫感染中后期。','plan':'按体重计算剂量，连续投喂。','eff':'载量较用药前显著下降，采食量与活力逐步恢复。','num2':'载量 ↓ · 活力 ↑'},
           {'num':'对虾 · 案例 03','title':'江苏小棚虾 · 预防方案','bg':'养殖密度高、疫病压力大。','plan':'放苗后定期投喂预防。','eff':'感染率显著低于对照组，整体养殖成功率提升。','num2':'感染率 ↓'}])
-add(id='xiahongtai',name='虾虹泰',en='XiaHongTai',cat='shrimp',img='assets/img/aqua/xiahongtai.jpg',
+add(id='xiahongtai',name='虾虹泰',en='XiaHongTai',cat='shrimp',binding='binding',img='assets/img/aqua/xiahongtai.jpg',
     type='复合预混合饲料 XVII',net='100 克/包',std='Q/GDHTD 74-2024',
     tags=['虾虹彩病毒','提高免疫','无抗养殖'],
     species=['对虾','罗氏沼虾'],disease='虹彩病毒',
     lead='针对对虾、罗氏沼虾虹彩病毒的结合蛋白产品，提高免疫、无抗养殖。',
     meta=['Q/GDHTD 74-2024'])
-add(id='xiajitai',name='虾吉泰',en='XiaJiTai',cat='shrimp',img='assets/img/aqua/xiajitai.jpg',
+add(id='xiajitai',name='虾吉泰',en='XiaJiTai',cat='shrimp',binding='binding',img='assets/img/aqua/xiajitai.jpg',
     type='复合预混合饲料 XIX',net='100 克/包',std='Q/GDHTD 76-2024',
     tags=['虾肌肉坏死病毒','提高免疫','无抗养殖'],
     species=['对虾'],disease='肌肉坏死病毒',
     lead='针对对虾肌肉坏死病毒的结合蛋白产品，提高免疫、无抗养殖。',
     meta=['虾肌肉坏死病毒结合蛋白','Q/GDHTD 76-2024'])
-add(id='xiabantai',name='虾斑泰',en='XiaBanTai',cat='shrimp',img='assets/img/aqua/xiabantai.jpg',
+add(id='xiabantai',name='虾斑泰',en='XiaBanTai',cat='shrimp',binding='binding',img='assets/img/aqua/xiabantai.jpg',
     type='复合预混合饲料 XVIII',net='100 克/包',std='Q/GDHTD 75-2024',
     tags=['虾白斑病毒','提高免疫','无抗养殖'],
     species=['对虾'],disease='白斑病毒（WSSV）',
     lead='针对对虾白斑病毒（WSSV）的结合蛋白产品，提高免疫、无抗养殖。',
     meta=['Q/GDHTD 75-2024'])
 # ===== LIVE =====
-add(id='qinbaotai',name='禽宝泰',en='QinBaoTai',cat='live',img='assets/img/prod/prod_qinbaotai_pdf.jpg',
+add(id='qinbaotai',name='禽宝泰',en='QinBaoTai',cat='broiler',binding='binding',img='assets/img/prod/prod_qinbaotai_pdf.jpg',
     type='维生素预混合饲料 Ⅰ（禽用）',net='200g · 1000 羽份/瓶',std='Q/GDHTD 41-2024',
     tags=['摆脱免疫抑制','长效保护 60 天+','激活免疫系统','降低死淘率'],
     species=['禽'],disease='免疫抑制 / 病毒防控',
     lead='禽用维生素预混，摆脱免疫抑制、激活免疫系统、长效保护 60 天以上、降低死淘率。1~3 日龄首次，7~10 日龄再用一次。',
     meta=['粤饲预(2021)13011','Q/GDHTD 41-2024','净含量 200g · 1000 羽份/瓶'])
-add(id='xubaotai',name='畜宝泰',en='XuBaoTai',cat='live',img='assets/img/prod/prod_xubaotai_box.jpg',
+add(id='xubaotai',name='畜宝泰',en='XuBaoTai',cat='ruminant',binding='binding',img='assets/img/prod/prod_xubaotai_box.jpg',
     type='维生素预混合饲料（畜用）',net='畜用',std='Q/GDHTD 43-2024',
     tags=['摆脱免疫抑制','防腹泻保生长','长效保护 60 天+','降低死淘率'],
     species=['畜'],disease='免疫抑制 / 腹泻',
     lead='畜用维生素预混，摆脱免疫抑制、防腹泻保生长、长效保护 60 天以上。仔猪 20 头份/瓶、母猪 10 头份/瓶；首次连用 3-7 天，以后每两月一次。',
     meta=['粤饲预(2021)13011','Q/GDHTD 43-2024','仔猪 20 头份/瓶 · 母猪 10 头份/瓶'])
-add(id='qintai_live',name='禽泰安',en='QinTaiAn (Binding Protein)',cat='live',img='assets/img/prod/prod_qintai_an.jpg',
+add(id='qintai_live',name='禽泰安',en='QinTaiAn (Binding Protein)',cat='broiler',binding='binding',img='assets/img/prod/prod_qintai_an.jpg',
     type='家禽病毒结合蛋白（维生素预混合饲料 Ⅰ）',net='100g · 大日龄 500 羽份',std='Q/GDHTD 43-2024',
     tags=['广谱通用','直接阻断感染','组合高效','孕产蛋可用'],
     species=['禽'],disease='家禽病毒病',
@@ -432,63 +434,63 @@ add(id='lianlikang',name='联立康',en='LianLiKang',cat='pig',img='assets/img/p
     en_species='Swine',en_disease='Swine Streptococcosis Septicemia',
     lead='用于预防猪败血性链球菌病的活疫苗。')
 # ===== POULTRY (15) — 2026-08-27 恢复自 8/21 拍板 (博美莱-禽苗手册-2025（4月定稿）.pdf) =====
-add(id='qintailai4f',name='禽泰莱 4(F)',en='QinTaiLai 4(F)',cat='poultry',img='assets/img/prod/prod_pou_p3_L.jpg',
+add(id='qintailai4f',name='禽泰莱 4(F)',en='QinTaiLai 4(F)',cat='universal',img='assets/img/prod/prod_pou_p3_L.jpg',
     type='三联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
     en_species='Chicken',en_disease='ND+AI(H9)+Adenovirus (La Sota+YT+QD)',
     lead='鸡用三联灭活疫苗：新城疫+禽流感(H9)+腺病毒。')
-add(id='qintailai5zf',name='禽泰莱 5(ZF)',en='QinTaiLai 5(ZF)',cat='poultry',img='assets/img/prod/prod_pou_p3_R.jpg',
+add(id='qintailai5zf',name='禽泰莱 5(ZF)',en='QinTaiLai 5(ZF)',cat='waterfowl',img='assets/img/prod/prod_pou_p3_R.jpg',
     type='三联灭活疫苗',net='—',std='—',species=['水禽（鸭/鹅）'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
     en_species='Waterfowl (Duck / Goose)',en_disease='ND+AI(H9)+Adenovirus (La Sota+YT+QD)',
     lead='水禽三联灭活疫苗：新城疫+禽流感(H9)+腺病毒。')
-add(id='xinzhian',name='欣支安',en='XinZhiAn',cat='poultry',img='assets/img/prod/prod_pou_p4_L.jpg',
+add(id='xinzhian',name='欣支安',en='XinZhiAn',cat='universal',img='assets/img/prod/prod_pou_p4_L.jpg',
     type='二联活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传染性支气管炎（HB1+H120 株）',
     en_species='Chicken',en_disease='ND + IB (HB1 + H120)',
     lead='鸡用新城疫+传支二联活疫苗。')
-add(id='xinzhiliu',name='新支流',en='XinZhiLiu',cat='poultry',img='assets/img/prod/prod_pou_p6_R.jpg',
+add(id='xinzhiliu',name='新支流',en='XinZhiLiu',cat='universal',img='assets/img/prod/prod_pou_p6_R.jpg',
     type='三联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传支+禽流感(H9)（La Sota+M41+HZ 株）',
     en_species='Chicken',en_disease='ND + IB + AI(H9) (La Sota + M41 + HZ)',
     lead='鸡用 ND+IB+AI(H9) 三联灭活疫苗。')
-add(id='xinzhijianliu',name='新支减流',en='XinZhiJianLiu',cat='poultry',img='assets/img/prod/prod_pou_p7_L.jpg',
+add(id='xinzhijianliu',name='新支减流',en='XinZhiJianLiu',cat='layer',img='assets/img/prod/prod_pou_p7_L.jpg',
     type='四联灭活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传支+减蛋综合征+禽流感(H9)（La Sota+M41+HS25+HZ 株）',
     en_species='Chicken',en_disease='ND + IB + EDS + AI(H9) (La Sota + M41 + HS25 + HZ)',
     lead='鸡用四联灭活疫苗：ND+IB+EDS+AI(H9)。')
-add(id='xinkean',name='新可安',en='XinKeAn',cat='poultry',img='assets/img/prod/prod_pou_p8_L.jpg',
+add(id='xinkean',name='新可安',en='XinKeAn',cat='broiler',img='assets/img/prod/prod_pou_p8_L.jpg',
     type='二联活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传染性支气管炎（La Sota+H120 株）',
     en_species='Chicken',en_disease='ND + IB (La Sota + H120)',
     lead='鸡用 ND+IB 二联活疫苗（La Sota+H120）。')
-add(id='doulian',name='都利安',en='DouLiAn',cat='poultry',img='assets/img/prod/prod_pou_p9_L.jpg',
+add(id='doulian',name='都利安',en='DouLiAn',cat='broiler',img='assets/img/prod/prod_pou_p9_L.jpg',
     type='活疫苗',net='—',std='—',species=['鸡'],disease='鸡痘（Fowl Pox）',
     en_species='Chicken',en_disease='Fowl Pox',
     lead='鸡痘活疫苗。')
-add(id='qinduosha',name='禽多杀',en='QinDuoSha',cat='poultry',img='assets/img/prod/prod_pou_p10_R.jpg',
+add(id='qinduosha',name='禽多杀',en='QinDuoSha',cat='broiler',img='assets/img/prod/prod_pou_p10_R.jpg',
     type='灭活疫苗',net='—',std='—',species=['禽'],disease='禽多杀性巴氏杆菌病（Avian Pasteurella multocida, C48-2 株）',
     en_species='Poultry',en_disease='Avian Pasteurella multocida (C48-2)',
     lead='禽巴氏杆菌病灭活疫苗（C48-2 株）。')
-add(id='yalian',name='雅利安',en='YaLiAn',cat='poultry',img='assets/img/prod/prod_pou_p11_L.jpg',
+add(id='yalian',name='雅利安',en='YaLiAn',cat='waterfowl',img='assets/img/prod/prod_pou_p11_L.jpg',
     type='活疫苗',net='—',std='—',species=['鸭'],disease='鸭瘟（Duck Plague）',
     en_species='Duck',en_disease='Duck Plague',
     lead='鸭瘟活疫苗。')
-add(id='falian',name='法利安',en='FaLiAn',cat='poultry',img='assets/img/prod/prod_pou_p12_L.jpg',
+add(id='falian',name='法利安',en='FaLiAn',cat='broiler',img='assets/img/prod/prod_pou_p12_L.jpg',
     type='活疫苗',net='—',std='—',species=['鸡'],disease='传染性法氏囊病（IBD / Gumboro, B87 株）',
     en_species='Chicken',en_disease='Infectious Bursal Disease (IBD / Gumboro, B87)',
     lead='鸡传染性法氏囊病活疫苗（B87 株）。')
-add(id='xinlian',name='新利安',en='XinLiAn',cat='poultry',img='assets/img/prod/prod_pou_p12_R.jpg',
+add(id='xinlian',name='新利安',en='XinLiAn',cat='layer',img='assets/img/prod/prod_pou_p12_R.jpg',
     type='活疫苗（中等毒力）',net='—',std='—',species=['鸡'],disease='新城疫（CS2 株）',
     en_species='Chicken',en_disease='Newcastle Disease (CS2, medium virulence)',
     lead='鸡新城疫活疫苗（CS2 株，中等毒力）。')
-add(id='xinyian',name='新易安',en='XinYiAn',cat='poultry',img='assets/img/prod/prod_pou_p13_L.jpg',
+add(id='xinyian',name='新易安',en='XinYiAn',cat='layer',img='assets/img/prod/prod_pou_p13_L.jpg',
     type='二联活疫苗',net='—',std='—',species=['鸡'],disease='新城疫+传染性支气管炎（La Sota+H52 株）',
     en_species='Chicken',en_disease='ND + IB (La Sota + H52)',
     lead='鸡用 ND+IB 二联活疫苗（La Sota+H52）。')
-add(id='xinbian',name='新必安',en='XinBiAn',cat='poultry',img='assets/img/prod/prod_pou_p13_R.jpg',
+add(id='xinbian',name='新必安',en='XinBiAn',cat='broiler',img='assets/img/prod/prod_pou_p13_R.jpg',
     type='活疫苗（弱毒）',net='—',std='—',species=['鸡'],disease='新城疫（Clone 30 株）',
     en_species='Chicken',en_disease='Newcastle Disease (Clone 30, mild virulence)',
     lead='鸡新城疫活疫苗（Clone 30 株，弱毒）。')
-add(id='qintailai',name='禽泰莱',en='QinTaiLai',cat='poultry',img='assets/img/prod/prod_pou_p9_R.jpg',
+add(id='qintailai',name='禽泰莱',en='QinTaiLai',cat='broiler',img='assets/img/prod/prod_pou_p9_R.jpg',
     type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
     en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
     lead='通用禽泰莱（三联灭活）— 同 qintailai4f/5zf 同株。')
-add(id='qintailai4h',name='禽泰莱 4(H)',en='QinTaiLai 4(H)',cat='poultry',img='assets/img/prod/prod_pou_p10_L.jpg',
+add(id='qintailai4h',name='禽泰莱 4(H)',en='QinTaiLai 4(H)',cat='universal',img='assets/img/prod/prod_pou_p10_L.jpg',
     type='三联灭活疫苗',net='—',std='—',species=['禽'],disease='新城疫+禽流感(H9)+腺病毒（La Sota+YT+QD 株）',
     en_species='Poultry',en_disease='ND + AI(H9) + Adenovirus (La Sota + YT + QD)',
     lead='通用禽泰莱 4(H) — 同 4(F) 株，标签分 H 版。')
@@ -612,7 +614,12 @@ MATCHER = [
     ('对虾','Shrimp',[('肝肠孢子虫','Hepatointestinal Microsporidia','baotailai'),('白斑病毒 / WSSV','White Spot Virus / WSSV','xiabantai'),('虹彩病毒','Iridovirus','xiahongtai'),('肌肉坏死','Muscle Necrosis','xiajitai'),('弧菌','Vibriosis','hutailai')]),
     ('猫','Cat',[('猫瘟 / FPV','FPV / Panleukopenia','wentailai'),('疱疹','Herpes','baozhentai_cat'),('杯状','Calici','beizhuangtai'),('传腹 / FCoV','FIP / FCoV','futailai'),('猫鼻支 / 泛白细胞减少','Feline Rhinotracheitis / Panleukopenia','taimiaoja')]),
     ('犬','Dog',[('犬瘟 / 细小 / 冠状','Distemper / Parvo / Corona','taiwangja')]),
-    ('鸽','Pigeon',[('新城疫 / ND','Newcastle Disease / ND','xinaowei'),('禽流感 H9','Avian Influenza H9','xinliu')]),
+    ('猪','Swine',[('蓝耳 / PRRS','PRRS','lantailai'),('圆环+猪瘟+伪狂犬 / 三联','PCV2+CSF+PR Combo','zhimian'),('支原体 / 气喘病','M. hyopneumoniae','yuanzhifulai'),('圆环 / PCV2','PCV2','yuantailai'),('猪瘟 / CSF','CSF / Classical Swine Fever','wentailai_swine'),('伪狂犬','Pseudorabies / PR','weitailai'),('巴氏杆菌 / 猪肺疫','Pasteurella multocida','helikang'),('猪丹毒','Swine Erysipelas','zhudanduvaccine'),('副伤寒','Paratyphus','paratyphus'),('链球菌','Streptococcosis','lianlikang')]),
+    ('肉鸡','Broiler',[('新城疫 / ND+AI+腺病毒','ND+AI(H9)+Adenovirus','qintailai'),('新城疫弱毒 / Clone30','ND Live Clone30','xinbian'),('新城疫+IB / La Sota+H120','ND+IB Live','xinkean'),('禽多杀 / 禽霍乱','Avian Pasteurella multocida','qinduosha'),('传染性法氏囊 / IBD','Infectious Bursal Disease','falian'),('鸡痘','Fowl Pox','doulian'),('禽维生素预混料','Poultry Vitamin Premix','qinbaotai'),('禽用结合蛋白','Poultry Binding Protein','qintai_live')]),
+    ('蛋鸡','Layer',[('新城疫+IB+EDS+AI / 减蛋','ND+IB+EDS+AI','xinzhijianliu'),('新城疫+IB / H52','ND+IB H52','xinyian'),('新城疫 / CS2','ND CS2','xinlian')]),
+    ('水禽','Waterfowl',[('鸭瘟','Duck Plague','yalian'),('新城疫+AI+腺病毒 / 5ZF','ND+AI(H9)+Adenovirus (waterfowl)','qintailai5zf')]),
+    ('通用（鸡用）','Universal',[('新城疫+AI+腺病毒 / 4F','ND+AI(H9)+Adenovirus (broiler)','qintailai4f'),('新城疫+IB / HB1+H120','ND+IB HB1+H120','xinzhian'),('新城疫+IB+AI(H9)','ND+IB+AI(H9)','xinzhiliu'),('新城疫+AI+腺病毒 / 4H','ND+AI(H9)+Adenovirus (broiler)','qintailai4h')]),
+    ('鸽用','Pigeon',[('新城疫 / V4/HB92','ND V4/HB92 Clone','xinaowei'),('新城疫 / La Sota','ND La Sota','xinsian'),('新城疫+AI H9','ND+AI(H9)','xinliu'),('新城疫 / 中等毒力','ND medium virulence','qintai_pigeon'),('禽泰宁','QinTaiNing','qintaining'),('鸽宝泰','GeBaoTai','baotai_pigeon'),('鸽泰康','GeTaiKang','taikang'),('南华维康','NanHuaWeiKang','nanhuaweikang'),('海泰滴康','HaiTai DiKang','dikang'),('口服补液盐','Oral Rehydration Salt','koufu'),('戊二醛癸甲溴铵溶液','Glutaraldehyde-Deciquam Solution','wutan')]),
     ('牛','Cattle',[('巴氏杆菌病 / 肺炎','Pasteurellosis / Pneumonia','niubashigan'),('副伤寒 / 肠炎','Paratyphoid / Enteritis','niushahotan'),('气肿疽 / 黑腿病','Blackleg','qizhongji')]),
     ('羊','Sheep',[('大肠杆菌病 / 腹泻','Colibacillosis / Diarrhea','yangdachangganjun'),('气肿疽 / 黑腿病','Blackleg','qizhongji')]),
 ]
@@ -718,7 +725,8 @@ def product_card(p, rel=''):
     tags_en = (p.get('en_tags') or [])[:4]
     tags = ''.join(f'<span>{zh_en(t, tags_en[i] if i < len(tags_en) else "")}</span>' for i,t in enumerate(tags_zh))
     search = ' '.join([p['name'], p['en'], p.get('type',''), p.get('en_type',''), p.get('disease',''), p.get('en_disease',''), ' '.join(p.get('tags',[])), ' '.join(p.get('en_tags') or [])])
-    return f'''<a class="product" href="{rel}products/{p['id']}.html" data-cat="{p['cat']}" data-name="{p['name']} {p['en']}" data-search="{search}">
+    binding = p.get('binding','vaccine')
+    return f'''<a class="product" href="{rel}products/{p['id']}.html" data-cat="{p['cat']}" data-binding="{binding}" data-name="{p['name']} {p['en']}" data-search="{search}">
   <div class="img" data-zoom>{rx}<img src="{rel}{p['img']}" alt="{p['name']}" loading="lazy"></div>
   <div class="body">
     <div class="cat">{zh_en(CAT_LABEL[p['cat']]['cn'], CAT_LABEL[p['cat']]['en'])}</div>
@@ -956,6 +964,7 @@ def render_about():
 # =========================================================
 def render_products():
     chips = '<button class="chip active" data-cat="all">' + zh_en('全部','All') + '</button>' + ''.join(f'<button class="chip" data-cat="{k}">{zh_en(cn, en)}</button>' for i,(k,cn,en) in enumerate(CATS))
+    ptype_chips = '<button class="chip active" data-binding="all">' + zh_en('全部类型','All Types') + '</button><button class="chip" data-binding="binding">' + zh_en('结合蛋白 / 抗菌蛋白','Binding Protein / Antimicrobial Protein') + '</button><button class="chip" data-binding="vaccine">' + zh_en('疫苗','Vaccine') + '</button><button class="chip" data-binding="other">' + zh_en('其他','Other') + '</button>'
     grid = ''.join(product_card(p) for p in P)
     # matcher species buttons
     sp_btns = ''.join(f'<button class="pill" data-species="{s[0]}" data-en="{s[1]}">{zh_en(s[0], s[1])}</button>' for s in MATCHER)
@@ -986,6 +995,7 @@ def render_products():
         <input id="pSearch" type="text" placeholder="搜索产品名称、疫病或关键词…">
       </div>
       <div class="filters" id="pChips">{chips}</div>
+      <div class="filters" id="pTypeChips">{ptype_chips}</div>
     </div>
     <div class="product-grid" id="pGrid">{grid}</div>
     <div class="empty" id="pEmpty" style="display:none;">{zh_en('未找到匹配的产品，换个关键词试试。','No matching products found. Try another keyword.')}</div>
